@@ -7,7 +7,7 @@ import java.sql.ResultSetMetaData;
 import java.util.Vector;
 import javax.swing.table.*;
 
-import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
+//import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array;
 
 public class TableModel extends AbstractTableModel{
 

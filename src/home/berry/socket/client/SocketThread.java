@@ -13,7 +13,6 @@ public class SocketThread implements Runnable{
     public SocketThread(Socket socket){
         this.socket=socket;
     }
-	@Override
 	public void run() {
 		BufferedReader receive = null;
 		PrintWriter send = null;

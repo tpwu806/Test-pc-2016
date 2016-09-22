@@ -1,4 +1,4 @@
-package day.com.day05.tool;
+/*package day.com.day05.tool;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -25,3 +25,4 @@ public class ImagePanel extends JPanel{
 	}
 
 }
+*/
