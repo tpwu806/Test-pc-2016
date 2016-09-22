@@ -3,9 +3,10 @@ package test2016.datadtructures.part5.separateChainng;
 import java.util.LinkedList;
 import java.util.List;
 
+
 /**
- * @Description: ��������</p>
- * @author wutp 2016��9��20��
+ * @Description: 
+ * @author wutp 2016年9月22日
  * @version 1.0
  */
 public class SparateChainingHashTable<T> {

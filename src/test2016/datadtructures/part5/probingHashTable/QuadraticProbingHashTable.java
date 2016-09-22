@@ -1,8 +1,9 @@
 package test2016.datadtructures.part5.probingHashTable;
 
+
 /**
- * @Description: ���������ɢ�б�
- * @author wutp 2016��9��20��
+ * @Description: 
+ * @author wutp 2016年9月22日
  * @version 1.0
  */
 public class QuadraticProbingHashTable<T> {
