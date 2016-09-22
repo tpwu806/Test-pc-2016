@@ -1,4 +1,4 @@
-package com.sql.dbutil;
+package com.sql.db.utils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
