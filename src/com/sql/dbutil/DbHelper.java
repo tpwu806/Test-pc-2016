@@ -1,4 +1,4 @@
-package com.wutp.dbutil;
+package com.sql.dbutil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
