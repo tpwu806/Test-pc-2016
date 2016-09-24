@@ -45,24 +45,26 @@ public final class MyProperties {
     /**
      * @Description: 获取数据库配置信息
      * @param id
+     * @throws Exception 
      */
-    public static void getDbMessage(int id){
+    public static void getDbMessage(int id) throws Exception{
     	Properties prop = new Properties();
     	InputStream in = Object.class.getResourceAsStream("/com/sql/db.properties");   	
     	try {    		
-    		if(in != null)
-    			prop.load(in);
-    		String database = "db_type_" + String.valueOf(id);
-    		db_type = prop.getProperty(database).trim();
-    		url_before = prop.getProperty(db_type + "url_before").trim();	
+    		if(in == null)
+    			throw new Exception("InputStream 读取失败！");
+    		
+    		prop.load(in);
+    		db_type = prop.getProperty("db_type_" + String.valueOf(id)).trim();
+    		url_before = prop.getProperty(db_type + "_url_before").trim();	
     		ip = prop.getProperty("ip_" + String.valueOf(id)).trim();
     		port = prop.getProperty("port_" + String.valueOf(id)).trim();
-    		DataBaseName = prop.getProperty("user" + String.valueOf(id)).trim();
+    		DataBaseName = prop.getProperty("dbname_" + String.valueOf(id)).trim();
     		
     		driver = prop.getProperty(db_type + "_driver").trim();	
-    		url = url_before + ip + port + DataBaseName;
-    		name = prop.getProperty("user" + String.valueOf(id)).trim();
-    		pwd = prop.getProperty("pwd" + String.valueOf(id)).trim();
+    		url = url_before + ip + ":" + port +"/"+ DataBaseName;
+    		name = prop.getProperty("user_" + String.valueOf(id)).trim();
+    		pwd = prop.getProperty("pwd_" + String.valueOf(id)).trim();
     		
     	} catch (IOException e) {
     		e.printStackTrace();
@@ -91,7 +93,7 @@ public final class MyProperties {
 		return pwd;
 	}
 
-	public static void main(String args[]) {
+	/*public static void main(String args[]) {
 		System.out.println(getDriver());
 		System.out.println(getUrl());
 		System.out.println(getName());
@@ -102,5 +104,5 @@ public final class MyProperties {
 	    //System.out.println(System.getProperty("user.dir")); 
 		//System.out.println("the path is : "+MyFilePath.getPath("sql", "db.properties"));
 	}
-
+*/
 }

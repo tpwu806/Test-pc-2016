@@ -59,7 +59,7 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 			e.printStackTrace();
 			throw e;			
 		}finally{
-			((ADbServiceBase) conn).BackPreparedStatement(ps, null);			
+			BackPreparedStatement(ps, null);			
 		}
 		return ps;
 	}
@@ -82,7 +82,7 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);
+			BackPreparedStatement(ps, rs);
 		}
 		return rs;
 	}
@@ -106,7 +106,7 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);
+			BackPreparedStatement(ps, rs);
 		}
 		return sum;
 	}
@@ -129,7 +129,7 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);
+			BackPreparedStatement(ps, rs);
 		}
 		return max;
 	}
@@ -147,8 +147,10 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 		boolean confInfo = false;
 		try {
 			ps=conn.prepareStatement(sql);			
-			for(int i=0;i<params.length;i++)
-				ps.setString(i+1, params[i]);
+			for(int i=0;i<params.length;i++){
+				System.out.println("参数为：" + params[i]);
+ 				ps.setString(i+1, params[i]);
+ 			}
 			rs=ps.executeQuery();
 			if(rs.next() && rs.getInt(1) >= 1)
 				confInfo = true;			 					
@@ -156,7 +158,7 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 			e.printStackTrace();
 			throw e;		
 		} finally {
-			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);		
+			BackPreparedStatement(ps, rs);		
 		}
 		return confInfo;		
 	}
@@ -182,7 +184,7 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 			e.printStackTrace();
 			throw e;
 		} finally {
-			((ADbServiceBase) conn).BackPreparedStatement(ps, null);
+			BackPreparedStatement(ps, null);
 		}
 		return confInfo;		
 	}

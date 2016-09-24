@@ -9,13 +9,13 @@ public class DBTestMainDemo {
 		String sql = "";
 		String[] params = null;
 		try {
-			sql="SELECT * FROM test WHERE NAME = 'admin' "
-					+" AND PASSWORD = '123456'";
+			sql="SELECT COUNT(*) FROM test WHERE NAME = ? "
+					+" AND PASSWORD = ?";
 			params = new String[2];
 			params[0] = "admin";
 			params[1] = "123456";
 			dbService = new DbService();
-			boolean b = dbService.execute(sql, params);
+			boolean b = dbService.executeQuery(sql, params);
 			System.out.println("登录：" + b);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

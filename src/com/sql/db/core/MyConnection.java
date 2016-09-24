@@ -57,7 +57,7 @@ public class MyConnection {
 			throw e;
 		}
 	}
-	
+
 	public Connection getCon() throws Exception{
 		return this.con;
 	}
