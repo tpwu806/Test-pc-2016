@@ -12,7 +12,7 @@ import java.sql.SQLException;
  * @version 1.0
  */
 public class DBUtils {
-	
+
 	private Connection con=null;	
 	
 	private String driver = "com.mysql.jdbc.Driver";
