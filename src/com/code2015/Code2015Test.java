@@ -1,7 +1,7 @@
 package com.code2015;
 import java.util.HashMap;
 
-public class Test {
+public class Code2015Test {
 
 	public static void main(String[] args) {
 		HashMap<String,String> hm = new HashMap<String,String>();

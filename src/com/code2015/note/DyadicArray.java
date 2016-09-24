@@ -1,9 +1,9 @@
-package com.code2016;
+package com.code2015.note;
 
 import java.util.Vector;
 
 
-public class Test {
+public class DyadicArray {
 
 	/**
 	 *@Description:

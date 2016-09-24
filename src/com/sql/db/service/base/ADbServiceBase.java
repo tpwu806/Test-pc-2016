@@ -1,9 +1,11 @@
-package com.sql.db.utils;
+package com.sql.db.service.base;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import com.sql.db.core.MyConnection;
 
 
 /**
@@ -13,15 +15,26 @@ import java.sql.SQLException;
  * @version 1.0
  * @time 2016-8-17下午4:37:39
  */
-public class DbHelper {
+public abstract class ADbServiceBase implements IDbServiceBase{
 	private Connection conn=null;
 	private PreparedStatement ps=null;	
 	private ResultSet rs=null;      
 	
-	public DbHelper()throws Exception{
-		DBUtils db;
+	public ADbServiceBase()throws Exception{
+		MyConnection db;
 		try {
-			db = new DBUtils();
+			db = new MyConnection();
+			this.conn = db.getCon();
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		}		
+	}
+	
+	public ADbServiceBase(int dataBaseId)throws Exception{
+		MyConnection db;
+		try {
+			db = new MyConnection(dataBaseId);
 			this.conn = db.getCon();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -46,7 +59,7 @@ public class DbHelper {
 			e.printStackTrace();
 			throw e;			
 		}finally{
-			((DbHelper) conn).BackPreparedStatement();			
+			((ADbServiceBase) conn).BackPreparedStatement(ps, null);			
 		}
 		return ps;
 	}
@@ -69,7 +82,7 @@ public class DbHelper {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			((DbHelper) conn).BackPreparedStatement(ps, null);
+			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);
 		}
 		return rs;
 	}
@@ -93,7 +106,7 @@ public class DbHelper {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			((DbHelper) conn).BackPreparedStatement(ps, null);
+			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);
 		}
 		return sum;
 	}
@@ -116,7 +129,7 @@ public class DbHelper {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			((DbHelper) conn).BackPreparedStatement(ps, null);
+			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);
 		}
 		return max;
 	}
@@ -143,7 +156,7 @@ public class DbHelper {
 			e.printStackTrace();
 			throw e;		
 		} finally {
-			((DbHelper) conn).BackPreparedStatement(ps, null);		
+			((ADbServiceBase) conn).BackPreparedStatement(ps, rs);		
 		}
 		return confInfo;		
 	}
@@ -169,37 +182,20 @@ public class DbHelper {
 			e.printStackTrace();
 			throw e;
 		} finally {
-			((DbHelper) conn).BackPreparedStatement(ps, null);
+			((ADbServiceBase) conn).BackPreparedStatement(ps, null);
 		}
 		return confInfo;		
-	}
-	
-	
-		
-	public void BackPreparedStatement() throws SQLException
-	{
-		try {			
-			((DbHelper) conn).BackPreparedStatement();	
-		} catch (Exception e) {
-			e.printStackTrace();
-			throw e;
-		}
-	}
-	
-	public  void BackPreparedStatement(PreparedStatement stmt)
-			throws SQLException {
-		try {
-			((DbHelper) conn).BackPreparedStatement(stmt);
-		} catch (Exception e) {
-			e.printStackTrace();
-			throw e;
-		}
 	}
 	
 	public  void BackPreparedStatement(PreparedStatement stmt,
 			ResultSet rs)throws SQLException {	
 		try {
-			((DbHelper) conn).BackPreparedStatement(stmt,rs);
+			if(stmt == null && rs == null)
+				MyConnection.BackPreparedStatement(conn);
+			else if(rs == null)
+				MyConnection.BackPreparedStatement(conn,stmt);
+			else
+				MyConnection.BackPreparedStatement(conn,stmt,rs);
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw e;

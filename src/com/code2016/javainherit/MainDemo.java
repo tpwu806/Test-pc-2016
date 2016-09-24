@@ -1,4 +1,4 @@
-package com.code2016.java;
+package com.code2016.javainherit;
 
 public class MainDemo {
 

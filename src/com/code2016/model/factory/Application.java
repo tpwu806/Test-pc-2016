@@ -5,8 +5,8 @@ public class Application {
 	public static void main(String[] args) {
 		PenCore penCore;
 		PenCoreCreator creator;
-		BallPen ballPen = new BallPen();
 		
+		BallPen ballPen = new BallPen();		
 		creator = new RedCoreCreator();
 		penCore = creator.getPenCore();
 		ballPen.usePenCore(penCore);
@@ -17,6 +17,7 @@ public class Application {
 		penCore = creator.getPenCore();
 		ballPen.usePenCore(penCore);
 		ballPen.write("nice to meet you");
+		
 		ballPen = new BallPen();
 		creator = new BlackCoreCreator();
 		penCore = creator.getPenCore();
