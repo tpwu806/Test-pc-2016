@@ -49,7 +49,7 @@ public final class MyProperties {
      */
     public static void getDbMessage(int id) throws Exception{
     	Properties prop = new Properties();
-    	InputStream in = Object.class.getResourceAsStream("/com/db/db.properties");   	
+    	InputStream in = Object.class.getResourceAsStream("/com/sql/db.properties");   	
     	try {    		
     		if(in == null)
     			throw new Exception("InputStream 读取失败！");
