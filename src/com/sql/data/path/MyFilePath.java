@@ -1,4 +1,4 @@
-package com.sql.db.path;
+package com.sql.data.path;
 
 import java.io.File;
 

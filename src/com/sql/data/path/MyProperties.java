@@ -1,4 +1,4 @@
-package com.sql.db.path;
+package com.sql.data.path;
 
 import java.io.File;
 import java.io.IOException;
@@ -49,7 +49,7 @@ public final class MyProperties {
      */
     public static void getDbMessage(int id) throws Exception{
     	Properties prop = new Properties();
-    	InputStream in = Object.class.getResourceAsStream("/com/sql/db.properties");   	
+    	InputStream in = Object.class.getResourceAsStream("/com/db/db.properties");   	
     	try {    		
     		if(in == null)
     			throw new Exception("InputStream 读取失败！");
@@ -61,8 +61,11 @@ public final class MyProperties {
     		port = prop.getProperty("port_" + String.valueOf(id)).trim();
     		DataBaseName = prop.getProperty("dbname_" + String.valueOf(id)).trim();
     		
-    		driver = prop.getProperty(db_type + "_driver").trim();	
-    		url = url_before + ip + ":" + port +"/"+ DataBaseName;
+    		driver = prop.getProperty(db_type + "_driver").trim();
+    		if("sqlserver".equals(db_type))
+    			url = url_before + ip + ":" + port +";DatabaseName="+ DataBaseName;
+    		else
+    			url = url_before + ip + ":" + port +"/"+ DataBaseName;
     		name = prop.getProperty("user_" + String.valueOf(id)).trim();
     		pwd = prop.getProperty("pwd_" + String.valueOf(id)).trim();
     		

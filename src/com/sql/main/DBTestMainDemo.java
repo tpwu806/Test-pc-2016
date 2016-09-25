@@ -1,7 +1,7 @@
 package com.sql.main;
 
-import com.sql.db.service.DbService;
-import com.sql.db.service.base.IDbServiceBase;
+import com.sql.data.service.DbService;
+import com.sql.data.service.base.IDbServiceBase;
 
 public class DBTestMainDemo {
 	private static IDbServiceBase dbService = null;
@@ -18,7 +18,6 @@ public class DBTestMainDemo {
 			boolean b = dbService.executeQuery(sql, params);
 			System.out.println("登录：" + b);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

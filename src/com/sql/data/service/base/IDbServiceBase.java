@@ -1,9 +1,10 @@
-package com.sql.db.service.base;
+package com.sql.data.service.base;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * @Description: 数据库操作基本接口
@@ -27,6 +28,14 @@ public interface IDbServiceBase {
 	 */
 	PreparedStatement getPreparedStatement(String sql)
 			throws SQLException;
+	
+	/**
+	 * @Description:
+	 * @auther: wutongpeng 2016年9月25日 
+	 * @return
+	 * @throws SQLException: Statement
+	 */
+	Statement getStatement() throws SQLException;
 	
 	/**
 	 * @Description:返回表

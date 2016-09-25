@@ -1,4 +1,4 @@
-package com.sql.db.core;
+package com.sql.data.core;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.sql.common.tools.SqlTools;
-import com.sql.db.path.MyProperties;
+import com.sql.data.path.MyProperties;
 
 /**
  * @Description: 获得Connection
@@ -25,8 +25,8 @@ public class MyConnection {
 	
 	
 	
-	public MyConnection()throws Exception{
-		new MyConnection(1);
+	private MyConnection()throws Exception{
+		 new MyConnection(1);
 	}
 
 	public MyConnection(int id)throws Exception{

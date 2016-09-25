@@ -1,11 +1,12 @@
-package com.sql.db.service.base;
+package com.sql.data.service.base;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
-import com.sql.db.core.MyConnection;
+import com.sql.data.core.MyConnection;
 
 
 /**
@@ -17,13 +18,14 @@ import com.sql.db.core.MyConnection;
  */
 public abstract class ADbServiceBase implements IDbServiceBase{
 	private Connection conn=null;
-	private PreparedStatement ps=null;	
-	private ResultSet rs=null;      
+	private PreparedStatement ps=null;
+	private ResultSet rs=null;   
+	private Statement stmt = null;
 	
 	public ADbServiceBase()throws Exception{
 		MyConnection db;
 		try {
-			db = new MyConnection();
+			db = new MyConnection(1);
 			this.conn = db.getCon();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -64,7 +66,23 @@ public abstract class ADbServiceBase implements IDbServiceBase{
 		return ps;
 	}
 
-
+	/**
+	 * @Description:
+	 * @auther: wutongpeng 2016年9月25日 
+	 * @return
+	 * @throws SQLException: Statement
+	 */
+	public Statement getStatement() throws SQLException{
+		try {
+			stmt=conn.createStatement();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw e;			
+		}finally{
+			BackPreparedStatement(ps, null);			
+		}
+		return stmt;
+	}
 	/**
 	 * @Description:返回表
 	 * @param sql
