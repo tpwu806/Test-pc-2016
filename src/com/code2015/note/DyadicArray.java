@@ -3,6 +3,11 @@ package com.code2015.note;
 import java.util.Vector;
 
 
+/**
+ * @Description: 二维数组
+ * @author wutp 2016年10月2日
+ * @version 1.0
+ */
 public class DyadicArray {
 
 	/**
