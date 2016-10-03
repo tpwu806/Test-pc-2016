@@ -7,6 +7,7 @@ import org.apache.commons.codec.binary.Base64;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
+
 /**
  * @Description: Base64加密算法
  * @author wutp 2016年10月3日
