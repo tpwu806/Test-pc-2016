@@ -1,4 +1,4 @@
-package com.code2016.imooc.concurrent.racecondition;
+package com.code2016.imooc.thread.concurrent.racecondition;
 
 public class EnergyTransferTask implements Runnable {
 

@@ -1,4 +1,4 @@
-package com.code2016.imooc.concurrent;
+package com.code2016.imooc.thread.concurrent;
 
 public class Actor extends Thread {
 

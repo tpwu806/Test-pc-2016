@@ -1,4 +1,4 @@
-package com.code2016.imooc.concurrent.racecondition;
+package com.code2016.imooc.thread.concurrent.racecondition;
 
 /**
  * 宇宙的能量系统 遵循能量守恒定律： 能量不会凭空创生或消失，只会从一处转移到另一处

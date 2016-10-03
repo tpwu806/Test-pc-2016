@@ -1,4 +1,4 @@
-package com.code2016.imooc.concurrent.base;
+package com.code2016.imooc.thread.concurrent.base;
 
 //军队线程
 //模拟作战双方的行为

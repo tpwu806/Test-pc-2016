@@ -1,4 +1,4 @@
-package com.code2016.imooc.concurrent.base;
+package com.code2016.imooc.thread.concurrent.base;
 
 /**
  * 隋唐演义大戏舞台
