@@ -1,4 +1,4 @@
-package com.code2016.imooc.securite.symmetric.aes;
+package com.code2016.imooc.encryption.symmetric.aes;
 
 import java.security.Key;
 import java.security.Security;

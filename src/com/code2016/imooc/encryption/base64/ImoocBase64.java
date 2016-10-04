@@ -1,4 +1,4 @@
-package com.code2016.imooc.securite.base64;
+package com.code2016.imooc.encryption.base64;
 
 import java.io.IOException;
 

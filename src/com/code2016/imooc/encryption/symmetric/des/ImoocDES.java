@@ -1,9 +1,8 @@
-package com.code2016.imooc.securite.symmetric.des;
+package com.code2016.imooc.encryption.symmetric.des;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
-import java.security.SecureRandom;
 import java.security.Security;
 import java.security.spec.InvalidKeySpecException;
 
@@ -14,51 +13,56 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.DESedeKeySpec;
+import javax.crypto.spec.DESKeySpec;
 
 import org.apache.commons.codec.binary.Hex;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
- * @Description: 3DES(DESede)
+ * @Description: DES加密
  * @author wutp 2016年10月3日
  * @version 1.0
  */
-public class Imooc3DES {
-
+public class ImoocDES {
+	
 	private static String src = "imooc security des";
-	public static void main(String[] args) {
-		jdk3DES();
-		bc3DES();
 
+	public static void main(String[] args) {
+		jdkDES();
+		bcDES();
 	}
-	//jdk 3des encrypt: [C@28864e92
-	//jdk 3des decrypt: imooc security des
-	private static void jdk3DES(){
+
+	/**
+	 * @Description:javax.crypto
+	 * @auther: wutp 2016年10月3日
+	 * @return void
+	 * @throws NoSuchPaddingException 
+	 * @throws InvalidKeySpecException 
+	 */
+	public static void jdkDES(){
 		try {
 			//生成KEY
-			KeyGenerator keyGenerator = KeyGenerator.getInstance("DESede");
+			KeyGenerator keyGenerator = KeyGenerator.getInstance("DES");
 			keyGenerator.getProvider();
-			//keyGenerator.init(168);
-			keyGenerator.init(new SecureRandom());
+			keyGenerator.init(56);
 			SecretKey secretKey = keyGenerator.generateKey();
 			byte[] byteKey = secretKey.getEncoded();
 			
 			//KEY的转换
-			DESedeKeySpec desKeySpec = new DESedeKeySpec(byteKey);
-			SecretKeyFactory  factory = SecretKeyFactory.getInstance("DESede");
+			DESKeySpec desKeySpec = new DESKeySpec(byteKey);
+			SecretKeyFactory  factory = SecretKeyFactory.getInstance("DES");
 			SecretKey convertSecretKey = factory.generateSecret(desKeySpec);
 			
 			//加密
-			Cipher cipher = Cipher.getInstance("DESede/ECB/PKCS5Padding");//name+工作模式+填充方式
+			Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
 			cipher.init(Cipher.ENCRYPT_MODE, convertSecretKey);
 			byte[] result = cipher.doFinal(src.getBytes());
-			System.out.println("jdk 3des encrypt: " + Hex.encodeHex(result).toString());
+			System.out.println("jdk des encrypt: " + Hex.encodeHex(result).toString());
 			
 			//解密
 			cipher.init(Cipher.DECRYPT_MODE, convertSecretKey);
 			result = cipher.doFinal(result);
-			System.out.println("jdk 3des decrypt: " + new String(result));
+			System.out.println("jdk des decrypt: " + new String(result));
 			
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
@@ -73,35 +77,41 @@ public class Imooc3DES {
 		} catch (BadPaddingException e) {
 			e.printStackTrace();
 		}
-	}
+	} 
 	
-	private static void bc3DES(){
+	/**
+	 * @Description:org.bouncycastle.jce.provider.BouncyCastleProvider
+	 * @auther: wutp 2016年10月3日
+	 * @return void
+	 * @throws NoSuchPaddingException 
+	 * @throws InvalidKeySpecException 
+	 */
+	public static void bcDES(){
 		try {
 			Security.addProvider(new BouncyCastleProvider());
 			
 			//生成KEY
-			KeyGenerator keyGenerator = KeyGenerator.getInstance("DESede","BC");
+			KeyGenerator keyGenerator = KeyGenerator.getInstance("DES","BC");
 			keyGenerator.getProvider();
-			//keyGenerator.init(168);
-			keyGenerator.init(new SecureRandom());
+			keyGenerator.init(56);
 			SecretKey secretKey = keyGenerator.generateKey();
 			byte[] byteKey = secretKey.getEncoded();
 			
 			//KEY的转换
-			DESedeKeySpec desKeySpec = new DESedeKeySpec(byteKey);
-			SecretKeyFactory  factory = SecretKeyFactory.getInstance("DESede");
+			DESKeySpec desKeySpec = new DESKeySpec(byteKey);
+			SecretKeyFactory  factory = SecretKeyFactory.getInstance("DES");
 			SecretKey convertSecretKey = factory.generateSecret(desKeySpec);
 			
 			//加密
-			Cipher cipher = Cipher.getInstance("DESede/ECB/PKCS5Padding");
+			Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
 			cipher.init(Cipher.ENCRYPT_MODE, convertSecretKey);
 			byte[] result = cipher.doFinal(src.getBytes());
-			System.out.println("bc 3des encrypt: " + Hex.encodeHex(result).toString());
+			System.out.println("bc des encrypt: " + Hex.encodeHex(result).toString());
 			
 			//解密
 			cipher.init(Cipher.DECRYPT_MODE, convertSecretKey);
 			result = cipher.doFinal(result);
-			System.out.println("bc 3des decrypt: " + new String(result));
+			System.out.println("bc des decrypt: " + new String(result));
 			
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
@@ -118,6 +128,5 @@ public class Imooc3DES {
 		} catch (NoSuchProviderException e) {
 			e.printStackTrace();
 		}
-	}
-
+	} 
 }

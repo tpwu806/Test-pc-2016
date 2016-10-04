@@ -1,4 +1,4 @@
-package com.code2016.imooc.securite.asymmetric.eIgmal;  
+package com.code2016.imooc.encryption.asymmetric.eIgmal;  
 import java.security.AlgorithmParameterGenerator;  
 import java.security.AlgorithmParameters;  
 import java.security.Key;  

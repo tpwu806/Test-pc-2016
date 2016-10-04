@@ -1,4 +1,4 @@
-package com.code2016.imooc.securite.symmetric.pbe;
+package com.code2016.imooc.encryption.symmetric.pbe;
 
 import java.security.Key;
 import java.security.SecureRandom;
