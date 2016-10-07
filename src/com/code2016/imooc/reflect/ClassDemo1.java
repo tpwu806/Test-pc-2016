@@ -26,7 +26,7 @@ public class ClassDemo1 {
 		//第三种表达方式
 		Class c3 = null;
 		try {
-			c3 = Class.forName("com.imooc.reflect.Foo");
+			c3 = Class.forName("com.code2016.imooc.reflect.Foo");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
