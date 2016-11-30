@@ -1,0 +1,2585 @@
+<package>
+	<RootNode id="FMIS">
+		<node caption="集中FMIS" id="UserRootMenu" icon="JEnterprise.gif" />
+	</RootNode>
+	<UserRootMenu id="Menu_" caption="我的菜单" F_CDMX="0" F_CDJS="0">
+		<node F_CDSM="项目成本" F_GNBH="" F_CDBH="1001" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本" F_CDMX="0" id="a_0005" caption="项目成本" F_CDJS="2" />
+	</UserRootMenu>
+	<a_0005 F_CDSM="项目成本" F_GNBH="" F_CDBH="100110101005" F_CDLJ="账务管理\实时记账\初始设置"
+		F_CDMX="0" id="a_0005" caption="项目成本" F_CDJS="1">
+		<node F_CDSM="基建项目" F_GNBH="" F_CDBH="1001" F_CDLJ="项目管理" F_CDMX="0"
+			id="a_00050002" caption="基建项目" F_CDJS="2" />
+		<node F_CDSM="科研项目" F_GNBH="" F_CDBH="100110101005" F_CDLJ="账务管理\实时记账\初始设置"
+			F_CDMX="0" id="a_00050003" caption="科研项目" F_CDJS="2" />
+		<node F_CDSM="销售项目" F_GNBH="" F_CDBH="100110101005" F_CDLJ="账务管理\实时记账\初始设置"
+			F_CDMX="1" id="a_00050004" caption="销售项目" F_CDJS="2" />
+		<node F_CDSM="公共配置" F_GNBH="" F_CDBH="10011001" F_CDLJ="项目成本系统\公共配置"
+			F_CDMX="0" id="a_00050005" caption="公共配置" F_CDJS="2" />
+	</a_0005>
+	<a_00050002 F_CDSM="基建项目" F_GNBH="" F_CDBH="1001" F_CDLJ="项目管理"
+		F_CDMX="0" id="a_00050002" caption="基建项目" F_CDJS="2">
+		<node F_CDSM="日常业务处理" F_GNBH="" F_CDBH="10011001" F_CDLJ="项目管理\日常业务处理"
+			F_CDMX="0" id="a_000500020001" caption="日常业务处理" F_CDJS="3" />
+		<node F_CDSM="成本查询分析" F_GNBH="" F_CDBH="10011002" F_CDLJ="项目管理\成本查询分析"
+			F_CDMX="0" id="a_000500020002" caption="成本查询分析" F_CDJS="3" />
+		<node F_CDSM="辅助查询分析" F_GNBH="" F_CDBH="10011003" F_CDLJ="项目管理\辅助查询分析"
+			F_CDMX="0" id="a_000500020003" caption="辅助查询分析" F_CDJS="3" />
+		<node F_CDSM="合同查询" F_GNBH="" F_CDBH="10011004" F_CDLJ="项目管理\合同查询"
+			F_CDMX="0" id="a_000500020004" caption="合同查询" F_CDJS="3" />
+		<node F_CDSM="系统初始" F_GNBH="" F_CDBH="10011005" F_CDLJ="项目管理\系统初始"
+			F_CDMX="0" id="a_000500020005" caption="系统初始" F_CDJS="3" />
+		<node F_CDSM="基建模块调整工具" F_GNBH="" F_CDBH="10011006"
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="新项目管理基建\基建模块调整工具" F_CDMX="0"
+			id="a_000500020006" caption="基建模块调整工具" F_CDJS="3" />
+	</a_00050002>
+	<a_000500020001 F_CDSM="日常业务处理" F_GNBH="" F_CDBH="10011001"
+		F_CDLJ="项目管理\日常业务处理" F_CDMX="0" id="a_000500020001" caption="日常业务处理"
+		F_CDJS="3">
+		<node object="CostManager" F_CDBH="100110011001" F_CDMX="1"
+			F_CDSM="费用分配标准维护" F_GNBH="" F_CDLJ="项目管理\日常业务处理\费用分配标准维护" nodeClass="jenterprise.FWKNodeStub"
+			method="Fyfpbzwh" id="a_0005000200010001" caption="费用分配标准维护" F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110011002" F_CDMX="1"
+			F_CDSM="间接费用归集" F_GNBH="" F_CDLJ="项目管理\日常业务处理\间接费用归集" nodeClass="jenterprise.FWKNodeStub"
+			method="Jjfygj" id="a_0005000200010002" caption="间接费用归集" F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110011003" F_CDMX="1"
+			F_CDSM="费用分配审核" F_GNBH="" F_CDLJ="项目管理\日常业务处理\费用分配审核" nodeClass="jenterprise.FWKNodeStub"
+			method="RunFyfpsh" id="a_0005000200010003" caption="费用分配审核" F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110011004" F_CDMX="1"
+			F_CDSM="工作量输入" F_GNBH="" F_CDLJ="项目管理\日常业务处理\工作量输入" nodeClass="jenterprise.FWKNodeStub"
+			method="RunGzlWh" id="a_0005000200010004" caption="工作量输入" F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110011005" F_CDMX="1"
+			F_CDSM="经济指标输入" F_GNBH="" F_CDLJ="项目管理\日常业务处理\经济指标输入" nodeClass="jenterprise.FWKNodeStub"
+			method="RunSmWh" id="a_0005000200010005" caption="经济指标输入" F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110011006" F_CDMX="1"
+			F_CDSM="责任中心项目完工核销" F_GNBH="" F_CDLJ="项目管理\日常业务处理\责任中心项目完工核销"
+			nodeClass="jenterprise.FWKNodeStub" method="RunGcwghx" id="a_0005000200010006"
+			caption="责任中心项目完工核销" F_CDJS="4" />
+	</a_000500020001>
+	<a_0005000200010001 object="CostManager" F_CDBH="100110011001"
+		F_CDMX="1" F_CDSM="费用分配标准维护" F_GNBH="" F_CDLJ="项目管理\日常业务处理\费用分配标准维护"
+		nodeClass="jenterprise.FWKNodeStub" method="Fyfpbzwh" id="a_0005000200010001"
+		caption="费用分配标准维护" F_CDJS="4" />
+	<a_0005000200010002 object="CostManager" F_CDBH="100110011002"
+		F_CDMX="1" F_CDSM="间接费用归集" F_GNBH="" F_CDLJ="项目管理\日常业务处理\间接费用归集"
+		nodeClass="jenterprise.FWKNodeStub" method="Jjfygj" id="a_0005000200010002"
+		caption="间接费用归集" F_CDJS="4" />
+	<a_0005000200010003 object="CostManager" F_CDBH="100110011003"
+		F_CDMX="1" F_CDSM="费用分配审核" F_GNBH="" F_CDLJ="项目管理\日常业务处理\费用分配审核"
+		nodeClass="jenterprise.FWKNodeStub" method="RunFyfpsh" id="a_0005000200010003"
+		caption="费用分配审核" F_CDJS="4" />
+	<a_0005000200010004 object="CostManager" F_CDBH="100110011004"
+		F_CDMX="1" F_CDSM="工作量输入" F_GNBH="" F_CDLJ="项目管理\日常业务处理\工作量输入"
+		nodeClass="jenterprise.FWKNodeStub" method="RunGzlWh" id="a_0005000200010004"
+		caption="工作量输入" F_CDJS="4" />
+	<a_0005000200010005 object="CostManager" F_CDBH="100110011005"
+		F_CDMX="1" F_CDSM="经济指标输入" F_GNBH="" F_CDLJ="项目管理\日常业务处理\经济指标输入"
+		nodeClass="jenterprise.FWKNodeStub" method="RunSmWh" id="a_0005000200010005"
+		caption="经济指标输入" F_CDJS="4" />
+	<a_0005000200010006 object="CostManager" F_CDBH="100110011006"
+		F_CDMX="1" F_CDSM="责任中心项目完工核销" F_GNBH="" F_CDLJ="项目管理\日常业务处理\责任中心项目完工核销"
+		nodeClass="jenterprise.FWKNodeStub" method="RunGcwghx" id="a_0005000200010006"
+		caption="责任中心项目完工核销" F_CDJS="4" />
+	<a_000500020002 F_CDSM="成本查询分析" F_GNBH="" F_CDBH="10011002"
+		F_CDLJ="项目管理\成本查询分析" F_CDMX="0" id="a_000500020002" caption="成本查询分析"
+		F_CDJS="3">
+		<node param="JCost/Query/gckpcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021001" F_CDMX="1" F_CDSM="项目卡片查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目卡片查询"
+			method="QueryObject" id="a_0005000200020001" caption="项目卡片查询" F_CDJS="4" />
+		<node param="JCost/Query/kpzhcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021002" F_CDMX="1" F_CDSM="卡片综合查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\卡片综合查询"
+			method="QueryObject" id="a_0005000200020002" caption="卡片综合查询" F_CDJS="4" />
+		<node param="JCost/Query/gcmxcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021003" F_CDMX="1" F_CDSM="项目明细查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目明细查询"
+			method="QueryObject" id="a_0005000200020003" caption="项目明细查询" F_CDJS="4" />
+		<node param="JCost/Query/fsxhzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021004" F_CDMX="1" F_CDSM="分属性汇总查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\分属性汇总查询"
+			method="QueryObject" id="a_0005000200020004" caption="分属性汇总查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/fzyxzhzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021005" F_CDMX="1" F_CDSM="分作业性质汇总查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\分作业性质汇总查询"
+			method="QueryObject" id="a_0005000200020005" caption="分作业性质汇总查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/ryhzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021006" F_CDMX="1" F_CDSM="任意汇总查询-成本" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\任意汇总查询-成本"
+			method="QueryObject" id="a_0005000200020006" caption="任意汇总查询-成本"
+			F_CDJS="4" />
+		<node param="JCost/Query/ryhzsmcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021007" F_CDMX="1" F_CDSM="任意汇总查询-经济指标" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\任意汇总查询-经济指标"
+			method="QueryObject" id="a_0005000200020007" caption="任意汇总查询-经济指标"
+			F_CDJS="4" />
+		<node param="JCost/Query/ryhzzzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021008" F_CDMX="1" F_CDSM="任意汇总查询-转资" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\任意汇总查询-转资"
+			method="QueryObject" id="a_0005000200020008" caption="任意汇总查询-转资"
+			F_CDJS="4" />
+		<node param="JCost/Query/ryhzyecx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021009" F_CDMX="1" F_CDSM="任意汇总查询-余额" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\任意汇总查询-余额"
+			method="QueryObject" id="a_0005000200020009" caption="任意汇总查询-余额"
+			F_CDJS="4" />
+		<node param="JCost/Query/sxflhzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021010" F_CDMX="1" F_CDSM="任意分类汇总查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\任意分类汇总查询"
+			method="QueryObject" id="a_0005000200020010" caption="任意分类汇总查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/codeflhzcuryear.xml" data=""
+			object="GenerQueryObject" F_CDBH="100110021011" F_CDMX="1" F_CDSM="分类汇总查询"
+			F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\分类汇总查询"
+			method="QueryObject" id="a_0005000200020011" caption="分类汇总查询" F_CDJS="4" />
+		<node param="JCost/Query/codeflhzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021012" F_CDMX="1" F_CDSM="责任中心分类汇总查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\责任中心分类汇总查询"
+			method="QueryObject" id="a_0005000200020012" caption="责任中心分类汇总查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/rytjcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021013" F_CDMX="1" F_CDSM="项目统计查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目统计查询"
+			method="QueryObject" id="a_0005000200020013" caption="项目统计查询" F_CDJS="4" />
+		<node param="JCost/Query/gcgzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021014" F_CDMX="1" F_CDSM="项目工作量查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目工作量查询"
+			method="QueryObject" id="a_0005000200020014" caption="项目工作量查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/wlxmyecx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021017" F_CDMX="1" F_CDSM="往来项目余额查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\往来项目余额查询"
+			method="QueryObject" id="a_0005000200020017" caption="往来项目余额查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/dxfzyecx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110021018" F_CDMX="1" F_CDSM="多项辅助余额查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\多项辅助余额查询"
+			method="QueryObject" id="a_0005000200020018" caption="多项辅助余额查询"
+			F_CDJS="4" />
+		<node F_CDSM="施工队成本查询" F_GNBH="" F_CDBH="100110021015" F_CDLJ="项目管理\成本查询分析\施工队成本查询"
+			F_CDMX="0" id="a_0005000200020015" caption="施工队成本查询" F_CDJS="4" />
+		<node F_CDSM="技术开发费查询" F_GNBH="" F_CDBH="100110021016" F_CDLJ="项目管理\成本查询分析\技术开发费查询"
+			F_CDMX="0" id="a_0005000200020016" caption="技术开发费查询" F_CDJS="4" />
+	</a_000500020002>
+	<a_0005000200020001 param="JCost/Query/gckpcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021001" F_CDMX="1"
+		F_CDSM="项目卡片查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目卡片查询"
+		method="QueryObject" id="a_0005000200020001" caption="项目卡片查询" F_CDJS="4" />
+	<a_0005000200020002 param="JCost/Query/kpzhcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021002" F_CDMX="1"
+		F_CDSM="卡片综合查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\卡片综合查询"
+		method="QueryObject" id="a_0005000200020002" caption="卡片综合查询" F_CDJS="4" />
+	<a_0005000200020003 param="JCost/Query/gcmxcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021003" F_CDMX="1"
+		F_CDSM="项目明细查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目明细查询"
+		method="QueryObject" id="a_0005000200020003" caption="项目明细查询" F_CDJS="4" />
+	<a_0005000200020004 param="JCost/Query/fsxhzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021004" F_CDMX="1"
+		F_CDSM="分属性汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\分属性汇总查询"
+		method="QueryObject" id="a_0005000200020004" caption="分属性汇总查询" F_CDJS="4" />
+	<a_0005000200020005 param="JCost/Query/fzyxzhzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021005" F_CDMX="1"
+		F_CDSM="分作业性质汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\分作业性质汇总查询" method="QueryObject" id="a_0005000200020005"
+		caption="分作业性质汇总查询" F_CDJS="4" />
+	<a_0005000200020006 param="JCost/Query/ryhzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021006" F_CDMX="1"
+		F_CDSM="任意汇总查询-成本" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\任意汇总查询-成本" method="QueryObject" id="a_0005000200020006"
+		caption="任意汇总查询-成本" F_CDJS="4" />
+	<a_0005000200020007 param="JCost/Query/ryhzsmcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021007" F_CDMX="1"
+		F_CDSM="任意汇总查询-经济指标" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\任意汇总查询-经济指标" method="QueryObject" id="a_0005000200020007"
+		caption="任意汇总查询-经济指标" F_CDJS="4" />
+	<a_0005000200020008 param="JCost/Query/ryhzzzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021008" F_CDMX="1"
+		F_CDSM="任意汇总查询-转资" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\任意汇总查询-转资" method="QueryObject" id="a_0005000200020008"
+		caption="任意汇总查询-转资" F_CDJS="4" />
+	<a_0005000200020009 param="JCost/Query/ryhzyecx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021009" F_CDMX="1"
+		F_CDSM="任意汇总查询-余额" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\任意汇总查询-余额" method="QueryObject" id="a_0005000200020009"
+		caption="任意汇总查询-余额" F_CDJS="4" />
+	<a_0005000200020010 param="JCost/Query/sxflhzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021010" F_CDMX="1"
+		F_CDSM="任意分类汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\任意分类汇总查询" method="QueryObject" id="a_0005000200020010"
+		caption="任意分类汇总查询" F_CDJS="4" />
+	<a_0005000200020011 param="JCost/Query/codeflhzcuryear.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021011" F_CDMX="1"
+		F_CDSM="分类汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\分类汇总查询"
+		method="QueryObject" id="a_0005000200020011" caption="分类汇总查询" F_CDJS="4" />
+	<a_0005000200020012 param="JCost/Query/codeflhzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021012" F_CDMX="1"
+		F_CDSM="责任中心分类汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\责任中心分类汇总查询" method="QueryObject" id="a_0005000200020012"
+		caption="责任中心分类汇总查询" F_CDJS="4" />
+	<a_0005000200020013 param="JCost/Query/rytjcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021013" F_CDMX="1"
+		F_CDSM="项目统计查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目统计查询"
+		method="QueryObject" id="a_0005000200020013" caption="项目统计查询" F_CDJS="4" />
+	<a_0005000200020014 param="JCost/Query/gcgzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110021014" F_CDMX="1"
+		F_CDSM="项目工作量查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\项目工作量查询"
+		method="QueryObject" id="a_0005000200020014" caption="项目工作量查询" F_CDJS="4" />
+	<a_0005000200020015 F_CDSM="施工队成本查询" F_GNBH=""
+		F_CDBH="100110021015" F_CDLJ="项目管理\成本查询分析\施工队成本查询" F_CDMX="0"
+		id="a_0005000200020015" caption="施工队成本查询" F_CDJS="4">
+		<node param="JCost/Query/xdcbcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="1001100210151001" F_CDMX="1" F_CDSM="施工队成本二维表" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\施工队成本查询\施工队成本二维表"
+			method="QueryObject" id="a_00050002000200150001" caption="施工队成本二维表"
+			F_CDJS="5" />
+		<node param="JCost/Query/xdgccx.xml" data="" object="GenerQueryObject"
+			F_CDBH="1001100210151002" F_CDMX="1" F_CDSM="施工队工程二维表" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\施工队成本查询\施工队工程二维表"
+			method="QueryObject" id="a_00050002000200150002" caption="施工队工程二维表"
+			F_CDJS="5" />
+		<node param="JCost/Query/gcxdcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="1001100210151003" F_CDMX="1" F_CDSM="项目施工队二维表" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\施工队成本查询\项目施工队二维表"
+			method="QueryObject" id="a_00050002000200150003" caption="项目施工队二维表"
+			F_CDJS="5" />
+		<node param="JCost/Query/cbgccx.xml" data="" object="GenerQueryObject"
+			F_CDBH="1001100210151004" F_CDMX="1" F_CDSM="成本工程二维表" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\施工队成本查询\成本工程二维表"
+			method="QueryObject" id="a_00050002000200150004" caption="成本工程二维表"
+			F_CDJS="5" />
+	</a_0005000200020015>
+	<a_00050002000200150001 param="JCost/Query/xdcbcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="1001100210151001" F_CDMX="1"
+		F_CDSM="施工队成本二维表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\施工队成本查询\施工队成本二维表" method="QueryObject" id="a_00050002000200150001"
+		caption="施工队成本二维表" F_CDJS="5" />
+	<a_00050002000200150002 param="JCost/Query/xdgccx.xml"
+		data="" object="GenerQueryObject" F_CDBH="1001100210151002" F_CDMX="1"
+		F_CDSM="施工队工程二维表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\施工队成本查询\施工队工程二维表" method="QueryObject" id="a_00050002000200150002"
+		caption="施工队工程二维表" F_CDJS="5" />
+	<a_00050002000200150003 param="JCost/Query/gcxdcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="1001100210151003" F_CDMX="1"
+		F_CDSM="项目施工队二维表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\施工队成本查询\项目施工队二维表" method="QueryObject" id="a_00050002000200150003"
+		caption="项目施工队二维表" F_CDJS="5" />
+	<a_00050002000200150004 param="JCost/Query/cbgccx.xml"
+		data="" object="GenerQueryObject" F_CDBH="1001100210151004" F_CDMX="1"
+		F_CDSM="成本工程二维表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\施工队成本查询\成本工程二维表"
+		method="QueryObject" id="a_00050002000200150004" caption="成本工程二维表"
+		F_CDJS="5" />
+	<a_0005000200020016 F_CDSM="技术开发费查询" F_GNBH=""
+		F_CDBH="100110021016" F_CDLJ="项目管理\成本查询分析\技术开发费查询" F_CDMX="0"
+		id="a_0005000200020016" caption="技术开发费查询" F_CDJS="4">
+		<node param="JCost/Query/kybabcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="1001100210161001" F_CDMX="1" F_CDSM="技术开发费加计扣除" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\技术开发费查询\技术开发费加计扣除"
+			method="QueryObject" id="a_00050002000200160001" caption="技术开发费加计扣除"
+			F_CDJS="5" />
+		<node param="JCost/Query/kybabmx.xml" data="" object="GenerQueryObject"
+			F_CDBH="1001100210161002" F_CDMX="1" F_CDSM="技术开发费明细查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\成本查询分析\技术开发费查询\技术开发费明细查询"
+			method="QueryObject" id="a_00050002000200160002" caption="技术开发费明细查询"
+			F_CDJS="5" />
+	</a_0005000200020016>
+	<a_00050002000200160001 param="JCost/Query/kybabcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="1001100210161001" F_CDMX="1"
+		F_CDSM="技术开发费加计扣除" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\技术开发费查询\技术开发费加计扣除" method="QueryObject" id="a_00050002000200160001"
+		caption="技术开发费加计扣除" F_CDJS="5" />
+	<a_00050002000200160002 param="JCost/Query/kybabmx.xml"
+		data="" object="GenerQueryObject" F_CDBH="1001100210161002" F_CDMX="1"
+		F_CDSM="技术开发费明细查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\成本查询分析\技术开发费查询\技术开发费明细查询" method="QueryObject" id="a_00050002000200160002"
+		caption="技术开发费明细查询" F_CDJS="5" />
+	<a_000500020003 F_CDSM="辅助查询分析" F_GNBH="" F_CDBH="10011003"
+		F_CDLJ="项目管理\辅助查询分析" F_CDMX="0" id="a_000500020003" caption="辅助查询分析"
+		F_CDJS="3">
+		<node param="JCost/Query/gcsmcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031001" F_CDMX="1" F_CDSM="经济指标查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\经济指标查询"
+			method="QueryObject" id="a_0005000200030001" caption="经济指标查询" F_CDJS="4" />
+		<node param="JCost/Query/smhzcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031002" F_CDMX="1" F_CDSM="经济指标汇总查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\经济指标汇总查询"
+			method="QueryObject" id="a_0005000200030002" caption="经济指标汇总查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/cbgcfxcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031003" F_CDMX="1" F_CDSM="成本构成分析" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\成本构成分析"
+			method="QueryObject" id="a_0005000200030003" caption="成本构成分析" F_CDJS="4" />
+		<node param="JCost/Query/cbdbfxcx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031004" F_CDMX="1" F_CDSM="成本对比分析" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\成本对比分析"
+			method="QueryObject" id="a_0005000200030004" caption="成本对比分析" F_CDJS="4" />
+		<node param="JCost/Query/cbslzycx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031005" F_CDMX="1" F_CDSM="项目成本三栏帐" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\项目成本三栏帐"
+			method="QueryObject" id="a_0005000200030005" caption="项目成本三栏帐"
+			F_CDJS="4" />
+		<node param="JCost/Query/cbdlzycx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031006" F_CDMX="1" F_CDSM="项目成本多栏帐" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\项目成本多栏帐"
+			method="QueryObject" id="a_0005000200030006" caption="项目成本多栏帐"
+			F_CDJS="4" />
+		<node param="JCost/Query/zyxzdlz.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031007" F_CDMX="1" F_CDSM="作业性质多栏帐" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\作业性质多栏帐"
+			method="QueryObject" id="a_0005000200030007" caption="作业性质多栏帐"
+			F_CDJS="4" />
+		<node param="JCost/Query/gcyscx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031008" F_CDMX="1" F_CDSM="项目预算执行情况" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\项目预算执行情况"
+			method="QueryObject" id="a_0005000200030008" caption="项目预算执行情况"
+			F_CDJS="4" />
+		<node param="JCost/Query/projectYsZx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031009" F_CDMX="1" F_CDSM="项目预算执行分析查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\项目预算执行分析查询"
+			method="QueryObject" id="a_0005000200030009" caption="项目预算执行分析查询"
+			F_CDJS="4" />
+		<node param="JCost/Query/querycostvoucher.xml" data=""
+			object="GenerQueryObject" F_CDBH="100110031010" F_CDMX="1" F_CDSM="费用凭证查询"
+			F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\费用凭证查询"
+			method="QueryObject" id="a_0005000200030010" caption="费用凭证查询" F_CDJS="4" />
+		<node param="JCost/Query/zwjccx.xml" data="" object="GenerQueryObject"
+			F_CDBH="100110031011" F_CDMX="1" F_CDSM="账务交叉查询" F_GNBH=""
+			nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\账务交叉查询"
+			method="QueryObject" id="a_0005000200030011" caption="账务交叉查询" F_CDJS="4" />
+	</a_000500020003>
+	<a_0005000200030001 param="JCost/Query/gcsmcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031001" F_CDMX="1"
+		F_CDSM="经济指标查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\经济指标查询"
+		method="QueryObject" id="a_0005000200030001" caption="经济指标查询" F_CDJS="4" />
+	<a_0005000200030002 param="JCost/Query/smhzcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031002" F_CDMX="1"
+		F_CDSM="经济指标汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\辅助查询分析\经济指标汇总查询" method="QueryObject" id="a_0005000200030002"
+		caption="经济指标汇总查询" F_CDJS="4" />
+	<a_0005000200030003 param="JCost/Query/cbgcfxcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031003" F_CDMX="1"
+		F_CDSM="成本构成分析" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\成本构成分析"
+		method="QueryObject" id="a_0005000200030003" caption="成本构成分析" F_CDJS="4" />
+	<a_0005000200030004 param="JCost/Query/cbdbfxcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031004" F_CDMX="1"
+		F_CDSM="成本对比分析" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\成本对比分析"
+		method="QueryObject" id="a_0005000200030004" caption="成本对比分析" F_CDJS="4" />
+	<a_0005000200030005 param="JCost/Query/cbslzycx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031005" F_CDMX="1"
+		F_CDSM="项目成本三栏帐" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\项目成本三栏帐"
+		method="QueryObject" id="a_0005000200030005" caption="项目成本三栏帐" F_CDJS="4" />
+	<a_0005000200030006 param="JCost/Query/cbdlzycx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031006" F_CDMX="1"
+		F_CDSM="项目成本多栏帐" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\项目成本多栏帐"
+		method="QueryObject" id="a_0005000200030006" caption="项目成本多栏帐" F_CDJS="4" />
+	<a_0005000200030007 param="JCost/Query/zyxzdlz.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031007" F_CDMX="1"
+		F_CDSM="作业性质多栏帐" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\作业性质多栏帐"
+		method="QueryObject" id="a_0005000200030007" caption="作业性质多栏帐" F_CDJS="4" />
+	<a_0005000200030008 param="JCost/Query/gcyscx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031008" F_CDMX="1"
+		F_CDSM="项目预算执行情况" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\辅助查询分析\项目预算执行情况" method="QueryObject" id="a_0005000200030008"
+		caption="项目预算执行情况" F_CDJS="4" />
+	<a_0005000200030009 param="JCost/Query/projectYsZx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031009" F_CDMX="1"
+		F_CDSM="项目预算执行分析查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\辅助查询分析\项目预算执行分析查询" method="QueryObject" id="a_0005000200030009"
+		caption="项目预算执行分析查询" F_CDJS="4" />
+	<a_0005000200030010 param="JCost/Query/querycostvoucher.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031010" F_CDMX="1"
+		F_CDSM="费用凭证查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\费用凭证查询"
+		method="QueryObject" id="a_0005000200030010" caption="费用凭证查询" F_CDJS="4" />
+	<a_0005000200030011 param="JCost/Query/zwjccx.xml"
+		data="" object="GenerQueryObject" F_CDBH="100110031011" F_CDMX="1"
+		F_CDSM="账务交叉查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\辅助查询分析\账务交叉查询"
+		method="QueryObject" id="a_0005000200030011" caption="账务交叉查询" F_CDJS="4" />
+	<a_000500020004 F_CDSM="合同查询" F_GNBH="" F_CDBH="10011004"
+		F_CDLJ="项目管理\合同查询" F_CDMX="0" id="a_000500020004" caption="合同查询"
+		F_CDJS="3">
+		<node F_CDSM="余额查询" F_GNBH="" F_CDBH="100110041001" F_CDLJ="项目管理\合同查询\余额查询"
+			F_CDMX="0" id="a_0005000200040001" caption="余额查询" F_CDJS="4" />
+		<node F_CDSM="帐页查询" F_GNBH="" F_CDBH="100110041002" F_CDLJ="项目管理\合同查询\帐页查询"
+			F_CDMX="0" id="a_0005000200040002" caption="帐页查询" F_CDJS="4" />
+	</a_000500020004>
+	<a_0005000200040001 F_CDSM="余额查询" F_GNBH=""
+		F_CDBH="100110041001" F_CDLJ="项目管理\合同查询\余额查询" F_CDMX="0"
+		id="a_0005000200040001" caption="余额查询" F_CDJS="4">
+		<node param="JContract/Query/yecx.ahtcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410011001" F_CDMX="1"
+			F_CDSM="合同余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\余额查询\合同余额查询"
+			method="QueryObject" id="a_00050002000400010001" caption="合同余额查询"
+			F_CDJS="5" />
+		<node param="JContract/Query/yecx.adwcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410011002" F_CDMX="1"
+			F_CDSM="单位余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\余额查询\单位余额查询"
+			method="QueryObject" id="a_00050002000400010002" caption="单位余额查询"
+			F_CDJS="5" />
+		<node param="JContract/Query/yecx.axmcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410011003" F_CDMX="1"
+			F_CDSM="项目余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\余额查询\项目余额查询"
+			method="QueryObject" id="a_00050002000400010003" caption="项目余额查询"
+			F_CDJS="5" />
+		<node param="JContract/Query/yecx.aqkcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410011004" F_CDMX="1"
+			F_CDSM="欠款类别余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目管理\合同查询\余额查询\欠款类别余额查询" method="QueryObject" id="a_00050002000400010004"
+			caption="欠款类别余额查询" F_CDJS="5" />
+		<node param="JContract/Query/yecx.aryewcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410011005" F_CDMX="1"
+			F_CDSM="任意二维余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目管理\合同查询\余额查询\任意二维余额查询" method="QueryObject" id="a_00050002000400010005"
+			caption="任意二维余额查询" F_CDJS="5" />
+	</a_0005000200040001>
+	<a_00050002000400010001 param="JContract/Query/yecx.ahtcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410011001" F_CDMX="1"
+		F_CDSM="合同余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\余额查询\合同余额查询"
+		method="QueryObject" id="a_00050002000400010001" caption="合同余额查询"
+		F_CDJS="5" />
+	<a_00050002000400010002 param="JContract/Query/yecx.adwcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410011002" F_CDMX="1"
+		F_CDSM="单位余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\余额查询\单位余额查询"
+		method="QueryObject" id="a_00050002000400010002" caption="单位余额查询"
+		F_CDJS="5" />
+	<a_00050002000400010003 param="JContract/Query/yecx.axmcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410011003" F_CDMX="1"
+		F_CDSM="项目余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\余额查询\项目余额查询"
+		method="QueryObject" id="a_00050002000400010003" caption="项目余额查询"
+		F_CDJS="5" />
+	<a_00050002000400010004 param="JContract/Query/yecx.aqkcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410011004" F_CDMX="1"
+		F_CDSM="欠款类别余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\合同查询\余额查询\欠款类别余额查询" method="QueryObject" id="a_00050002000400010004"
+		caption="欠款类别余额查询" F_CDJS="5" />
+	<a_00050002000400010005 param="JContract/Query/yecx.aryewcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410011005" F_CDMX="1"
+		F_CDSM="任意二维余额查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\合同查询\余额查询\任意二维余额查询" method="QueryObject" id="a_00050002000400010005"
+		caption="任意二维余额查询" F_CDJS="5" />
+	<a_0005000200040002 F_CDSM="帐页查询" F_GNBH=""
+		F_CDBH="100110041002" F_CDLJ="项目管理\合同查询\帐页查询" F_CDMX="0"
+		id="a_0005000200040002" caption="帐页查询" F_CDJS="4">
+		<node param="JContract/Query/zycx.ahtcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410021001" F_CDMX="1"
+			F_CDSM="合同帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\合同帐页查询"
+			method="QueryObject" id="a_00050002000400020001" caption="合同帐页查询"
+			F_CDJS="5" />
+		<node param="JContract/Query/zycx.adwcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410021002" F_CDMX="1"
+			F_CDSM="单位帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\单位帐页查询"
+			method="QueryObject" id="a_00050002000400020002" caption="单位帐页查询"
+			F_CDJS="5" />
+		<node param="JContract/Query/zycx.axmcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410021003" F_CDMX="1"
+			F_CDSM="项目帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\项目帐页查询"
+			method="QueryObject" id="a_00050002000400020003" caption="项目帐页查询"
+			F_CDJS="5" />
+		<node param="JContract/Query/zycx.aqklbcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410021004" F_CDMX="1"
+			F_CDSM="欠款类别帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目管理\合同查询\帐页查询\欠款类别帐页查询" method="QueryObject" id="a_00050002000400020004"
+			caption="欠款类别帐页查询" F_CDJS="5" />
+		<node param="JContract/Query/zycx.akmcx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410021005" F_CDMX="1"
+			F_CDSM="科目帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\科目帐页查询"
+			method="QueryObject" id="a_00050002000400020005" caption="科目帐页查询"
+			F_CDJS="5" />
+		<node param="JContract/Query/zycx.ryzycx.xml" data="JJ"
+			object="GenerQueryObject" F_CDBH="1001100410021006" F_CDMX="1"
+			F_CDSM="任意帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\任意帐页查询"
+			method="QueryObject" id="a_00050002000400020006" caption="任意帐页查询"
+			F_CDJS="5" />
+	</a_0005000200040002>
+	<a_00050002000400020001 param="JContract/Query/zycx.ahtcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410021001" F_CDMX="1"
+		F_CDSM="合同帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\合同帐页查询"
+		method="QueryObject" id="a_00050002000400020001" caption="合同帐页查询"
+		F_CDJS="5" />
+	<a_00050002000400020002 param="JContract/Query/zycx.adwcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410021002" F_CDMX="1"
+		F_CDSM="单位帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\单位帐页查询"
+		method="QueryObject" id="a_00050002000400020002" caption="单位帐页查询"
+		F_CDJS="5" />
+	<a_00050002000400020003 param="JContract/Query/zycx.axmcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410021003" F_CDMX="1"
+		F_CDSM="项目帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\项目帐页查询"
+		method="QueryObject" id="a_00050002000400020003" caption="项目帐页查询"
+		F_CDJS="5" />
+	<a_00050002000400020004 param="JContract/Query/zycx.aqklbcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410021004" F_CDMX="1"
+		F_CDSM="欠款类别帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目管理\合同查询\帐页查询\欠款类别帐页查询" method="QueryObject" id="a_00050002000400020004"
+		caption="欠款类别帐页查询" F_CDJS="5" />
+	<a_00050002000400020005 param="JContract/Query/zycx.akmcx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410021005" F_CDMX="1"
+		F_CDSM="科目帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\科目帐页查询"
+		method="QueryObject" id="a_00050002000400020005" caption="科目帐页查询"
+		F_CDJS="5" />
+	<a_00050002000400020006 param="JContract/Query/zycx.ryzycx.xml"
+		data="JJ" object="GenerQueryObject" F_CDBH="1001100410021006" F_CDMX="1"
+		F_CDSM="任意帐页查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目管理\合同查询\帐页查询\任意帐页查询"
+		method="QueryObject" id="a_00050002000400020006" caption="任意帐页查询"
+		F_CDJS="5" />
+	<a_000500020005 F_CDSM="系统初始" F_GNBH="" F_CDBH="10011005"
+		F_CDLJ="项目管理\系统初始" F_CDMX="0" id="a_000500020005" caption="系统初始"
+		F_CDJS="3">
+		<node object="CostManager" F_CDBH="100110051001" F_CDMX="1"
+			F_CDSM="系统环境定义" F_GNBH="" F_CDLJ="项目管理\系统初始\系统环境定义" nodeClass="jenterprise.FWKNodeStub"
+			method="RunSysParamDefine" id="a_0005000200050001" caption="系统环境定义"
+			F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110051002" F_CDMX="1"
+			F_CDSM="工程编码规则定义" F_GNBH="" F_CDLJ="项目管理\系统初始\工程编码规则定义" nodeClass="jenterprise.FWKNodeStub"
+			method="GCBMGZDefine" id="a_0005000200050002" caption="工程编码规则定义"
+			F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110051003" F_CDMX="1"
+			F_CDSM="工程项目编码替换" F_GNBH="" F_CDLJ="项目管理\系统初始\工程项目编码替换" nodeClass="jenterprise.FWKNodeStub"
+			method="GCZDExport" id="a_0005000200050003" caption="工程项目编码替换"
+			F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110051004" F_CDMX="1"
+			F_CDSM="合同编码替换" F_GNBH="" F_CDLJ="项目管理\系统初始\合同编码替换" nodeClass="jenterprise.FWKNodeStub"
+			method="HTZDExport" id="a_0005000200050004" caption="合同编码替换" F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110051005" F_CDMX="1"
+			F_CDSM="发生额初始" F_GNBH="" F_CDLJ="项目管理\系统初始\发生额初始" nodeClass="jenterprise.FWKNodeStub"
+			method="costInit" id="a_0005000200050005" caption="发生额初始" F_CDJS="4" />
+		<node F_CDSM="字典定义" F_GNBH="" F_CDBH="100110051006" F_CDLJ="项目管理\系统初始\字典定义"
+			F_CDMX="0" id="a_0005000200050006" caption="字典定义" F_CDJS="4" />
+		<node F_CDSM="使用关系定义" F_GNBH="" F_CDBH="100110051007" F_CDLJ="项目管理\系统初始\使用关系定义"
+			F_CDMX="0" id="a_0005000200050007" caption="使用关系定义" F_CDJS="4" />
+		<node F_CDSM="余额初始" F_GNBH="" F_CDBH="100110051008" F_CDLJ="项目管理\系统初始\余额初始"
+			F_CDMX="0" id="a_0005000200050008" caption="余额初始" F_CDJS="4" />
+		<node F_CDSM="分模块类别定义" F_GNBH="" F_CDBH="100110051009" F_CDLJ="项目管��\系统初始\分模块类别定义"
+			F_CDMX="0" id="a_0005000200050009" caption="分模块类别定义" F_CDJS="4" />
+	</a_000500020005>
+	<a_0005000200050001 object="CostManager" F_CDBH="100110051001"
+		F_CDMX="1" F_CDSM="系统环境定义" F_GNBH="" F_CDLJ="项目管理\系统初始\系统环境定义"
+		nodeClass="jenterprise.FWKNodeStub" method="RunSysParamDefine" id="a_0005000200050001"
+		caption="系统环境定义" F_CDJS="4" />
+	<a_0005000200050002 object="CostManager" F_CDBH="100110051002"
+		F_CDMX="1" F_CDSM="工程编码规则定义" F_GNBH="" F_CDLJ="项目管理\系统初始\工程编码规则定义"
+		nodeClass="jenterprise.FWKNodeStub" method="GCBMGZDefine" id="a_0005000200050002"
+		caption="工程编码规则定义" F_CDJS="4" />
+	<a_0005000200050003 object="CostManager" F_CDBH="100110051003"
+		F_CDMX="1" F_CDSM="工程项目编码替换" F_GNBH="" F_CDLJ="项目管理\系统初始\工程项目编码替换"
+		nodeClass="jenterprise.FWKNodeStub" method="GCZDExport" id="a_0005000200050003"
+		caption="工程项目编码替换" F_CDJS="4" />
+	<a_0005000200050004 object="CostManager" F_CDBH="100110051004"
+		F_CDMX="1" F_CDSM="合同编码替换" F_GNBH="" F_CDLJ="项目管理\系统初始\合同编码替换"
+		nodeClass="jenterprise.FWKNodeStub" method="HTZDExport" id="a_0005000200050004"
+		caption="合同编码替换" F_CDJS="4" />
+	<a_0005000200050005 object="CostManager" F_CDBH="100110051005"
+		F_CDMX="1" F_CDSM="发生额初始" F_GNBH="" F_CDLJ="项目管理\系统初始\发生额初始"
+		nodeClass="jenterprise.FWKNodeStub" method="costInit" id="a_0005000200050005"
+		caption="发生额初始" F_CDJS="4" />
+	<a_0005000200050006 F_CDSM="字典定义" F_GNBH=""
+		F_CDBH="100110051006" F_CDLJ="项目管理\系统初始\字典定义" F_CDMX="0"
+		id="a_0005000200050006" caption="字典定义" F_CDJS="4">
+		<node object="CostManager" F_CDBH="1001100510061001" F_CDMX="1"
+			F_CDSM="建设过程维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\建设过程维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYXZZD" id="a_00050002000500060001" caption="建设过程维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061002" F_CDMX="1"
+			F_CDSM="转资类型维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\转资类型维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYZZZD" id="a_00050002000500060002" caption="转资类型维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061003" F_CDMX="1"
+			F_CDSM="费用要素维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\费用要素维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYCBZD" id="a_00050002000500060003" caption="费用要素维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061004" F_CDMX="1"
+			F_CDSM="经济指标维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\经济指标维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYSMZD" id="a_00050002000500060004" caption="经济指标维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061005" F_CDMX="1"
+			F_CDSM="属性字典维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\属性字典维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYSXSM" id="a_00050002000500060005" caption="属性字典维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061006" F_CDMX="1"
+			F_CDSM="项目字典维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\项目字典维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYGCZD" id="a_00050002000500060006" caption="项目字典维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061007" F_CDMX="1"
+			F_CDSM="分责任中心项目字典维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\分责任中心项目字典维护"
+			nodeClass="jenterprise.FWKNodeStub" method="ZYGCZDZRZX" id="a_00050002000500060007"
+			caption="分责任中心项目字典维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061008" F_CDMX="1"
+			F_CDSM="分配标准字典维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\分配标准字典维护"
+			nodeClass="jenterprise.FWKNodeStub" method="ZYBZZD" id="a_00050002000500060008"
+			caption="分配标准字典维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061009" F_CDMX="1"
+			F_CDSM="间接费用字典维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\间接费用字典维护"
+			nodeClass="jenterprise.FWKNodeStub" method="ZYFYZD" id="a_00050002000500060009"
+			caption="间接费用字典维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061010" F_CDMX="1"
+			F_CDSM="施工小队维护" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\施工小队维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYXDDY" id="a_00050002000500060010" caption="施工小队维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510061011" F_CDMX="1"
+			F_CDSM="凭证方案定义" F_GNBH="" F_CDLJ="项目管理\系统初始\字典定义\凭证方案定义" nodeClass="jenterprise.FWKNodeStub"
+			method="ZYPZFA" id="a_00050002000500060011" caption="凭证方案定义" F_CDJS="5" />
+	</a_0005000200050006>
+	<a_00050002000500060001 object="CostManager"
+		F_CDBH="1001100510061001" F_CDMX="1" F_CDSM="建设过程维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\建设过程维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYXZZD" id="a_00050002000500060001" caption="建设过程维护" F_CDJS="5" />
+	<a_00050002000500060002 object="CostManager"
+		F_CDBH="1001100510061002" F_CDMX="1" F_CDSM="转资类型维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\转资类型维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYZZZD" id="a_00050002000500060002" caption="转资类型维护" F_CDJS="5" />
+	<a_00050002000500060003 object="CostManager"
+		F_CDBH="1001100510061003" F_CDMX="1" F_CDSM="费用要素维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\费用要素维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYCBZD" id="a_00050002000500060003" caption="费用要素维护" F_CDJS="5" />
+	<a_00050002000500060004 object="CostManager"
+		F_CDBH="1001100510061004" F_CDMX="1" F_CDSM="经济指标维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\经济指标维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYSMZD" id="a_00050002000500060004" caption="经济指标维护" F_CDJS="5" />
+	<a_00050002000500060005 object="CostManager"
+		F_CDBH="1001100510061005" F_CDMX="1" F_CDSM="属性字典维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\属性字典维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYSXSM" id="a_00050002000500060005" caption="属性字典维护" F_CDJS="5" />
+	<a_00050002000500060006 object="CostManager"
+		F_CDBH="1001100510061006" F_CDMX="1" F_CDSM="项目字典维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\项目字典维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYGCZD" id="a_00050002000500060006" caption="项目字典维护" F_CDJS="5" />
+	<a_00050002000500060007 object="CostManager"
+		F_CDBH="1001100510061007" F_CDMX="1" F_CDSM="分责任中心项目字典维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\分责任中心项目字典维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYGCZDZRZX" id="a_00050002000500060007" caption="分责任中心项目字典维护"
+		F_CDJS="5" />
+	<a_00050002000500060008 object="CostManager"
+		F_CDBH="1001100510061008" F_CDMX="1" F_CDSM="分配标准字典维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\分配标准字典维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYBZZD" id="a_00050002000500060008" caption="分配标准字典维护" F_CDJS="5" />
+	<a_00050002000500060009 object="CostManager"
+		F_CDBH="1001100510061009" F_CDMX="1" F_CDSM="间接费用字典维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\间接费用字典维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYFYZD" id="a_00050002000500060009" caption="间接费用字典维护" F_CDJS="5" />
+	<a_00050002000500060010 object="CostManager"
+		F_CDBH="1001100510061010" F_CDMX="1" F_CDSM="施工小队维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\施工小队维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYXDDY" id="a_00050002000500060010" caption="施工小队维护" F_CDJS="5" />
+	<a_00050002000500060011 object="CostManager"
+		F_CDBH="1001100510061011" F_CDMX="1" F_CDSM="凭证方案定义" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\字典定义\凭证方案定义" nodeClass="jenterprise.FWKNodeStub"
+		method="ZYPZFA" id="a_00050002000500060011" caption="凭证方案定义" F_CDJS="5" />
+	<a_0005000200050007 F_CDSM="使用关系定义" F_GNBH=""
+		F_CDBH="100110051007" F_CDLJ="项目管理\系统初始\使用关系定义" F_CDMX="0"
+		id="a_0005000200050007" caption="使用关系定义" F_CDJS="4">
+		<node object="CostManager" F_CDBH="1001100510071001" F_CDMX="1"
+			F_CDSM="责任中心使用项目" F_GNBH="" F_CDLJ="项目管理\系统初始\使用关系定义\责任中心使用项目"
+			nodeClass="jenterprise.FWKNodeStub" method="RunZrzxDyGcDefine" id="a_00050002000500070001"
+			caption="责任中心使用项目" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510071002" F_CDMX="1"
+			F_CDSM="责任中心使用建设过程" F_GNBH="" F_CDLJ="项目管理\系统初始\使用关系定义\责任中心使用建设过程"
+			nodeClass="jenterprise.FWKNodeStub" method="RunZrzxDyZyxzDefine" id="a_00050002000500070002"
+			caption="责任中心使用建设过程" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510071003" F_CDMX="1"
+			F_CDSM="建设过程对应经济指标" F_GNBH="" F_CDLJ="项目管理\系统初始\使用关系定义\建设过程对应经济指标"
+			nodeClass="jenterprise.FWKNodeStub" method="RunZyxzDySmDefine" id="a_00050002000500070003"
+			caption="建设过程对应经济指标" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510071004" F_CDMX="1"
+			F_CDSM="建设过程对应费用要素" F_GNBH="" F_CDLJ="项目管理\系统初始\使用关系定义\建设过程对应费用要素"
+			nodeClass="jenterprise.FWKNodeStub" method="RunZyxzDyCbxmDefine" id="a_00050002000500070004"
+			caption="建设过程对应费用要素" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510071005" F_CDMX="1"
+			F_CDSM="项目对应施工小队定义" F_GNBH="" F_CDLJ="项目管理\系统初始\使用关系定义\项目对应施工小队定义"
+			nodeClass="jenterprise.FWKNodeStub" method="RunGcDyXdDefine" id="a_00050002000500070005"
+			caption="项目对应施工小队定义" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510071006" F_CDMX="1"
+			F_CDSM="责任中心使用施工队" F_GNBH="" F_CDLJ="项目管理\系统初始\使用关系定义\责任中心使用施工队"
+			nodeClass="jenterprise.FWKNodeStub" method="RunZrzxDyXdDefine" id="a_00050002000500070006"
+			caption="责任中心使用施工队" F_CDJS="5" />
+	</a_0005000200050007>
+	<a_00050002000500070001 object="CostManager"
+		F_CDBH="1001100510071001" F_CDMX="1" F_CDSM="责任中心使用项目" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\使用关系定义\责任中心使用项目" nodeClass="jenterprise.FWKNodeStub"
+		method="RunZrzxDyGcDefine" id="a_00050002000500070001" caption="责任中心使用项目"
+		F_CDJS="5" />
+	<a_00050002000500070002 object="CostManager"
+		F_CDBH="1001100510071002" F_CDMX="1" F_CDSM="责任中心使用建设过程" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\使用关系定义\责任中心使用建设过程" nodeClass="jenterprise.FWKNodeStub"
+		method="RunZrzxDyZyxzDefine" id="a_00050002000500070002" caption="责任中心使用建设过程"
+		F_CDJS="5" />
+	<a_00050002000500070003 object="CostManager"
+		F_CDBH="1001100510071003" F_CDMX="1" F_CDSM="建设过程对应经济指标" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\使用关系定义\建设过程对应经济指标" nodeClass="jenterprise.FWKNodeStub"
+		method="RunZyxzDySmDefine" id="a_00050002000500070003" caption="建设过程对应经济指标"
+		F_CDJS="5" />
+	<a_00050002000500070004 object="CostManager"
+		F_CDBH="1001100510071004" F_CDMX="1" F_CDSM="建设过程对应费用要素" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\使用关系定义\建设过程对应费用要素" nodeClass="jenterprise.FWKNodeStub"
+		method="RunZyxzDyCbxmDefine" id="a_00050002000500070004" caption="建设过程对应费用要素"
+		F_CDJS="5" />
+	<a_00050002000500070005 object="CostManager"
+		F_CDBH="1001100510071005" F_CDMX="1" F_CDSM="项目对应施工小队定义" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\使用关系定义\项目对应施工小队定义" nodeClass="jenterprise.FWKNodeStub"
+		method="RunGcDyXdDefine" id="a_00050002000500070005" caption="项目对应施工小队定义"
+		F_CDJS="5" />
+	<a_00050002000500070006 object="CostManager"
+		F_CDBH="1001100510071006" F_CDMX="1" F_CDSM="责任中心使用施工队" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\使用关系定义\责任中心使用施工队" nodeClass="jenterprise.FWKNodeStub"
+		method="RunZrzxDyXdDefine" id="a_00050002000500070006" caption="责任中心使用施工队"
+		F_CDJS="5" />
+	<a_0005000200050008 F_CDSM="余额初始" F_GNBH=""
+		F_CDBH="100110051008" F_CDLJ="项目管理\系统初始\余额初始" F_CDMX="0"
+		id="a_0005000200050008" caption="余额初始" F_CDJS="4">
+		<node object="CostManager" F_CDBH="1001100510081001" F_CDMX="1"
+			F_CDSM="项目转资初始" F_GNBH="" F_CDLJ="项目管理\系统初始\余额初始\项目转资初始" nodeClass="jenterprise.FWKNodeStub"
+			method="JGczzcs" id="a_00050002000500080001" caption="项目转资初始" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510081002" F_CDMX="1"
+			F_CDSM="经济指标初始" F_GNBH="" F_CDLJ="项目管理\系统初始\余额初始\经济指标初始" nodeClass="jenterprise.FWKNodeStub"
+			method="JjzbYecs" id="a_00050002000500080002" caption="经济指标初始"
+			F_CDJS="5" />
+	</a_0005000200050008>
+	<a_00050002000500080001 object="CostManager"
+		F_CDBH="1001100510081001" F_CDMX="1" F_CDSM="项目转资初始" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\余额初始\项目转资初始" nodeClass="jenterprise.FWKNodeStub"
+		method="JGczzcs" id="a_00050002000500080001" caption="项目转资初始" F_CDJS="5" />
+	<a_00050002000500080002 object="CostManager"
+		F_CDBH="1001100510081002" F_CDMX="1" F_CDSM="经济指标初始" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\余额初始\经济指标初始" nodeClass="jenterprise.FWKNodeStub"
+		method="JjzbYecs" id="a_00050002000500080002" caption="经济指标初始" F_CDJS="5" />
+	<a_0005000200050009 F_CDSM="分模块类别定义" F_GNBH=""
+		F_CDBH="100110051009" F_CDLJ="项目管理\系统初始\分模块类别定义" F_CDMX="0"
+		id="a_0005000200050009" caption="分模块类别定义" F_CDJS="4">
+		<node object="CostManager" F_CDBH="1001100510091001" F_CDMX="1"
+			F_CDSM="模块类别维护" F_GNBH="" F_CDLJ="项目管理\系统初始\分模块类别定义\模块类别维护"
+			nodeClass="jenterprise.FWKNodeStub" method="mklbDefine" id="a_00050002000500090001"
+			caption="模块类别维护" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510091002" F_CDMX="1"
+			F_CDSM="科目对应模块类别定义" F_GNBH="" F_CDLJ="项目管理\系统初始\分模块类别定义\科目对应模块类别定义"
+			nodeClass="jenterprise.FWKNodeStub" method="JKmdymk" id="a_00050002000500090002"
+			caption="科目对应模块类别定义" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510091003" F_CDMX="1"
+			F_CDSM="模块类别选用属性" F_GNBH="" F_CDLJ="项目管理\系统初始\分模块类别定义\模块类别选用属性"
+			nodeClass="jenterprise.FWKNodeStub" method="mklbsxSelect" id="a_00050002000500090003"
+			caption="模块类别选用属性" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510091004" F_CDMX="1"
+			F_CDSM="分模块类别项目字典维护" F_GNBH="" F_CDLJ="项目管理\系统初始\分模块类别定义\分模块类别项目字典维护"
+			nodeClass="jenterprise.FWKNodeStub" method="mklbxmzdDefine" id="a_00050002000500090004"
+			caption="分模块类别项目字典维护" F_CDJS="5" />
+		<node param="ZRZX" object="CostManager" F_CDBH="1001100510091005"
+			F_CDMX="1" F_CDSM="分模块类别分责任中心项目字典维护" F_GNBH=""
+			F_CDLJ="项目管理\系统初始\分模块类别定义\分模块类别分责任中心项目字典维护" nodeClass="jenterprise.FWKNodeStub"
+			method="mklbxmzdDefine" id="a_00050002000500090005" caption="分模块类别分责任中心项目字典维护"
+			F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510091006" F_CDMX="1"
+			F_CDSM="技术开发费用定义" F_GNBH="" F_CDLJ="项目管理\系统初始\分模块类别定义\技术开发费用定义"
+			nodeClass="jenterprise.FWKNodeStub" method="jskfDefine" id="a_00050002000500090006"
+			caption="技术开发费用定义" F_CDJS="5" />
+		<node object="CostManager" F_CDBH="1001100510091007" F_CDMX="1"
+			F_CDSM="技术开发费用要素定义" F_GNBH="" F_CDLJ="项目管理\系统初始\分模块类别定义\技术开发费用要素定义"
+			nodeClass="jenterprise.FWKNodeStub" method="jskfysDefine" id="a_00050002000500090007"
+			caption="技术开发费用要素定义" F_CDJS="5" />
+	</a_0005000200050009>
+	<a_00050002000500090001 object="CostManager"
+		F_CDBH="1001100510091001" F_CDMX="1" F_CDSM="模块类别维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\分模块类别定义\模块类别维护" nodeClass="jenterprise.FWKNodeStub"
+		method="mklbDefine" id="a_00050002000500090001" caption="模块类别维护"
+		F_CDJS="5" />
+	<a_00050002000500090002 object="CostManager"
+		F_CDBH="1001100510091002" F_CDMX="1" F_CDSM="科目对应模块类别定义" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\分模块类别定义\科目对应模块类别定义" nodeClass="jenterprise.FWKNodeStub"
+		method="JKmdymk" id="a_00050002000500090002" caption="科目对应模块类别定义"
+		F_CDJS="5" />
+	<a_00050002000500090003 object="CostManager"
+		F_CDBH="1001100510091003" F_CDMX="1" F_CDSM="模块类别选用属性" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\分模块类别定义\模块类别选用属性" nodeClass="jenterprise.FWKNodeStub"
+		method="mklbsxSelect" id="a_00050002000500090003" caption="模块类别选用属性"
+		F_CDJS="5" />
+	<a_00050002000500090004 object="CostManager"
+		F_CDBH="1001100510091004" F_CDMX="1" F_CDSM="分模块类别项目字典维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\分模块类别定义\分模块类别项目字典维护" nodeClass="jenterprise.FWKNodeStub"
+		method="mklbxmzdDefine" id="a_00050002000500090004" caption="分模块类别项目字典维护"
+		F_CDJS="5" />
+	<a_00050002000500090005 param="ZRZX" object="CostManager"
+		F_CDBH="1001100510091005" F_CDMX="1" F_CDSM="分模块类别分责任中心项目字典维护" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\分模块类别定义\分模块类别分责任中心项目字典维护" nodeClass="jenterprise.FWKNodeStub"
+		method="mklbxmzdDefine" id="a_00050002000500090005" caption="分模块类别分责任中心项目字典维护"
+		F_CDJS="5" />
+	<a_00050002000500090006 object="CostManager"
+		F_CDBH="1001100510091006" F_CDMX="1" F_CDSM="技术开发费用定义" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\分模块类别定义\技术开发费用定义" nodeClass="jenterprise.FWKNodeStub"
+		method="jskfDefine" id="a_00050002000500090006" caption="技术开发费用定义"
+		F_CDJS="5" />
+	<a_00050002000500090007 object="CostManager"
+		F_CDBH="1001100510091007" F_CDMX="1" F_CDSM="技术开发费用要素定义" F_GNBH=""
+		F_CDLJ="项目管理\系统初始\分模块类别定义\技术开发费用要素定义" nodeClass="jenterprise.FWKNodeStub"
+		method="jskfysDefine" id="a_00050002000500090007" caption="技术开发费用要素定义"
+		F_CDJS="5" />
+	<a_000500020006 F_CDSM="基建模块调整工具" F_GNBH="" F_CDBH="10011006"
+		nodeClass="jenterprise.FWKNodeStub" F_CDLJ="新项目管理基建\基建模块调整工具" F_CDMX="0"
+		id="a_000500020006" caption="基建模块调整工具" F_CDJS="3">
+		<node object="CostManager" F_CDBH="100110061001" F_CDMX="1"
+			F_CDSM="对照关系维护" F_GNBH="" F_CDLJ="新项目管理基建\基建模块调整工具\对照关系维护" nodeClass="jenterprise.FWKNodeStub"
+			method="dzgxControl" id="a_0005000200060001" caption="对照关系维护" F_CDJS="4" />
+		<node object="CostManager" F_CDBH="100110061002" F_CDMX="1"
+			F_CDSM="编码替换调账工具" F_GNBH="" F_CDLJ="新项目管理基建\基建模块调整工具\调账工具" nodeClass="jenterprise.FWKNodeStub"
+			method="adjustTool" id="a_0005000200060002" caption="编码替换调账工具"
+			F_CDJS="4" />
+	</a_000500020006>
+	<a_00050003 F_CDSM="科研项目" F_GNBH="" F_CDBH="100110101005"
+		F_CDLJ="账务管理\实时记账\初始设置" F_CDMX="0" id="a_00050003" caption="科研项目"
+		F_CDJS="2">
+		<node F_CDSM="系统配置" F_GNBH="" F_CDBH="100110021001" F_CDLJ="项目成本系统\科研模块\系统配置"
+			F_CDMX="0" id="a_000500030002" caption="系统配置" F_CDJS="3" />
+		<node F_CDSM="预算明细要素" F_GNBH="" F_CDBH="1001100210011003" F_CDLJ="项目成本系统\科研模块\系统配置\预算明细要素"
+			F_CDMX="0" id="a_JCostSystem_CBYSCB01" caption="预算明细要素" F_CDJS="3" />
+		<node F_CDSM="成本对象" F_GNBH="" F_CDBH="1001100210011004" F_CDLJ="项目成本系统\科研模块\系统配置\成本对象"
+			F_CDMX="0" id="a_JCostSystem_CBDXCB01" caption="成本对象" F_CDJS="3" />
+		<node F_CDSM="自定义成本辅助" F_GNBH="" F_CDBH="1001100210011005"
+			F_CDLJ="项目成本系统\科研模块\系统配置\自定义成本辅助" F_CDMX="0" id="a_JCostSystem_CBZDYCB01"
+			caption="自定义成本辅助" F_CDJS="3" />
+		<node F_CDSM="预算控制" F_GNBH="" F_CDBH="100110021002" F_CDLJ="项目成本系统\科研模块\预算控制"
+			F_CDMX="0" id="a_000500030006" caption="预算控制" F_CDJS="3" />
+		<node F_CDSM="预付管理" F_GNBH="" F_CDBH="100110021003" F_CDLJ="项目成本系统\科研模块\预付管理"
+			F_CDMX="0" id="a_000500030007" caption="预付管理" F_CDJS="3" />
+		<node F_CDSM="加计扣除" F_GNBH="" F_CDBH="100110021010" F_CDLJ="项目成本系统\科研模块\加计扣除查询"
+			F_CDMX="0" id="a_000500030008" caption="加计扣除" F_CDJS="3" />
+		<node F_CDSM="成本月末处理" F_GNBH="" F_CDBH="100110021004" F_CDLJ="项目成本系统\科研模块\成本月末处理"
+			F_CDMX="0" id="a_000500030009" caption="成本月末处理" F_CDJS="3" />
+		<node F_CDSM="预算查询" F_GNBH="" F_CDBH="100110021005" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\预算查询" F_CDMX="1" id="a_JCostSystem_CBYSCXCB01"
+			caption="预算查询" F_CDJS="3" />
+		<node F_CDSM="成本查询" F_GNBH="" F_CDBH="100110021006" F_CDLJ="项目成本系统\科研模块\成本查询"
+			F_CDMX="0" id="a_JCostSystem_CBCXCB01" caption="成本查询" F_CDJS="3" />
+		<node F_CDSM="对比分析" F_GNBH="" F_CDBH="100110021007" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\对比分析" F_CDMX="1" id="a_JCostSystem_DBFXCB01"
+			caption="对比分析" F_CDJS="3" />
+		<node F_CDSM="辅助查询" F_GNBH="" F_CDBH="100110021008" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\辅助查询" F_CDMX="1" id="a_JCostSystem_FZCXCB01"
+			caption="辅助查询" F_CDJS="3" />
+		<node F_CDSM="多项辅助查询" F_GNBH="" F_CDBH="100110021009" F_CDLJ="项目成本系统\科研模块\多项辅助查询"
+			F_CDMX="0" id="a_000500030014" caption="多项辅助查询" F_CDJS="3" />
+	</a_00050003>
+	<a_000500030002 F_CDSM="系统配置" F_GNBH="" F_CDBH="100110021001"
+		F_CDLJ="项目成本系统\科研模块\系统配置" F_CDMX="0" id="a_000500030002" caption="系统配置"
+		F_CDJS="3">
+		<node data="CB01" object="CostSysManager" F_CDBH="1001100210011001"
+			F_CDMX="1" F_CDSM="系统参数定义" F_GNBH="" F_CDLJ="项目成本系统\科研模块\系统配置\系统参数定义"
+			nodeClass="jenterprise.FWKNodeStub" method="KyXtcsDefine" id="a_0005000300020001"
+			caption="系统参数定义" F_CDJS="4" />
+		<node data="CB01" object="CostSysManager" F_CDBH="1001100210011002"
+			F_CDMX="1" F_CDSM="使用科目定义" F_GNBH="" F_CDLJ="项目成本系统\科研模块\系统配置\使用科目定义"
+			nodeClass="jenterprise.FWKNodeStub" method="KyKmSyDefine" id="a_0005000300020002"
+			caption="使用科目定义" F_CDJS="4" />
+	</a_000500030002>
+	<a_0005000300020001 data="CB01" object="CostSysManager"
+		F_CDBH="1001100210011001" F_CDMX="1" F_CDSM="系统参数定义" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\系统配置\系统参数定义" nodeClass="jenterprise.FWKNodeStub"
+		method="KyXtcsDefine" id="a_0005000300020001" caption="系统参数定义" F_CDJS="4" />
+	<a_0005000300020002 data="CB01" object="CostSysManager"
+		F_CDBH="1001100210011002" F_CDMX="1" F_CDSM="使用科目定义" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\系统配置\使用科目定义" nodeClass="jenterprise.FWKNodeStub"
+		method="KyKmSyDefine" id="a_0005000300020002" caption="使用科目定义" F_CDJS="4" />
+	<a_JCostSystem_CBYSCB01 F_CDSM="预算明细要素" F_GNBH=""
+		F_CDBH="1001100210011003" F_CDLJ="项目成本系统\科研模块\系统配置\预算明细要素" F_CDMX="0"
+		id="a_JCostSystem_CBYSCB01" caption="预算明细要素" F_CDJS="3">
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100110031001"
+			F_CDMX="1" F_CDSM="预算明细要素管理" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\系统配置\预算明细要素\预算明细要素管理" nodeClass="jenterprise.FWKNodeStub"
+			method="KycbysManager" id="a_0005000300030001" caption="预算明细要素管理"
+			F_CDJS="4" />
+	</a_JCostSystem_CBYSCB01>
+	<a_0005000300030001 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100110031001" F_CDMX="1" F_CDSM="预算明细要素管理" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\系统配置\预算明细要素\预算明细要素管理" nodeClass="jenterprise.FWKNodeStub"
+		method="KycbysManager" id="a_0005000300030001" caption="预算明细要素管理"
+		F_CDJS="4" />
+	<a_JCostSystem_CBDXCB01 F_CDSM="成本对象" F_GNBH=""
+		F_CDBH="1001100210011004" F_CDLJ="项目成本系统\科研模块\系统配置\成本对象" F_CDMX="0"
+		id="a_JCostSystem_CBDXCB01" caption="成本对象" F_CDJS="3">
+		<node param="JCostSystem/Query/kyxmxxk.xml" data="DX0001;CB01"
+			object="GenerQueryObject" F_CDBH="10011002100110041001" F_CDMX="1"
+			F_CDSM="科研项目信息卡" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\科研项目信息卡" method="QueryObject" id="a_0005000300040001"
+			caption="科研项目信息卡" F_CDJS="4" />
+		<node param="JCostSystem/Query/zbxdkyxmztcxzz.xml" data="DX0001"
+			object="GenerQueryObject" F_CDBH="10011002100110041002" F_CDMX="1"
+			F_CDSM="总部下达科研项目状态查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\总部下达科研项目状态查询" method="QueryObject"
+			id="a_0005000300040002" caption="总部下达科研项目状态查询" F_CDJS="4" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100110041003"
+			F_CDMX="1" F_CDSM="成本对象管理" F_GNBH="" F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\成本对象管理"
+			nodeClass="jenterprise.FWKNodeStub" method="KycbdxManager" id="a_0005000300040003"
+			caption="成本对象管理" F_CDJS="4" />
+		<node data="DX0001" object="CostSysManager" F_CDBH="10011002100110041004"
+			F_CDMX="1" F_CDSM="WBS对照科研项目配置" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\WBS对照科研项目配置" nodeClass="jenterprise.FWKNodeStub"
+			method="WbsdxpzManager" id="a_0005000300040004" caption="WBS对照科研项目配置"
+			F_CDJS="4" />
+		<node data="DX0001" object="CostSysManager" F_CDBH="10011002100110041005"
+			F_CDMX="1" F_CDSM="同步WBS对照科研项目" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\同步WBS对照科研项目" nodeClass="jenterprise.FWKNodeStub"
+			method="SyncWbsCreateKyxm" id="a_0005000300040005" caption="同步WBS对照科研项目"
+			F_CDJS="4" />
+	</a_JCostSystem_CBDXCB01>
+	<a_0005000300040001 param="JCostSystem/Query/kyxmxxk.xml"
+		data="DX0001;CB01" object="GenerQueryObject" F_CDBH="10011002100110041001"
+		F_CDMX="1" F_CDSM="科研项目信息卡" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\科研项目信息卡" method="QueryObject" id="a_0005000300040001"
+		caption="科研项目信息卡" F_CDJS="4" />
+	<a_0005000300040002 param="JCostSystem/Query/zbxdkyxmztcxzz.xml"
+		data="DX0001" object="GenerQueryObject" F_CDBH="10011002100110041002"
+		F_CDMX="1" F_CDSM="总部下达科研项目状态查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\总部下达科研项目状态查询" method="QueryObject"
+		id="a_0005000300040002" caption="总部下达科研项目状态查询" F_CDJS="4" />
+	<a_0005000300040003 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100110041003" F_CDMX="1" F_CDSM="成本对象管理" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\成本对象管理" nodeClass="jenterprise.FWKNodeStub"
+		method="KycbdxManager" id="a_0005000300040003" caption="成本对象管理"
+		F_CDJS="4" />
+	<a_0005000300040004 data="DX0001" object="CostSysManager"
+		F_CDBH="10011002100110041004" F_CDMX="1" F_CDSM="WBS对照科研项目配置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\WBS对照科研项目配置" nodeClass="jenterprise.FWKNodeStub"
+		method="WbsdxpzManager" id="a_0005000300040004" caption="WBS对照科研项目配置"
+		F_CDJS="4" />
+	<a_0005000300040005 data="DX0001" object="CostSysManager"
+		F_CDBH="10011002100110041005" F_CDMX="1" F_CDSM="同步WBS对照科研项目" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\系统配置\成本对象\同步WBS对照科研项目" nodeClass="jenterprise.FWKNodeStub"
+		method="SyncWbsCreateKyxm" id="a_0005000300040005" caption="同步WBS对照科研项目"
+		F_CDJS="4" />
+	<a_JCostSystem_CBZDYCB01 F_CDSM="自定义成本辅助"
+		F_GNBH="" F_CDBH="1001100210011005" F_CDLJ="项目成本系统\科研模块\系统配置\自定义成本辅助"
+		F_CDMX="0" id="a_JCostSystem_CBZDYCB01" caption="自定义成本辅助" F_CDJS="3">
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100110051001"
+			F_CDMX="1" F_CDSM="自定义成本辅助管理" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\系统配置\自定义成本辅助\自定义成本辅助管理" nodeClass="jenterprise.FWKNodeStub"
+			method="KyzdycbfzManager" id="a_0005000300050001" caption="自定义成本辅助管理"
+			F_CDJS="4" />
+	</a_JCostSystem_CBZDYCB01>
+	<a_0005000300050001 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100110051001" F_CDMX="1" F_CDSM="自定义成本辅助管理" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\系统配置\自定义成本辅助\自定义成本辅助管理" nodeClass="jenterprise.FWKNodeStub"
+		method="KyzdycbfzManager" id="a_0005000300050001" caption="自定义成本辅助管理"
+		F_CDJS="4" />
+	<a_000500030006 F_CDSM="预算控制" F_GNBH="" F_CDBH="100110021002"
+		F_CDLJ="项目成本系统\科研模块\预算控制" F_CDMX="0" id="a_000500030006" caption="预算控制"
+		F_CDJS="3">
+		<node F_CDSM="预算配置" F_GNBH="" F_CDBH="1001100210021001" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置"
+			F_CDMX="0" id="a_0005000300060001" caption="预算配置" F_CDJS="4" />
+		<node F_CDSM="预算数据维护" F_GNBH="" F_CDBH="1001100210021002" F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护"
+			F_CDMX="0" id="a_0005000300060002" caption="预算数据维护" F_CDJS="4" />
+	</a_000500030006>
+	<a_0005000300060001 F_CDSM="预算配置" F_GNBH=""
+		F_CDBH="1001100210021001" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置" F_CDMX="0"
+		id="a_0005000300060001" caption="预算配置" F_CDJS="4">
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210011001"
+			F_CDMX="1" F_CDSM="预算类别定义" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算类别定义"
+			nodeClass="jenterprise.FWKNodeStub" method="YslbdyManager" id="a_00050003000600010001"
+			caption="预算类别定义" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210011002"
+			F_CDMX="1" F_CDSM="预算版本定义" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算版本定义"
+			nodeClass="jenterprise.FWKNodeStub" method="YsbbdyManager" id="a_00050003000600010002"
+			caption="预算版本定义" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210011003"
+			F_CDMX="1" F_CDSM="预算数据同步" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算数据同步"
+			nodeClass="jenterprise.FWKNodeStub" method="YssjSyncManager" id="a_00050003000600010003"
+			caption="预算数据同步" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210011004"
+			F_CDMX="1" F_CDSM="预算数据结转" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算数据结转"
+			nodeClass="jenterprise.FWKNodeStub" method="YssjJzManager" id="a_00050003000600010004"
+			caption="预算数据结转" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210011005"
+			F_CDMX="1" F_CDSM="更新预算实际发生" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\更新预算实际发生"
+			nodeClass="jenterprise.FWKNodeStub" method="GxYssjfsManager" id="a_00050003000600010005"
+			caption="更新预算实际发生" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210011006"
+			F_CDMX="1" F_CDSM="凭证录入实时显示配置" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\凭证录入实时显示配置" nodeClass="jenterprise.FWKNodeStub"
+			method="CbysxspzManager" id="a_00050003000600010006" caption="凭证录入实时显示配置"
+			F_CDJS="5" />
+		<node param="CB01" object="CostSysManager" F_CDBH="10011002100210011007"
+			F_CDMX="1" F_CDSM="预算无关成本对象配置" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算无关成本对象配置" nodeClass="jenterprise.FWKNodeStub"
+			method="CbyspcdxpzManager" id="a_00050003000600010007" caption="预算无关成本对象配置"
+			F_CDJS="5" />
+		<node param="CB01" object="CostSysManager" F_CDBH="10011002100210011008"
+			F_CDMX="1" F_CDSM="预算无关科研要素配置" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算无关科研要素配置" nodeClass="jenterprise.FWKNodeStub"
+			method="CbyspcyspzManager" id="a_00050003000600010008" caption="预算无关科研要素配置"
+			F_CDJS="5" />
+		<node object="CostSysManager" F_CDBH="10011002100210011009"
+			F_CDMX="1" F_CDSM="预算数据解锁" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算数据解锁"
+			nodeClass="jenterprise.FWKNodeStub" method="YssjjsManager" id="a_00050003000600010009"
+			caption="预算数据解锁" F_CDJS="5" />
+		<node F_CDSM="预算中心" F_GNBH="" F_CDBH="10011002100210011010"
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心" F_CDMX="0" id="a_00050003000600010010"
+			caption="预算中心" F_CDJS="5" />
+		<node F_CDSM="预算项目" F_GNBH="" F_CDBH="10011002100210011011"
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目" F_CDMX="0" id="a_00050003000600010011"
+			caption="预算项目" F_CDJS="5" />
+	</a_0005000300060001>
+	<a_00050003000600010001 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011001" F_CDMX="1" F_CDSM="预算类别定义" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算类别定义" nodeClass="jenterprise.FWKNodeStub"
+		method="YslbdyManager" id="a_00050003000600010001" caption="预算类别定义"
+		F_CDJS="5" />
+	<a_00050003000600010002 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011002" F_CDMX="1" F_CDSM="预算版本定义" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算版本定义" nodeClass="jenterprise.FWKNodeStub"
+		method="YsbbdyManager" id="a_00050003000600010002" caption="预算版本定义"
+		F_CDJS="5" />
+	<a_00050003000600010003 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011003" F_CDMX="1" F_CDSM="预算数据同步" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算数据同步" nodeClass="jenterprise.FWKNodeStub"
+		method="YssjSyncManager" id="a_00050003000600010003" caption="预算数据同步"
+		F_CDJS="5" />
+	<a_00050003000600010004 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011004" F_CDMX="1" F_CDSM="预算数据结转" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算数据结转" nodeClass="jenterprise.FWKNodeStub"
+		method="YssjJzManager" id="a_00050003000600010004" caption="预算数据结转"
+		F_CDJS="5" />
+	<a_00050003000600010005 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011005" F_CDMX="1" F_CDSM="更新预算实际发生" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\更新预算实际发生" nodeClass="jenterprise.FWKNodeStub"
+		method="GxYssjfsManager" id="a_00050003000600010005" caption="更新预算实际发生"
+		F_CDJS="5" />
+	<a_00050003000600010006 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011006" F_CDMX="1" F_CDSM="凭证录入实时显示配置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\凭证录入实时显示配置" nodeClass="jenterprise.FWKNodeStub"
+		method="CbysxspzManager" id="a_00050003000600010006" caption="凭证录入实时显示配置"
+		F_CDJS="5" />
+	<a_00050003000600010007 param="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011007" F_CDMX="1" F_CDSM="预算无关成本对象配置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算无关成本对象配置" nodeClass="jenterprise.FWKNodeStub"
+		method="CbyspcdxpzManager" id="a_00050003000600010007" caption="预算无关成本对象配置"
+		F_CDJS="5" />
+	<a_00050003000600010008 param="CB01" object="CostSysManager"
+		F_CDBH="10011002100210011008" F_CDMX="1" F_CDSM="预算无关科研要素配置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算无关科研要素配置" nodeClass="jenterprise.FWKNodeStub"
+		method="CbyspcyspzManager" id="a_00050003000600010008" caption="预算无关科研要素配置"
+		F_CDJS="5" />
+	<a_00050003000600010009 object="CostSysManager"
+		F_CDBH="10011002100210011009" F_CDMX="1" F_CDSM="预算数据解锁" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算数据解锁" nodeClass="jenterprise.FWKNodeStub"
+		method="YssjjsManager" id="a_00050003000600010009" caption="预算数据解锁"
+		F_CDJS="5" />
+	<a_00050003000600010010 F_CDSM="预算中心" F_GNBH=""
+		F_CDBH="10011002100210011010" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心"
+		F_CDMX="0" id="a_00050003000600010010" caption="预算中心" F_CDJS="5">
+		<node data="CB01" object="CostSysManager" F_CDBH="100110021002100110101001"
+			F_CDMX="1" F_CDSM="预算中心管理" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心管理"
+			nodeClass="jenterprise.FWKNodeStub" method="YszxManager"
+			id="a_000500030006000100100001" caption="预算中心管理" F_CDJS="6" />
+		<node param="" data="CB01" object="CostSysManager" F_CDBH="100110021002100110101002"
+			F_CDMX="1" F_CDSM="预算中心导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心导入" method="yszxImport"
+			id="a_000500030006000100100002" caption="预算中心导入" F_CDJS="6" />
+		<node data="CB01" object="CostSysManager" F_CDBH="100110021002100110101003"
+			F_CDMX="1" F_CDSM="预算中心维护" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心维护"
+			nodeClass="jenterprise.FWKNodeStub" method="Yszxwh"
+			id="a_000500030006000100100003" caption="预算中心维护" F_CDJS="6" />
+		<node data="CB01" object="CostSysManager" F_CDBH="100110021002100110101004"
+			F_CDMX="1" F_CDSM="预算中心查询" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心查询"
+			nodeClass="jenterprise.FWKNodeStub" method="Yszxcx"
+			id="a_000500030006000100100004" caption="预算中心查询" F_CDJS="6" />
+	</a_00050003000600010010>
+	<a_000500030006000100100001 data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110101001" F_CDMX="1"
+		F_CDSM="预算中心管理" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心管理"
+		nodeClass="jenterprise.FWKNodeStub" method="YszxManager"
+		id="a_000500030006000100100001" caption="预算中心管理" F_CDJS="6" />
+	<a_000500030006000100100002 param="" data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110101002" F_CDMX="1"
+		F_CDSM="预算中心导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心导入" method="yszxImport"
+		id="a_000500030006000100100002" caption="预算中心导入" F_CDJS="6" />
+	<a_000500030006000100100003 data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110101003" F_CDMX="1"
+		F_CDSM="预算中心维护" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心维护"
+		nodeClass="jenterprise.FWKNodeStub" method="Yszxwh"
+		id="a_000500030006000100100003" caption="预算中心维护" F_CDJS="6" />
+	<a_000500030006000100100004 data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110101004" F_CDMX="1"
+		F_CDSM="预算中心查询" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算中心\预算中心查询"
+		nodeClass="jenterprise.FWKNodeStub" method="Yszxcx"
+		id="a_000500030006000100100004" caption="预算中心查询" F_CDJS="6" />
+	<a_00050003000600010011 F_CDSM="预算项目" F_GNBH=""
+		F_CDBH="10011002100210011011" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目"
+		F_CDMX="0" id="a_00050003000600010011" caption="预算项目" F_CDJS="5">
+		<node data="CB01" object="CostSysManager" F_CDBH="100110021002100110111001"
+			F_CDMX="1" F_CDSM="预算项目管理" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目管理"
+			nodeClass="jenterprise.FWKNodeStub" method="YsxmManager"
+			id="a_000500030006000100110001" caption="预算项目管理" F_CDJS="6" />
+		<node param="" data="CB01" object="CostSysManager" F_CDBH="100110021002100110111002"
+			F_CDMX="1" F_CDSM="预算项目导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目导入" method="ysxmImport"
+			id="a_000500030006000100110002" caption="预算项目导入" F_CDJS="6" />
+		<node data="CB01" object="CostSysManager" F_CDBH="100110021002100110111003"
+			F_CDMX="1" F_CDSM="预算项目维护" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目维护"
+			nodeClass="jenterprise.FWKNodeStub" method="YsxmwhManager"
+			id="a_000500030006000100110003" caption="预算项目维护" F_CDJS="6" />
+		<node data="CB01" object="CostSysManager" F_CDBH="100110021002100110111004"
+			F_CDMX="1" F_CDSM="预算项目查询" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目查询"
+			nodeClass="jenterprise.FWKNodeStub" method="YsxmcxManager"
+			id="a_000500030006000100110004" caption="预算项目查询" F_CDJS="6" />
+	</a_00050003000600010011>
+	<a_000500030006000100110001 data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110111001" F_CDMX="1"
+		F_CDSM="预算项目管理" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目管理"
+		nodeClass="jenterprise.FWKNodeStub" method="YsxmManager"
+		id="a_000500030006000100110001" caption="预算项目管理" F_CDJS="6" />
+	<a_000500030006000100110002 param="" data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110111002" F_CDMX="1"
+		F_CDSM="预算项目导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目导入" method="ysxmImport"
+		id="a_000500030006000100110002" caption="预算项目导入" F_CDJS="6" />
+	<a_000500030006000100110003 data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110111003" F_CDMX="1"
+		F_CDSM="预算项目维护" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目维护"
+		nodeClass="jenterprise.FWKNodeStub" method="YsxmwhManager"
+		id="a_000500030006000100110003" caption="预算项目维护" F_CDJS="6" />
+	<a_000500030006000100110004 data="CB01"
+		object="CostSysManager" F_CDBH="100110021002100110111004" F_CDMX="1"
+		F_CDSM="预算项目查询" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算配置\预算项目\预算项目查询"
+		nodeClass="jenterprise.FWKNodeStub" method="YsxmcxManager"
+		id="a_000500030006000100110004" caption="预算项目查询" F_CDJS="6" />
+	<a_0005000300060002 F_CDSM="预算数据维护" F_GNBH=""
+		F_CDBH="1001100210021002" F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护" F_CDMX="0"
+		id="a_0005000300060002" caption="预算数据维护" F_CDJS="4">
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021001"
+			F_CDMX="1" F_CDSM="预算数据模板定义" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据模板定义" nodeClass="jenterprise.FWKNodeStub"
+			method="ysdrmbdy" id="a_00050003000600020001" caption="预算数据模板定义"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021002"
+			F_CDMX="1" F_CDSM="预算数据模板配置" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据模板配置" nodeClass="jenterprise.FWKNodeStub"
+			method="ysdrmbdypz" id="a_00050003000600020002" caption="预算数据模板配置"
+			F_CDJS="5" />
+		<node data="" object="CostSysManager" F_CDBH="10011002100210021003"
+			F_CDMX="1" F_CDSM="预算类别校验关系" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算类别校验关系" nodeClass="jenterprise.FWKNodeStub"
+			method="Yslbjygx" id="a_00050003000600020003" caption="预算类别校验关系"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021004"
+			F_CDMX="1" F_CDSM="预算数据二维导入" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据二维导入" nodeClass="jenterprise.FWKNodeStub"
+			method="yssjdr" id="a_00050003000600020004" caption="预算数据二维导入"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021005"
+			F_CDMX="1" F_CDSM="预算数据二维维护" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据二维维护" nodeClass="jenterprise.FWKNodeStub"
+			method="yssjedit2" id="a_00050003000600020005" caption="预算数据二维维护"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021006"
+			F_CDMX="1" F_CDSM="预算数据二维审核" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据二维审核" nodeClass="jenterprise.FWKNodeStub"
+			method="yssjsh2" id="a_00050003000600020006" caption="预算数据二维审核"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021007"
+			F_CDMX="1" F_CDSM="预算数据录入" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据录入"
+			nodeClass="jenterprise.FWKNodeStub" method="YsDataLr" id="a_00050003000600020007"
+			caption="预算数据录入" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021008"
+			F_CDMX="1" F_CDSM="预算数据审核" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据审核"
+			nodeClass="jenterprise.FWKNodeStub" method="YsDataSh" id="a_00050003000600020008"
+			caption="预算数据审核" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021009"
+			F_CDMX="1" F_CDSM="预算数据调整录入" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据调整录入" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsDataLr" id="a_00050003000600020009" caption="预算数据调整录入"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021010"
+			F_CDMX="1" F_CDSM="预算数据调整审核" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据调整审核" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsDataSh" id="a_00050003000600020010" caption="预算数据调整审核"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021011"
+			F_CDMX="1" F_CDSM="预算调整二维维护" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算调整二维维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsTwoDataLr" id="a_00050003000600020011" caption="预算调整二维维护"
+			F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100210021012"
+			F_CDMX="1" F_CDSM="预算调整二维审核" F_GNBH=""
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算调整二维审核" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsTwoDataSh" id="a_00050003000600020012" caption="预算调整二维审核"
+			F_CDJS="5" />
+		<node param="" data="CB01" object="CostSysManager" F_CDBH="10011002100210021013"
+			F_CDMX="1" F_CDSM="预算数据查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据查询" method="yssjcx2"
+			id="a_00050003000600020013" caption="预算数据查询" F_CDJS="5" />
+		<node param="" data="CB01" object="CostSysManager" F_CDBH="10011002100210021014"
+			F_CDMX="1" F_CDSM="预算数据生成" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据生成" method="Yssjsc"
+			id="a_00050003000600020014" caption="预算数据生成" F_CDJS="5" />
+	</a_0005000300060002>
+	<a_00050003000600020001 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021001" F_CDMX="1" F_CDSM="预算数据模板定义" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据模板定义" nodeClass="jenterprise.FWKNodeStub"
+		method="ysdrmbdy" id="a_00050003000600020001" caption="预算数据模板定义"
+		F_CDJS="5" />
+	<a_00050003000600020002 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021002" F_CDMX="1" F_CDSM="预算数据模板配置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据模板配置" nodeClass="jenterprise.FWKNodeStub"
+		method="ysdrmbdypz" id="a_00050003000600020002" caption="预算数据模板配置"
+		F_CDJS="5" />
+	<a_00050003000600020003 data="" object="CostSysManager"
+		F_CDBH="10011002100210021003" F_CDMX="1" F_CDSM="预算类别校验关系" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算类别校验关系" nodeClass="jenterprise.FWKNodeStub"
+		method="Yslbjygx" id="a_00050003000600020003" caption="预算类别校验关系"
+		F_CDJS="5" />
+	<a_00050003000600020004 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021004" F_CDMX="1" F_CDSM="预算数据二维导入" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据二维导入" nodeClass="jenterprise.FWKNodeStub"
+		method="yssjdr" id="a_00050003000600020004" caption="预算数据二维导入" F_CDJS="5" />
+	<a_00050003000600020005 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021005" F_CDMX="1" F_CDSM="预算数据二维维护" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据二维维护" nodeClass="jenterprise.FWKNodeStub"
+		method="yssjedit2" id="a_00050003000600020005" caption="预算数据二维维护"
+		F_CDJS="5" />
+	<a_00050003000600020006 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021006" F_CDMX="1" F_CDSM="预算数据二维审核" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据二维审核" nodeClass="jenterprise.FWKNodeStub"
+		method="yssjsh2" id="a_00050003000600020006" caption="预算数据二维审核"
+		F_CDJS="5" />
+	<a_00050003000600020007 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021007" F_CDMX="1" F_CDSM="预算数据录入" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据录入" nodeClass="jenterprise.FWKNodeStub"
+		method="YsDataLr" id="a_00050003000600020007" caption="预算数据录入" F_CDJS="5" />
+	<a_00050003000600020008 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021008" F_CDMX="1" F_CDSM="预算数据审核" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据审核" nodeClass="jenterprise.FWKNodeStub"
+		method="YsDataSh" id="a_00050003000600020008" caption="预算数据审核" F_CDJS="5" />
+	<a_00050003000600020009 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021009" F_CDMX="1" F_CDSM="预算数据调整录入" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据调整录入" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsDataLr" id="a_00050003000600020009" caption="预算数据调整录入"
+		F_CDJS="5" />
+	<a_00050003000600020010 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021010" F_CDMX="1" F_CDSM="预算数据调整审核" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据调整审核" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsDataSh" id="a_00050003000600020010" caption="预算数据调整审核"
+		F_CDJS="5" />
+	<a_00050003000600020011 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021011" F_CDMX="1" F_CDSM="预算调整二维维护" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算调整二维维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsTwoDataLr" id="a_00050003000600020011" caption="预算调整二维维护"
+		F_CDJS="5" />
+	<a_00050003000600020012 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100210021012" F_CDMX="1" F_CDSM="预算调整二维审核" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算调整二维审核" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsTwoDataSh" id="a_00050003000600020012" caption="预算调整二维审核"
+		F_CDJS="5" />
+	<a_00050003000600020013 param="" data="CB01"
+		object="CostSysManager" F_CDBH="10011002100210021013" F_CDMX="1"
+		F_CDSM="预算数据查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据查询"
+		method="yssjcx2" id="a_00050003000600020013" caption="预算数据查询" F_CDJS="5" />
+	<a_00050003000600020014 param="" data="CB01"
+		object="CostSysManager" F_CDBH="10011002100210021014" F_CDMX="1"
+		F_CDSM="预算数据生成" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\预算控制\预算数据维护\预算数据生成"
+		method="Yssjsc" id="a_00050003000600020014" caption="预算数据生成" F_CDJS="5" />
+	<a_000500030007 F_CDSM="预付管理" F_GNBH="" F_CDBH="100110021003"
+		F_CDLJ="项目成本系统\科研模块\预付管理" F_CDMX="0" id="a_000500030007" caption="预付管理"
+		F_CDJS="3">
+		<node data="CB01" object="CostSysManager" F_CDBH="1001100210031001"
+			F_CDMX="1" F_CDSM="预付启用配置" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预付管理\预付启用配置"
+			nodeClass="jenterprise.FWKNodeStub" method="yfqypz" id="a_0005000300070001"
+			caption="预付启用配置" F_CDJS="4" />
+		<node data="CB01" object="CostSysManager" F_CDBH="1001100210031002"
+			F_CDMX="1" F_CDSM="预付申请单" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预付管理\预付申请单"
+			nodeClass="jenterprise.FWKNodeStub" method="PrepayRequisition" id="a_0005000300070002"
+			caption="预付申请单" F_CDJS="4" />
+		<node data="CB01" object="CostSysManager" F_CDBH="1001100210031003"
+			F_CDMX="1" F_CDSM="预付申请单审核" F_GNBH="" F_CDLJ="项目成本系统\科研模块\预付管理\预付申请单审核"
+			nodeClass="jenterprise.FWKNodeStub" method="AuditPrepayRequisition"
+			id="a_0005000300070003" caption="预付申请单审核" F_CDJS="4" />
+		<node param="JCostSystem/Query/yfsqdcx.xml" data="CB01"
+			object="GenerQueryObject" F_CDBH="1001100210031004" F_CDMX="1"
+			F_CDSM="预付申请单查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\预付管理\预付申请单查询" method="QueryObject" id="a_0005000300070004"
+			caption="预付申请单查询" F_CDJS="4" />
+	</a_000500030007>
+	<a_0005000300070001 data="CB01" object="CostSysManager"
+		F_CDBH="1001100210031001" F_CDMX="1" F_CDSM="预付启用���置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预付管理\预付启用配置" nodeClass="jenterprise.FWKNodeStub"
+		method="yfqypz" id="a_0005000300070001" caption="预付启用配置" F_CDJS="4" />
+	<a_0005000300070002 data="CB01" object="CostSysManager"
+		F_CDBH="1001100210031002" F_CDMX="1" F_CDSM="预付申请单" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预付管理\预付申请单" nodeClass="jenterprise.FWKNodeStub"
+		method="PrepayRequisition" id="a_0005000300070002" caption="预付申请单"
+		F_CDJS="4" />
+	<a_0005000300070003 data="CB01" object="CostSysManager"
+		F_CDBH="1001100210031003" F_CDMX="1" F_CDSM="预付申请单审核" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\预付管理\预付申请单审核" nodeClass="jenterprise.FWKNodeStub"
+		method="AuditPrepayRequisition" id="a_0005000300070003" caption="预付申请单审核"
+		F_CDJS="4" />
+	<a_0005000300070004 param="JCostSystem/Query/yfsqdcx.xml"
+		data="CB01" object="GenerQueryObject" F_CDBH="1001100210031004"
+		F_CDMX="1" F_CDSM="预付申请单查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\预付管理\预付申请单查询" method="QueryObject" id="a_0005000300070004"
+		caption="预付申请单查询" F_CDJS="4" />
+	<a_000500030008 F_CDSM="加计扣除" F_GNBH="" F_CDBH="100110021010"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询" F_CDMX="0" id="a_000500030008" caption="加计扣除"
+		F_CDJS="3">
+		<node F_CDSM="加计扣除配置" F_GNBH="" F_CDBH="1001100210101001"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置" F_CDMX="0" id="a_0005000300080001"
+			caption="加计扣除配置" F_CDJS="4" />
+		<node F_CDSM="加计扣除查询" F_GNBH="" F_CDBH="1001100210101002"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询" F_CDMX="0" id="a_0005000300080002"
+			caption="加计扣除查询" F_CDJS="4" />
+	</a_000500030008>
+	<a_0005000300080001 F_CDSM="加计扣除配置" F_GNBH=""
+		F_CDBH="1001100210101001" F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置" F_CDMX="0"
+		id="a_0005000300080001" caption="加计扣除配置" F_CDJS="4">
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011001"
+			F_CDMX="1" F_CDSM="加计扣除费用定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除费用定义" method="jjkcfydy"
+			id="a_00050003000800010001" caption="加计扣除费用定义" F_CDJS="5" />
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011002"
+			F_CDMX="1" F_CDSM="加计扣除费用要素定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除费用要素定义" method="Jjccfyysdy"
+			id="a_00050003000800010002" caption="加计扣除费用要素定义" F_CDJS="5" />
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011003"
+			F_CDMX="1" F_CDSM="加计扣除科研项目配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除科研项目配置" method="Jjcckyxmdy"
+			id="a_00050003000800010003" caption="加计扣除科研项目配置" F_CDJS="5" />
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011004"
+			F_CDMX="1" F_CDSM="科研机构费用加计扣除配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\科研机构费用加计扣除配置" method="kyjgfyjjkcpz"
+			id="a_00050003000800010004" caption="科研机构费用加计扣除配置" F_CDJS="5" />
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011005"
+			F_CDMX="1" F_CDSM="加计扣除费用定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除类别定义" method="jjkclbdy"
+			id="a_00050003000800010005" caption="加计扣除类别定义" F_CDJS="5" />
+	</a_0005000300080001>
+	<a_00050003000800010001 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011001" F_CDMX="1"
+		F_CDSM="加计扣除费用定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除费用定义" method="jjkcfydy"
+		id="a_00050003000800010001" caption="加计扣除费用定义" F_CDJS="5" />
+	<a_00050003000800010002 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011002" F_CDMX="1"
+		F_CDSM="加计扣除费用要素定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除费用要素定义" method="Jjccfyysdy"
+		id="a_00050003000800010002" caption="加计扣除费用要素定义" F_CDJS="5" />
+	<a_00050003000800010003 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011003" F_CDMX="1"
+		F_CDSM="加计扣除科研项目配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除科研项目配置" method="Jjcckyxmdy"
+		id="a_00050003000800010003" caption="加计扣除科研项目配置" F_CDJS="5" />
+	<a_00050003000800010004 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011004" F_CDMX="1"
+		F_CDSM="科研机构费用加计扣除配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\科研机构费用加计扣除配置" method="kyjgfyjjkcpz"
+		id="a_00050003000800010004" caption="科研机构费用加计扣除配置" F_CDJS="5" />
+	<a_00050003000800010005 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011005" F_CDMX="1"
+		F_CDSM="加计扣除费用定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除配置\加计扣除类别定义" method="jjkclbdy"
+		id="a_00050003000800010001" caption="加计扣除类别定义" F_CDJS="5" />
+		
+	<a_0005000300080002 F_CDSM="加计扣除查询" F_GNBH=""
+		F_CDBH="1001100210101002" F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询" F_CDMX="0"
+		id="a_0005000300080002" caption="加计扣除查询" F_CDJS="4">
+		<node param="JCostSystem/Query/jjkccx.xml" data="DX0001"
+			object="GenerQueryObject" F_CDBH="10011002101010021001" F_CDMX="1"
+			F_CDSM="加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询\加计扣除查询" method="QueryObject"
+			id="a_00050003000800020001" caption="加计扣除查询" F_CDJS="5" />
+		<node param="JCostSystem/Query/jjkcmxcx.xml" data="DX0001"
+			object="GenerQueryObject" F_CDBH="10011002101010021002" F_CDMX="1"
+			F_CDSM="加计扣除明细查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询\加计扣除明细查询" method="QueryObject"
+			id="a_00050003000800020002" caption="加计扣除明细查询" F_CDJS="5" />
+		<node param="JCostSystem/Query/kyjgjjkccx.xml" data="DX0002"
+			object="GenerQueryObject" F_CDBH="10011002101010021003" F_CDMX="1"
+			F_CDSM="科研机构费用加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询\科研机构费用加计扣除查询" method="QueryObject"
+			id="a_00050003000800020003" caption="科研机构费用加计扣除查询" F_CDJS="5" />
+	</a_0005000300080002>
+	<a_00050003000800020001 param="JCostSystem/Query/jjkccx.xml"
+		data="DX0001" object="GenerQueryObject" F_CDBH="10011002101010021001"
+		F_CDMX="1" F_CDSM="加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询\加计扣除查询" method="QueryObject"
+		id="a_00050003000800020001" caption="加计扣除查询" F_CDJS="5" />
+	<a_00050003000800020002 param="JCostSystem/Query/jjkcmxcx.xml"
+		data="DX0001" object="GenerQueryObject" F_CDBH="10011002101010021002"
+		F_CDMX="1" F_CDSM="加计扣除明细查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询\加计扣除明细查询" method="QueryObject"
+		id="a_00050003000800020002" caption="加计扣除明细查询" F_CDJS="5" />
+	<a_00050003000800020003 param="JCostSystem/Query/kyjgjjkccx.xml"
+		data="DX0002" object="GenerQueryObject" F_CDBH="10011002101010021003"
+		F_CDMX="1" F_CDSM="科研机构费用加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\加计扣除查询\加计扣除查询\科研机构费用加计扣除查询" method="QueryObject"
+		id="a_00050003000800020003" caption="科研机构费用加计扣除查询" F_CDJS="5" />
+	<a_000500030009 F_CDSM="成本月末处理" F_GNBH="" F_CDBH="100110021004"
+		F_CDLJ="项目成本系统\科研模块\成本月末处理" F_CDMX="0" id="a_000500030009" caption="成本月末处理"
+		F_CDJS="3">
+		<node data="CB01" object="CostSysManager" F_CDBH="1001100210041001"
+			F_CDMX="1" F_CDSM="处理过程定义" F_GNBH="" F_CDLJ="项目成本系统\科研模块\成本月末处理\处理过程定义"
+			nodeClass="jenterprise.FWKNodeStub" method="cbymclgcdy" id="a_0005000300090001"
+			caption="处理过程定义" F_CDJS="4" />
+		<node F_CDSM="成本分摊" F_GNBH="" F_CDBH="1001100210041002" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊"
+			F_CDMX="0" id="a_0005000300090002" caption="成本分摊" F_CDJS="4" />
+		<node F_CDSM="成本结转" F_GNBH="" F_CDBH="1001100210041003" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转"
+			F_CDMX="0" id="a_0005000300090003" caption="成本结转" F_CDJS="4" />
+	</a_000500030009>
+	<a_0005000300090001 data="CB01" object="CostSysManager"
+		F_CDBH="1001100210041001" F_CDMX="1" F_CDSM="处理过程定义" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\成本月末处理\处理过程定义" nodeClass="jenterprise.FWKNodeStub"
+		method="cbymclgcdy" id="a_0005000300090001" caption="处理过程定义" F_CDJS="4" />
+	<a_0005000300090002 F_CDSM="成本分摊" F_GNBH=""
+		F_CDBH="1001100210041002" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊" F_CDMX="0"
+		id="a_0005000300090002" caption="成本分摊" F_CDJS="4">
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100410021001"
+			F_CDMX="1" F_CDSM="分摊步骤配置" F_GNBH="" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊\分摊步骤配置"
+			nodeClass="jenterprise.FWKNodeStub" method="ftbzpz" id="a_00050003000900020001"
+			caption="分摊步骤配置" F_CDJS="5" />
+		<node param="" data="CB01" object="CostSysManager" F_CDBH="10011002100410021002"
+			F_CDMX="1" F_CDSM="成本分摊" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊\成本分摊" method="CbfpOperation" id="a_00050003000900020002"
+			caption="成本分摊" F_CDJS="5" />
+		<node param="JCostSystem/Query/ftlogcx.xml" data="CB01;01"
+			object="GenerQueryObject" F_CDBH="10011002100410021003" F_CDMX="1"
+			F_CDSM="分摊日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊\分摊日志查询"
+			method="QueryObject" id="a_00050003000900020003" caption="分摊日志查询"
+			F_CDJS="5" />
+	</a_0005000300090002>
+	<a_00050003000900020001 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100410021001" F_CDMX="1" F_CDSM="分摊步骤配置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊\分摊步骤配置" nodeClass="jenterprise.FWKNodeStub"
+		method="ftbzpz" id="a_00050003000900020001" caption="分摊步骤配置" F_CDJS="5" />
+	<a_00050003000900020002 param="" data="CB01"
+		object="CostSysManager" F_CDBH="10011002100410021002" F_CDMX="1"
+		F_CDSM="成本分摊" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊\成本分摊"
+		method="CbfpOperation" id="a_00050003000900020002" caption="成本分摊"
+		F_CDJS="5" />
+	<a_00050003000900020003 param="JCostSystem/Query/ftlogcx.xml"
+		data="CB01;01" object="GenerQueryObject" F_CDBH="10011002100410021003"
+		F_CDMX="1" F_CDSM="分摊日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\成本月末处理\成本分摊\分摊日志查询" method="QueryObject"
+		id="a_00050003000900020003" caption="分摊日志查询" F_CDJS="5" />
+	<a_0005000300090003 F_CDSM="成本结转" F_GNBH=""
+		F_CDBH="1001100210041003" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转" F_CDMX="0"
+		id="a_0005000300090003" caption="成本结转" F_CDJS="4">
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100410031001"
+			F_CDMX="1" F_CDSM="结转步骤配置" F_GNBH="" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转\结转步骤配置"
+			nodeClass="jenterprise.FWKNodeStub" method="jzbzpz" id="a_00050003000900030001"
+			caption="结转步骤配置" F_CDJS="5" />
+		<node data="CB01" object="CostSysManager" F_CDBH="10011002100410031002"
+			F_CDMX="1" F_CDSM="成本结转" F_GNBH="" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转\成本结转"
+			nodeClass="jenterprise.FWKNodeStub" method="CbjzOperation" id="a_00050003000900030002"
+			caption="成本结转" F_CDJS="5" />
+		<node param="JCostSystem/Query/ftlogcx.xml" data="CB01;02"
+			object="GenerQueryObject" F_CDBH="10011002100410031003" F_CDMX="1"
+			F_CDSM="结转日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转\结转日志查询"
+			method="QueryObject" id="a_00050003000900030003" caption="结转日志查询"
+			F_CDJS="5" />
+	</a_0005000300090003>
+	<a_00050003000900030001 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100410031001" F_CDMX="1" F_CDSM="结转步骤配置" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转\结转步骤配置" nodeClass="jenterprise.FWKNodeStub"
+		method="jzbzpz" id="a_00050003000900030001" caption="结转步骤配置" F_CDJS="5" />
+	<a_00050003000900030002 data="CB01" object="CostSysManager"
+		F_CDBH="10011002100410031002" F_CDMX="1" F_CDSM="成本结转" F_GNBH=""
+		F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转\成本结转" nodeClass="jenterprise.FWKNodeStub"
+		method="CbjzOperation" id="a_00050003000900030002" caption="成本结转"
+		F_CDJS="5" />
+	<a_00050003000900030003 param="JCostSystem/Query/ftlogcx.xml"
+		data="CB01;02" object="GenerQueryObject" F_CDBH="10011002100410031003"
+		F_CDMX="1" F_CDSM="结转日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\成本月末处理\成本结转\结转日志查询" method="QueryObject"
+		id="a_00050003000900030003" caption="结转日志查询" F_CDJS="5" />
+	<a_JCostSystem_CBYSCXCB01 F_CDSM="预算查询"
+		F_GNBH="" F_CDBH="100110021005" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\预算查询" F_CDMX="1" id="a_JCostSystem_CBYSCXCB01"
+		caption="预算查询" F_CDJS="3" />
+	<a_JCostSystem_CBCXCB01 F_CDSM="成本查询" F_GNBH=""
+		F_CDBH="100110021006" F_CDLJ="项目成本系统\科研模块\成本查询" F_CDMX="0"
+		id="a_JCostSystem_CBCXCB01" caption="成本查询" F_CDJS="3">
+		<node param="JCostSystem/Query/ryhzcx.xml" data="CB01;CB01"
+			object="GenerQueryObject" F_CDBH="1001100210061001" F_CDMX="1"
+			F_CDSM="任意汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\成本查询\任意汇总查询"
+			method="QueryObject" id="a_0005000300110001" caption="任意汇总查询" F_CDJS="4" />
+		<node param="JCostSystem/Query/jccbdxhzcx.xml" data="CB01;CB01"
+			object="GenerQueryObject" F_CDBH="1001100210061002" F_CDMX="1"
+			F_CDSM="交叉成本对象汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\成本查询\交叉成本对象汇总查询" method="QueryObject" id="a_0005000300110002"
+			caption="交叉成本对象汇总查询" F_CDJS="4" />
+	</a_JCostSystem_CBCXCB01>
+	<a_0005000300110001 param="JCostSystem/Query/ryhzcx.xml"
+		data="CB01;CB01" object="GenerQueryObject" F_CDBH="1001100210061001"
+		F_CDMX="1" F_CDSM="任意汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\成本查询\任意汇总查询" method="QueryObject" id="a_0005000300110001"
+		caption="任意汇总查询" F_CDJS="4" />
+	<a_0005000300110002 param="JCostSystem/Query/jccbdxhzcx.xml"
+		data="CB01;CB01" object="GenerQueryObject" F_CDBH="1001100210061002"
+		F_CDMX="1" F_CDSM="交叉成本对象汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\成本查询\交叉成本对象汇总查询" method="QueryObject" id="a_0005000300110002"
+		caption="交叉成本对象汇总查询" F_CDJS="4" />
+	<a_JCostSystem_DBFXCB01 F_CDSM="对比分析" F_GNBH=""
+		F_CDBH="100110021007" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\对比分析"
+		F_CDMX="1" id="a_JCostSystem_DBFXCB01" caption="对比分析" F_CDJS="3" />
+	<a_JCostSystem_FZCXCB01 F_CDSM="辅助查询" F_GNBH=""
+		F_CDBH="100110021008" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\科研模块\辅助查询"
+		F_CDMX="1" id="a_JCostSystem_FZCXCB01" caption="辅助查询" F_CDJS="3" />
+	<a_000500030014 F_CDSM="多项辅助查询" F_GNBH="" F_CDBH="100110021009"
+		F_CDLJ="项目成本系统\科研模块\多项辅助查询" F_CDMX="0" id="a_000500030014" caption="多项辅助查询"
+		F_CDJS="3">
+		<node param="JCostSystem/Query/dxfzyecx.xml" data="CB01"
+			object="GenerQueryObject" F_CDBH="1001100210091001" F_CDMX="1"
+			F_CDSM="多项辅助余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\多项辅助查询\多项辅助余额表" method="QueryObject" id="a_0005000300140001"
+			caption="多项辅助余额表" F_CDJS="4" />
+		<node param="JCostSystem/Query/dxfzyeewcx.xml" data="CB01"
+			object="GenerQueryObject" F_CDBH="1001100210091002" F_CDMX="1"
+			F_CDSM="多项辅助二维余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\科研模块\多项辅助查询\多项辅助二维余额表" method="QueryObject" id="a_0005000300140002"
+			caption="多项辅助二维余额表" F_CDJS="4" />
+	</a_000500030014>
+	<a_0005000300140001 param="JCostSystem/Query/dxfzyecx.xml"
+		data="CB01" object="GenerQueryObject" F_CDBH="1001100210091001"
+		F_CDMX="1" F_CDSM="多项辅助余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\多项辅助查询\多项辅助余额表" method="QueryObject" id="a_0005000300140001"
+		caption="多项辅助余额表" F_CDJS="4" />
+	<a_0005000300140002 param="JCostSystem/Query/dxfzyeewcx.xml"
+		data="CB01" object="GenerQueryObject" F_CDBH="1001100210091002"
+		F_CDMX="1" F_CDSM="多项辅助二维余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\科研模块\多项辅助查询\多项辅助二维余额表" method="QueryObject" id="a_0005000300140002"
+		caption="多项辅助二维余额表" F_CDJS="4" />
+	<a_00050004 F_CDSM="销售项目" F_GNBH="" F_CDBH="100110101005"
+		F_CDLJ="账务管理\实时记账\初始设置" F_CDMX="0" id="a_00050004" caption="销售项目"
+		F_CDJS="2">
+		<node F_CDSM="系统配置" F_GNBH="" F_CDBH="100110021001" F_CDLJ="项目成本系统\销售模块\系统配置"
+			F_CDMX="0" id="a_000500040002" caption="系统配置" F_CDJS="3" />
+		<node F_CDSM="预算明细要素" F_GNBH="" F_CDBH="1001100210011003" F_CDLJ="项目成本系统\销售模块\系统配置\预算明细要素"
+			F_CDMX="0" id="a_JCostSystem_CBYSCB03" caption="预算明细要素" F_CDJS="3" />
+		<node F_CDSM="成本对象" F_GNBH="" F_CDBH="1001100210011004" F_CDLJ="项目成本系统\销售模块\系统配置\成本对象"
+			F_CDMX="0" id="a_JCostSystem_CBDXCB03" caption="成本对象" F_CDJS="3" />
+		<node F_CDSM="自定义成本辅助" F_GNBH="" F_CDBH="1001100210011005"
+			F_CDLJ="项目成本系统\销售模块\系统配置\自定义成本辅助" F_CDMX="0" id="a_JCostSystem_CBZDYCB03"
+			caption="自定义成本辅助" F_CDJS="3" />
+		<node F_CDSM="预算控制" F_GNBH="" F_CDBH="100110021002" F_CDLJ="项目成本系统\销售模块\预算控制"
+			F_CDMX="0" id="a_000500040006" caption="预算控制" F_CDJS="3" />
+		<node F_CDSM="预付管理" F_GNBH="" F_CDBH="100110021003" F_CDLJ="项目成本系统\销售模块\预付管理"
+			F_CDMX="0" id="a_000500040007" caption="预付管理" F_CDJS="3" />
+		<node F_CDSM="加计扣除" F_GNBH="" F_CDBH="100110021010" F_CDLJ="项目成本系统\销售模块\加计扣除查询"
+			F_CDMX="0" id="a_000500040008" caption="加计扣除" F_CDJS="3" />
+		<node F_CDSM="成本月末处理" F_GNBH="" F_CDBH="100110021004" F_CDLJ="项目成本系统\销售模块\成本月末处理"
+			F_CDMX="0" id="a_000500040009" caption="成本月末处理" F_CDJS="3" />
+		<node F_CDSM="预算查询" F_GNBH="" F_CDBH="100110021005" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\预算查询" F_CDMX="1" id="a_JCostSystem_CBYSCXCB03"
+			caption="预算查询" F_CDJS="3" />
+		<node F_CDSM="成本查询" F_GNBH="" F_CDBH="100110021006" F_CDLJ="项目成本系统\销售模块\成本查询"
+			F_CDMX="0" id="a_JCostSystem_CBCXCB03" caption="成本查询" F_CDJS="3" />
+		<node F_CDSM="对比分析" F_GNBH="" F_CDBH="100110021007" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\对比分析" F_CDMX="1" id="a_JCostSystem_DBFXCB03"
+			caption="对比分析" F_CDJS="3" />
+		<node F_CDSM="辅助查询" F_GNBH="" F_CDBH="100110021008" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\辅助查询" F_CDMX="1" id="a_JCostSystem_FZCXCB03"
+			caption="辅助查询" F_CDJS="3" />
+		<node F_CDSM="多项辅助查询" F_GNBH="" F_CDBH="100110021009" F_CDLJ="项目成本系统\销售模块\多项辅助查询"
+			F_CDMX="0" id="a_000500040014" caption="多项辅助查询" F_CDJS="3" />
+	</a_00050004>
+	<a_000500040002 F_CDSM="系统配置" F_GNBH="" F_CDBH="100110021001"
+		F_CDLJ="项目成本系统\销售模块\系统配置" F_CDMX="0" id="a_000500040002" caption="系统配置"
+		F_CDJS="3">
+		<node data="CB03" object="CostSysManager" F_CDBH="1001100210011001"
+			F_CDMX="1" F_CDSM="系统参数定义" F_GNBH="" F_CDLJ="项目成本系统\销售模块\系统配置\系统参数定义"
+			nodeClass="jenterprise.FWKNodeStub" method="KyXtcsDefine" id="a_0005000400020001"
+			caption="系统参数定义" F_CDJS="4" />
+		<node data="CB03" object="CostSysManager" F_CDBH="1001100210011002"
+			F_CDMX="1" F_CDSM="使用科目定义" F_GNBH="" F_CDLJ="项目成本系统\销售模块\系统配置\使用科目定义"
+			nodeClass="jenterprise.FWKNodeStub" method="KyKmSyDefine" id="a_0005000400020002"
+			caption="使用科目定义" F_CDJS="4" />
+		<node param="DX0003" data="CB03" object="CostSysManager" F_CDBH="1001100210011005"
+			F_CDMX="1" F_CDSM="经济指标编码维护" F_GNBH="" F_CDLJ="项目成本系统\销售模块\系统配置\经济指标编码维护"
+			nodeClass="jenterprise.FWKNodeStub" method="jjzbbmdy" id="a_0005000400020005"
+			caption="经济指标编码维护" F_CDJS="4" />
+		<node data="CB03" object="CostSysManager" F_CDBH="1001100210011003"
+			F_CDMX="1" F_CDSM="经济指标维护" F_GNBH="" F_CDLJ="项目成本系统\销售模块\系统配置\经济指标维护"
+			nodeClass="jenterprise.FWKNodeStub" method="CBZYSMZD" id="a_0005000400020003"
+			caption="经济指标维护" F_CDJS="4" />
+		<node param="DX0003" data="CB03" object="CostSysManager" F_CDBH="1001100210011004"
+			F_CDMX="1" F_CDSM="经济指标输入" F_GNBH="" F_CDLJ="项目成本系统\销售模块\系统配置\经济指标输入"
+			nodeClass="jenterprise.FWKNodeStub" method="CBRunSmWh" id="a_0005000400020004"
+			caption="经济指标输入" F_CDJS="4" />
+	</a_000500040002>
+	<a_0005000400020001 data="CB03" object="CostSysManager"
+		F_CDBH="1001100210011001" F_CDMX="1" F_CDSM="系统参数定义" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\系统参数定义" nodeClass="jenterprise.FWKNodeStub"
+		method="KyXtcsDefine" id="a_0005000400020001" caption="系统参数定义" F_CDJS="4" />
+	<a_0005000400020002 data="CB03" object="CostSysManager"
+		F_CDBH="1001100210011002" F_CDMX="1" F_CDSM="使用科目定义" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\使用科目定义" nodeClass="jenterprise.FWKNodeStub"
+		method="KyKmSyDefine" id="a_0005000400020002" caption="使用科目定义" F_CDJS="4" />
+	<a_0005000400020003 data="CB03" object="CostSysManager"
+		F_CDBH="1001100210011002" F_CDMX="1" F_CDSM="经济指标维护" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\经济指标维护" nodeClass="jenterprise.FWKNodeStub"
+		method="CBZYSMZD" id="a_0005000400020003" caption="经济指标维护" F_CDJS="4" />
+	<a_0005000400020004 param="DX0003" data="CB03" object="CostSysManager"
+		F_CDBH="1001100210011002" F_CDMX="1" F_CDSM="经济指标输入" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\经济指标输入" nodeClass="jenterprise.FWKNodeStub"
+		method="CBRunSmWh" id="a_0005000400020004" caption="经济指标输入" F_CDJS="4" />
+	<a_0005000400020005 param="DX0003" data="CB03" object="CostSysManager"
+		F_CDBH="1001100210011002" F_CDMX="1" F_CDSM="经济指标编码维护" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\经济指标编码维护" nodeClass="jenterprise.FWKNodeStub"
+		method="jjzbbmdy" id="a_0005000400020005" caption="经济指标编码维护" F_CDJS="4" />
+	<a_JCostSystem_CBYSCB03 F_CDSM="预算明细要素" F_GNBH=""
+		F_CDBH="1001100210011003" F_CDLJ="项目成本系统\销售模块\系统配置\预算明细要素" F_CDMX="0"
+		id="a_JCostSystem_CBYSCB03" caption="预算明细要素" F_CDJS="3">
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100110031001"
+			F_CDMX="1" F_CDSM="预算明细要素管理" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\系统配置\预算明细要素\预算明细要素管理" nodeClass="jenterprise.FWKNodeStub"
+			method="KycbysManager" id="a_0005000400030001" caption="预算明细要素管理"
+			F_CDJS="4" />
+	</a_JCostSystem_CBYSCB03>
+	<a_0005000400030001 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100110031001" F_CDMX="1" F_CDSM="预算明细要素管理" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\预算明细要素\预算明细要素管理" nodeClass="jenterprise.FWKNodeStub"
+		method="KycbysManager" id="a_0005000400030001" caption="预算明细要素管理"
+		F_CDJS="4" />
+	<a_JCostSystem_CBDXCB03 F_CDSM="成本对象" F_GNBH=""
+		F_CDBH="1001100210011004" F_CDLJ="项目成本系统\销售模块\系统配置\成本对象" F_CDMX="0"
+		id="a_JCostSystem_CBDXCB03" caption="成本对象" F_CDJS="3">
+		<node param="JCostSystem/Query/kyxmxxk.xml" data="DX0001;CB03"
+			object="GenerQueryObject" F_CDBH="10011002100110041001" F_CDMX="1"
+			F_CDSM="销售项目信息卡" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\销售项目信息卡" method="QueryObject" id="a_0005000400040001"
+			caption="销售项目信息卡" F_CDJS="4" />
+		<node param="JCostSystem/Query/zbxdkyxmztcxzz.xml" data="DX0001"
+			object="GenerQueryObject" F_CDBH="10011002100110041002" F_CDMX="1"
+			F_CDSM="总部下达销售项目状态查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\总部下达销售项目状态查询" method="QueryObject"
+			id="a_0005000400040002" caption="总部下达销售项目状态查询" F_CDJS="4" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100110041003"
+			F_CDMX="1" F_CDSM="成本对象管理" F_GNBH="" F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\成本对象管理"
+			nodeClass="jenterprise.FWKNodeStub" method="KycbdxManager" id="a_0005000400040003"
+			caption="成本对象管理" F_CDJS="4" />
+		<node data="DX0001" object="CostSysManager" F_CDBH="10011002100110041004"
+			F_CDMX="1" F_CDSM="WBS对照销售项目配置" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\WBS对照销售项目配置" nodeClass="jenterprise.FWKNodeStub"
+			method="WbsdxpzManager" id="a_0005000400040004" caption="WBS对照销售项目配置"
+			F_CDJS="4" />
+		<node data="DX0001" object="CostSysManager" F_CDBH="10011002100110041005"
+			F_CDMX="1" F_CDSM="同步WBS对照销售项目" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\同步WBS对照销售项目" nodeClass="jenterprise.FWKNodeStub"
+			method="SyncWbsCreateKyxm" id="a_0005000400040005" caption="同步WBS对照销售项目"
+			F_CDJS="4" />
+	</a_JCostSystem_CBDXCB03>
+	<a_0005000400040001 param="JCostSystem/Query/kyxmxxk.xml"
+		data="DX0001;CB03" object="GenerQueryObject" F_CDBH="10011002100110041001"
+		F_CDMX="1" F_CDSM="销售项目信息卡" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\销售项目信息卡" method="QueryObject" id="a_0005000400040001"
+		caption="销售项目信息卡" F_CDJS="4" />
+	<a_0005000400040002 param="JCostSystem/Query/zbxdkyxmztcxzz.xml"
+		data="DX0001" object="GenerQueryObject" F_CDBH="10011002100110041002"
+		F_CDMX="1" F_CDSM="总部下达销售项目状态查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\总部下达销售项目状态查询" method="QueryObject"
+		id="a_0005000400040002" caption="总部下达销售项目状态查询" F_CDJS="4" />
+	<a_0005000400040003 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100110041003" F_CDMX="1" F_CDSM="成本对象管理" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\成本对象管理" nodeClass="jenterprise.FWKNodeStub"
+		method="KycbdxManager" id="a_0005000400040003" caption="成本对象管理"
+		F_CDJS="4" />
+	<a_0005000400040004 data="DX0001" object="CostSysManager"
+		F_CDBH="10011002100110041004" F_CDMX="1" F_CDSM="WBS对照销售项目配置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\WBS对照销售项目配置" nodeClass="jenterprise.FWKNodeStub"
+		method="WbsdxpzManager" id="a_0005000400040004" caption="WBS对照销售项目配置"
+		F_CDJS="4" />
+	<a_0005000400040005 data="DX0001" object="CostSysManager"
+		F_CDBH="10011002100110041005" F_CDMX="1" F_CDSM="同步WBS对照销售项目" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\同步WBS对照销售项目" nodeClass="jenterprise.FWKNodeStub"
+		method="SyncWbsCreateKyxm" id="a_0005000400040005" caption="同步WBS对照销售项目"
+		F_CDJS="4" />
+	<a_JCostSystem_CBZDYCB03 F_CDSM="自定义成本辅助"
+		F_GNBH="" F_CDBH="1001100210011005" F_CDLJ="项目成本系统\销售模块\系统配置\自定义成本辅助"
+		F_CDMX="0" id="a_JCostSystem_CBZDYCB03" caption="自定义成本辅助" F_CDJS="3">
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100110051001"
+			F_CDMX="1" F_CDSM="自定义成本辅助管理" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\系统配置\自定义成本辅助\自定义成本辅助管理" nodeClass="jenterprise.FWKNodeStub"
+			method="KyzdycbfzManager" id="a_0005000400050001" caption="自定义成本辅助管理"
+			F_CDJS="4" />
+	</a_JCostSystem_CBZDYCB03>
+	<a_0005000400050001 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100110051001" F_CDMX="1" F_CDSM="自定义成本辅助管理" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\系统配置\自定义成本辅助\自定义成本辅助管理" nodeClass="jenterprise.FWKNodeStub"
+		method="KyzdycbfzManager" id="a_0005000400050001" caption="自定义成本辅助管理"
+		F_CDJS="4" />
+	<a_000500040006 F_CDSM="预算控制" F_GNBH="" F_CDBH="100110021002"
+		F_CDLJ="项目成本系统\销售模块\预算控制" F_CDMX="0" id="a_000500040006" caption="预算控制"
+		F_CDJS="3">
+		<node F_CDSM="预算配置" F_GNBH="" F_CDBH="1001100210021001" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置"
+			F_CDMX="0" id="a_0005000400060001" caption="预算配置" F_CDJS="4" />
+		<node F_CDSM="预算数据维护" F_GNBH="" F_CDBH="1001100210021002" F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护"
+			F_CDMX="0" id="a_0005000400060002" caption="预算数据维护" F_CDJS="4" />
+	</a_000500040006>
+	<a_0005000400060001 F_CDSM="预算配置" F_GNBH=""
+		F_CDBH="1001100210021001" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置" F_CDMX="0"
+		id="a_0005000400060001" caption="预算配置" F_CDJS="4">
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210011001"
+			F_CDMX="1" F_CDSM="预算类别定义" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算类别定义"
+			nodeClass="jenterprise.FWKNodeStub" method="YslbdyManager" id="a_00050004000600010001"
+			caption="预算类别定义" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210011002"
+			F_CDMX="1" F_CDSM="预算版本定义" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算版本定义"
+			nodeClass="jenterprise.FWKNodeStub" method="YsbbdyManager" id="a_00050004000600010002"
+			caption="预算版本定义" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210011003"
+			F_CDMX="1" F_CDSM="预算数据同步" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算数据同步"
+			nodeClass="jenterprise.FWKNodeStub" method="YssjSyncManager" id="a_00050004000600010003"
+			caption="预算数据同步" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210011004"
+			F_CDMX="1" F_CDSM="预算数据结转" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算数据结转"
+			nodeClass="jenterprise.FWKNodeStub" method="YssjJzManager" id="a_00050004000600010004"
+			caption="预算数据结转" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210011005"
+			F_CDMX="1" F_CDSM="更新预算实际发生" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\更新预算实际发生"
+			nodeClass="jenterprise.FWKNodeStub" method="GxYssjfsManager" id="a_00050004000600010005"
+			caption="更新预算实际发生" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210011006"
+			F_CDMX="1" F_CDSM="凭证录入实时显示配置" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\凭证录入实时显示配置" nodeClass="jenterprise.FWKNodeStub"
+			method="CbysxspzManager" id="a_00050004000600010006" caption="凭证录入实时显示配置"
+			F_CDJS="5" />
+		<node param="CB03" object="CostSysManager" F_CDBH="10011002100210011007"
+			F_CDMX="1" F_CDSM="预算无关成本对象配置" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算无关成本对象配置" nodeClass="jenterprise.FWKNodeStub"
+			method="CbyspcdxpzManager" id="a_00050004000600010007" caption="预算无关成本对象配置"
+			F_CDJS="5" />
+		<node param="CB03" object="CostSysManager" F_CDBH="10011002100210011008"
+			F_CDMX="1" F_CDSM="预算无关销售要素配置" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算无关销售要素配置" nodeClass="jenterprise.FWKNodeStub"
+			method="CbyspcyspzManager" id="a_00050004000600010008" caption="预算无关销售要素配置"
+			F_CDJS="5" />
+		<node object="CostSysManager" F_CDBH="10011002100210011009"
+			F_CDMX="1" F_CDSM="预算数据解锁" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算数据解锁"
+			nodeClass="jenterprise.FWKNodeStub" method="YssjjsManager" id="a_00050004000600010009"
+			caption="预算数据解锁" F_CDJS="5" />
+		<node F_CDSM="预算中心" F_GNBH="" F_CDBH="10011002100210011010"
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心" F_CDMX="0" id="a_00050004000600010010"
+			caption="预算中心" F_CDJS="5" />
+		<node F_CDSM="预算项目" F_GNBH="" F_CDBH="10011002100210011011"
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目" F_CDMX="0" id="a_00050004000600010011"
+			caption="预算项目" F_CDJS="5" />
+	</a_0005000400060001>
+	<a_00050004000600010001 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011001" F_CDMX="1" F_CDSM="预算类别定义" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算类别定义" nodeClass="jenterprise.FWKNodeStub"
+		method="YslbdyManager" id="a_00050004000600010001" caption="预算类别定义"
+		F_CDJS="5" />
+	<a_00050004000600010002 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011002" F_CDMX="1" F_CDSM="预算版本定义" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算版本定义" nodeClass="jenterprise.FWKNodeStub"
+		method="YsbbdyManager" id="a_00050004000600010002" caption="预算版本定义"
+		F_CDJS="5" />
+	<a_00050004000600010003 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011003" F_CDMX="1" F_CDSM="预算数据同步" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算数据同步" nodeClass="jenterprise.FWKNodeStub"
+		method="YssjSyncManager" id="a_00050004000600010003" caption="预算数据同步"
+		F_CDJS="5" />
+	<a_00050004000600010004 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011004" F_CDMX="1" F_CDSM="预算数据结转" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算数据结转" nodeClass="jenterprise.FWKNodeStub"
+		method="YssjJzManager" id="a_00050004000600010004" caption="预算数据结转"
+		F_CDJS="5" />
+	<a_00050004000600010005 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011005" F_CDMX="1" F_CDSM="更新预算实际发生" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\更新预算实际发生" nodeClass="jenterprise.FWKNodeStub"
+		method="GxYssjfsManager" id="a_00050004000600010005" caption="更新预算实际发生"
+		F_CDJS="5" />
+	<a_00050004000600010006 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011006" F_CDMX="1" F_CDSM="凭证录入实时显示配置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\凭证录入实时显示配置" nodeClass="jenterprise.FWKNodeStub"
+		method="CbysxspzManager" id="a_00050004000600010006" caption="凭证录入实时显示配置"
+		F_CDJS="5" />
+	<a_00050004000600010007 param="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011007" F_CDMX="1" F_CDSM="预算无关成本对象配置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算无关成本对象配置" nodeClass="jenterprise.FWKNodeStub"
+		method="CbyspcdxpzManager" id="a_00050004000600010007" caption="预算无关成本对象配置"
+		F_CDJS="5" />
+	<a_00050004000600010008 param="CB03" object="CostSysManager"
+		F_CDBH="10011002100210011008" F_CDMX="1" F_CDSM="预算无关销售要素配置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算无关销售要素配置" nodeClass="jenterprise.FWKNodeStub"
+		method="CbyspcyspzManager" id="a_00050004000600010008" caption="预算无关销售要素配置"
+		F_CDJS="5" />
+	<a_00050004000600010009 object="CostSysManager"
+		F_CDBH="10011002100210011009" F_CDMX="1" F_CDSM="预算数据解锁" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算数据解锁" nodeClass="jenterprise.FWKNodeStub"
+		method="YssjjsManager" id="a_00050004000600010009" caption="预算数据解锁"
+		F_CDJS="5" />
+	<a_00050004000600010010 F_CDSM="预算中心" F_GNBH=""
+		F_CDBH="10011002100210011010" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心"
+		F_CDMX="0" id="a_00050004000600010010" caption="预算中心" F_CDJS="5">
+		<node data="CB03" object="CostSysManager" F_CDBH="100110021002100110101001"
+			F_CDMX="1" F_CDSM="预算中心管理" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心管理"
+			nodeClass="jenterprise.FWKNodeStub" method="YszxManager"
+			id="a_000500040006000100100001" caption="预算中心管理" F_CDJS="6" />
+		<node param="" data="CB03" object="CostSysManager" F_CDBH="100110021002100110101002"
+			F_CDMX="1" F_CDSM="预算中心导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心导入" method="yszxImport"
+			id="a_000500040006000100100002" caption="预算中心导入" F_CDJS="6" />
+		<node data="CB03" object="CostSysManager" F_CDBH="100110021002100110101003"
+			F_CDMX="1" F_CDSM="预算中心维护" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心维护"
+			nodeClass="jenterprise.FWKNodeStub" method="Yszxwh"
+			id="a_000500040006000100100003" caption="预算中心维护" F_CDJS="6" />
+		<node data="CB03" object="CostSysManager" F_CDBH="100110021002100110101004"
+			F_CDMX="1" F_CDSM="预算中心查询" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心查询"
+			nodeClass="jenterprise.FWKNodeStub" method="Yszxcx"
+			id="a_000500040006000100100004" caption="预算中心查询" F_CDJS="6" />
+	</a_00050004000600010010>
+	<a_000500040006000100100001 data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110101001" F_CDMX="1"
+		F_CDSM="预算中心管理" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心管理"
+		nodeClass="jenterprise.FWKNodeStub" method="YszxManager"
+		id="a_000500040006000100100001" caption="预算中心管理" F_CDJS="6" />
+	<a_000500040006000100100002 param="" data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110101002" F_CDMX="1"
+		F_CDSM="预算中心导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心导入" method="yszxImport"
+		id="a_000500040006000100100002" caption="预算中心导入" F_CDJS="6" />
+	<a_000500040006000100100003 data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110101003" F_CDMX="1"
+		F_CDSM="预算中心维护" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心维护"
+		nodeClass="jenterprise.FWKNodeStub" method="Yszxwh"
+		id="a_000500040006000100100003" caption="预算中心维护" F_CDJS="6" />
+	<a_000500040006000100100004 data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110101004" F_CDMX="1"
+		F_CDSM="预算中心查询" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算中心\预算中心查询"
+		nodeClass="jenterprise.FWKNodeStub" method="Yszxcx"
+		id="a_000500040006000100100004" caption="预算中心查询" F_CDJS="6" />
+	<a_00050004000600010011 F_CDSM="预算项目" F_GNBH=""
+		F_CDBH="10011002100210011011" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目"
+		F_CDMX="0" id="a_00050004000600010011" caption="预算项目" F_CDJS="5">
+		<node data="CB03" object="CostSysManager" F_CDBH="100110021002100110111001"
+			F_CDMX="1" F_CDSM="预算项目管理" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目管理"
+			nodeClass="jenterprise.FWKNodeStub" method="YsxmManager"
+			id="a_000500040006000100110001" caption="预算项目管理" F_CDJS="6" />
+		<node param="" data="CB03" object="CostSysManager" F_CDBH="100110021002100110111002"
+			F_CDMX="1" F_CDSM="预算项目导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目导入" method="ysxmImport"
+			id="a_000500040006000100110002" caption="预算项目导入" F_CDJS="6" />
+		<node data="CB03" object="CostSysManager" F_CDBH="100110021002100110111003"
+			F_CDMX="1" F_CDSM="预算项目维护" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目维护"
+			nodeClass="jenterprise.FWKNodeStub" method="YsxmwhManager"
+			id="a_000500040006000100110003" caption="预算项目维护" F_CDJS="6" />
+		<node data="CB03" object="CostSysManager" F_CDBH="100110021002100110111004"
+			F_CDMX="1" F_CDSM="预算项目查询" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目查询"
+			nodeClass="jenterprise.FWKNodeStub" method="YsxmcxManager"
+			id="a_000500040006000100110004" caption="预算项目查询" F_CDJS="6" />
+	</a_00050004000600010011>
+	<a_000500040006000100110001 data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110111001" F_CDMX="1"
+		F_CDSM="预算项目管理" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目管理"
+		nodeClass="jenterprise.FWKNodeStub" method="YsxmManager"
+		id="a_000500040006000100110001" caption="预算项目管理" F_CDJS="6" />
+	<a_000500040006000100110002 param="" data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110111002" F_CDMX="1"
+		F_CDSM="预算项目导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目导入" method="ysxmImport"
+		id="a_000500040006000100110002" caption="预算项目导入" F_CDJS="6" />
+	<a_000500040006000100110003 data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110111003" F_CDMX="1"
+		F_CDSM="预算项目维护" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目维护"
+		nodeClass="jenterprise.FWKNodeStub" method="YsxmwhManager"
+		id="a_000500040006000100110003" caption="预算项目维护" F_CDJS="6" />
+	<a_000500040006000100110004 data="CB03"
+		object="CostSysManager" F_CDBH="100110021002100110111004" F_CDMX="1"
+		F_CDSM="预算项目查询" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算配置\预算项目\预算项目查询"
+		nodeClass="jenterprise.FWKNodeStub" method="YsxmcxManager"
+		id="a_000500040006000100110004" caption="预算项目查询" F_CDJS="6" />
+	<a_0005000400060002 F_CDSM="预算数据维护" F_GNBH=""
+		F_CDBH="1001100210021002" F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护" F_CDMX="0"
+		id="a_0005000400060002" caption="预算数据维护" F_CDJS="4">
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021001"
+			F_CDMX="1" F_CDSM="预算数据模板定义" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据模板定义" nodeClass="jenterprise.FWKNodeStub"
+			method="ysdrmbdy" id="a_00050004000600020001" caption="预算数据模板定义"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021002"
+			F_CDMX="1" F_CDSM="预算数据模板配置" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据模板配置" nodeClass="jenterprise.FWKNodeStub"
+			method="ysdrmbdypz" id="a_00050004000600020002" caption="预算数据模板配置"
+			F_CDJS="5" />
+		<node data="" object="CostSysManager" F_CDBH="10011002100210021003"
+			F_CDMX="1" F_CDSM="预算类别校验关系" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算类别校验关系" nodeClass="jenterprise.FWKNodeStub"
+			method="Yslbjygx" id="a_00050004000600020003" caption="预算类别校验关系"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021004"
+			F_CDMX="1" F_CDSM="预算数据二维导入" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据二维导入" nodeClass="jenterprise.FWKNodeStub"
+			method="yssjdr" id="a_00050004000600020004" caption="预算数据二维导入"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021005"
+			F_CDMX="1" F_CDSM="预算数据二维维护" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据二维维护" nodeClass="jenterprise.FWKNodeStub"
+			method="yssjedit2" id="a_00050004000600020005" caption="预算数据二维维护"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021006"
+			F_CDMX="1" F_CDSM="预算数据二维审核" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据二维审核" nodeClass="jenterprise.FWKNodeStub"
+			method="yssjsh2" id="a_00050004000600020006" caption="预算数据二维审核"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021007"
+			F_CDMX="1" F_CDSM="预算数据录入" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据录入"
+			nodeClass="jenterprise.FWKNodeStub" method="YsDataLr" id="a_00050004000600020007"
+			caption="预算数据录入" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021008"
+			F_CDMX="1" F_CDSM="预算数据审核" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据审核"
+			nodeClass="jenterprise.FWKNodeStub" method="YsDataSh" id="a_00050004000600020008"
+			caption="预算数据审核" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021009"
+			F_CDMX="1" F_CDSM="预算数据调整录入" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据调整录入" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsDataLr" id="a_00050004000600020009" caption="预算数据调整录入"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021010"
+			F_CDMX="1" F_CDSM="预算数据调整审核" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据调整审核" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsDataSh" id="a_00050004000600020010" caption="预算数据调整审核"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021011"
+			F_CDMX="1" F_CDSM="预算调整二维维护" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算调整二维维护" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsTwoDataLr" id="a_00050004000600020011" caption="预算调整二维维护"
+			F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100210021012"
+			F_CDMX="1" F_CDSM="预算调整二维审核" F_GNBH=""
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算调整二维审核" nodeClass="jenterprise.FWKNodeStub"
+			method="ZjYsTwoDataSh" id="a_00050004000600020012" caption="预算调整二维审核"
+			F_CDJS="5" />
+		<node param="" data="CB03" object="CostSysManager" F_CDBH="10011002100210021013"
+			F_CDMX="1" F_CDSM="预算数据查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据查询" method="yssjcx2"
+			id="a_00050004000600020013" caption="预算数据查询" F_CDJS="5" />
+	</a_0005000400060002>
+	<a_00050004000600020001 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021001" F_CDMX="1" F_CDSM="预算数据模板定义" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据模板定义" nodeClass="jenterprise.FWKNodeStub"
+		method="ysdrmbdy" id="a_00050004000600020001" caption="预算数据模板定义"
+		F_CDJS="5" />
+	<a_00050004000600020002 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021002" F_CDMX="1" F_CDSM="预算数据模板配置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据模板配置" nodeClass="jenterprise.FWKNodeStub"
+		method="ysdrmbdypz" id="a_00050004000600020002" caption="预算数据模板配置"
+		F_CDJS="5" />
+	<a_00050004000600020003 data="" object="CostSysManager"
+		F_CDBH="10011002100210021003" F_CDMX="1" F_CDSM="预算类别校验关系" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算类别校验关系" nodeClass="jenterprise.FWKNodeStub"
+		method="Yslbjygx" id="a_00050004000600020003" caption="预算类别校验关系"
+		F_CDJS="5" />
+	<a_00050004000600020004 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021004" F_CDMX="1" F_CDSM="预算数据二维导入" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据二维导入" nodeClass="jenterprise.FWKNodeStub"
+		method="yssjdr" id="a_00050004000600020004" caption="预算数据二维导入" F_CDJS="5" />
+	<a_00050004000600020005 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021005" F_CDMX="1" F_CDSM="预算数据二维维护" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据二维维护" nodeClass="jenterprise.FWKNodeStub"
+		method="yssjedit2" id="a_00050004000600020005" caption="预算数据二维维护"
+		F_CDJS="5" />
+	<a_00050004000600020006 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021006" F_CDMX="1" F_CDSM="预算数据二维审核" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据二维审核" nodeClass="jenterprise.FWKNodeStub"
+		method="yssjsh2" id="a_00050004000600020006" caption="预算数据二维审核"
+		F_CDJS="5" />
+	<a_00050004000600020007 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021007" F_CDMX="1" F_CDSM="预算数据录入" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据录入" nodeClass="jenterprise.FWKNodeStub"
+		method="YsDataLr" id="a_00050004000600020007" caption="预算数据录入" F_CDJS="5" />
+	<a_00050004000600020008 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021008" F_CDMX="1" F_CDSM="预算数据审核" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据审核" nodeClass="jenterprise.FWKNodeStub"
+		method="YsDataSh" id="a_00050004000600020008" caption="预算数据审核" F_CDJS="5" />
+	<a_00050004000600020009 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021009" F_CDMX="1" F_CDSM="预算数据调整录入" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据调整录入" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsDataLr" id="a_00050004000600020009" caption="预算数据调整录入"
+		F_CDJS="5" />
+	<a_00050004000600020010 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021010" F_CDMX="1" F_CDSM="预算数据调整审核" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据调整审核" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsDataSh" id="a_00050004000600020010" caption="预算数据调整审核"
+		F_CDJS="5" />
+	<a_00050004000600020011 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021011" F_CDMX="1" F_CDSM="预算调整二维维护" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算调整二维维护" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsTwoDataLr" id="a_00050004000600020011" caption="预算调整二维维护"
+		F_CDJS="5" />
+	<a_00050004000600020012 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100210021012" F_CDMX="1" F_CDSM="预算调整二维审核" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算调整二维审核" nodeClass="jenterprise.FWKNodeStub"
+		method="ZjYsTwoDataSh" id="a_00050004000600020012" caption="预算调整二维审核"
+		F_CDJS="5" />
+	<a_00050004000600020013 param="" data="CB03"
+		object="CostSysManager" F_CDBH="10011002100210021013" F_CDMX="1"
+		F_CDSM="预算数据查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\销售模块\预算控制\预算数据维护\预算数据查询"
+		method="yssjcx2" id="a_00050004000600020013" caption="预算数据查询" F_CDJS="5" />
+	<a_000500040007 F_CDSM="预付管理" F_GNBH="" F_CDBH="100110021003"
+		F_CDLJ="项目成本系统\销售模块\预付管理" F_CDMX="0" id="a_000500040007" caption="预付管理"
+		F_CDJS="3">
+		<node data="CB03" object="CostSysManager" F_CDBH="1001100210031001"
+			F_CDMX="1" F_CDSM="预付启用配置" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预付管理\预付启用配置"
+			nodeClass="jenterprise.FWKNodeStub" method="yfqypz" id="a_0005000400070001"
+			caption="预付启用配置" F_CDJS="4" />
+		<node data="CB03" object="CostSysManager" F_CDBH="1001100210031002"
+			F_CDMX="1" F_CDSM="预付申请单" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预付管理\预付申请单"
+			nodeClass="jenterprise.FWKNodeStub" method="PrepayRequisition" id="a_0005000400070002"
+			caption="预付申请单" F_CDJS="4" />
+		<node data="CB03" object="CostSysManager" F_CDBH="1001100210031003"
+			F_CDMX="1" F_CDSM="预付申请单审核" F_GNBH="" F_CDLJ="项目成本系统\销售模块\预付管理\预付申请单审核"
+			nodeClass="jenterprise.FWKNodeStub" method="AuditPrepayRequisition"
+			id="a_0005000400070003" caption="预付申请单审核" F_CDJS="4" />
+		<node param="JCostSystem/Query/yfsqdcx.xml" data="CB03"
+			object="GenerQueryObject" F_CDBH="1001100210031004" F_CDMX="1"
+			F_CDSM="预付申请单查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\预付管理\预付申请单查询" method="QueryObject" id="a_0005000400070004"
+			caption="预付申请单查询" F_CDJS="4" />
+	</a_000500040007>
+	<a_0005000400070001 data="CB03" object="CostSysManager"
+		F_CDBH="1001100210031001" F_CDMX="1" F_CDSM="预付启用���置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预付管理\预付启用配置" nodeClass="jenterprise.FWKNodeStub"
+		method="yfqypz" id="a_0005000400070001" caption="预付启用配置" F_CDJS="4" />
+	<a_0005000400070002 data="CB03" object="CostSysManager"
+		F_CDBH="1001100210031002" F_CDMX="1" F_CDSM="预付申请单" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预付管理\预付申请单" nodeClass="jenterprise.FWKNodeStub"
+		method="PrepayRequisition" id="a_0005000400070002" caption="预付申请单"
+		F_CDJS="4" />
+	<a_0005000400070003 data="CB03" object="CostSysManager"
+		F_CDBH="1001100210031003" F_CDMX="1" F_CDSM="预付申请单审核" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\预付管理\预付申请单审核" nodeClass="jenterprise.FWKNodeStub"
+		method="AuditPrepayRequisition" id="a_0005000400070003" caption="预付申请单审核"
+		F_CDJS="4" />
+	<a_0005000400070004 param="JCostSystem/Query/yfsqdcx.xml"
+		data="CB03" object="GenerQueryObject" F_CDBH="1001100210031004"
+		F_CDMX="1" F_CDSM="预付申请单查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\预付管理\预付申请单查询" method="QueryObject" id="a_0005000400070004"
+		caption="预付申请单查询" F_CDJS="4" />
+	<a_000500040008 F_CDSM="加计扣除" F_GNBH="" F_CDBH="100110021010"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询" F_CDMX="0" id="a_000500040008" caption="加计扣除"
+		F_CDJS="3">
+		<node F_CDSM="加计扣除配置" F_GNBH="" F_CDBH="1001100210101001"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置" F_CDMX="0" id="a_0005000400080001"
+			caption="加计扣除配置" F_CDJS="4" />
+		<node F_CDSM="加计扣除查询" F_GNBH="" F_CDBH="1001100210101002"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询" F_CDMX="0" id="a_0005000400080002"
+			caption="加计扣除查询" F_CDJS="4" />
+	</a_000500040008>
+	<a_0005000400080001 F_CDSM="加计扣除配置" F_GNBH=""
+		F_CDBH="1001100210101001" F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置" F_CDMX="0"
+		id="a_0005000400080001" caption="加计扣除配置" F_CDJS="4">
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011001"
+			F_CDMX="1" F_CDSM="加计扣除费用定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\加计扣除费用定义" method="jjkcfydy"
+			id="a_00050004000800010001" caption="加计扣除费用定义" F_CDJS="5" />
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011002"
+			F_CDMX="1" F_CDSM="加计扣除费用要素定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\加计扣除费用要素定义" method="Jjccfyysdy"
+			id="a_00050004000800010002" caption="加计扣除费用要素定义" F_CDJS="5" />
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011003"
+			F_CDMX="1" F_CDSM="加计扣除销售项目配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\加计扣除销售项目配置" method="Jjcckyxmdy"
+			id="a_00050004000800010003" caption="加计扣除销售项目配置" F_CDJS="5" />
+		<node param="" data="" object="CostSysManager" F_CDBH="10011002101010011004"
+			F_CDMX="1" F_CDSM="销售机构费用加计扣除配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\销售机构费用加计扣除配置" method="kyjgfyjjkcpz"
+			id="a_00050004000800010004" caption="销售机构费用加计扣除配置" F_CDJS="5" />
+	</a_0005000400080001>
+	<a_00050004000800010001 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011001" F_CDMX="1"
+		F_CDSM="加计扣除费用定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\加计扣除费用定义" method="jjkcfydy"
+		id="a_00050004000800010001" caption="加计扣除费用定义" F_CDJS="5" />
+	<a_00050004000800010002 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011002" F_CDMX="1"
+		F_CDSM="加计扣除费用要素定义" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\加计扣除费用要素定义" method="Jjccfyysdy"
+		id="a_00050004000800010002" caption="加计扣除费用要素定义" F_CDJS="5" />
+	<a_00050004000800010003 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011003" F_CDMX="1"
+		F_CDSM="加计扣除销售项目配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\加计扣除销售项目配置" method="Jjcckyxmdy"
+		id="a_00050004000800010003" caption="加计扣除销售项目配置" F_CDJS="5" />
+	<a_00050004000800010004 param="" data=""
+		object="CostSysManager" F_CDBH="10011002101010011004" F_CDMX="1"
+		F_CDSM="销售机构费用加计扣除配置" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除配置\销售机构费用加计扣除配置" method="kyjgfyjjkcpz"
+		id="a_00050004000800010004" caption="销售机构费用加计扣除配置" F_CDJS="5" />
+	<a_0005000400080002 F_CDSM="加计扣除查询" F_GNBH=""
+		F_CDBH="1001100210101002" F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询" F_CDMX="0"
+		id="a_0005000400080002" caption="加计扣除查询" F_CDJS="4">
+		<node param="JCostSystem/Query/jjkccx.xml" data="DX0001"
+			object="GenerQueryObject" F_CDBH="10011002101010021001" F_CDMX="1"
+			F_CDSM="加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询\加计扣除查询" method="QueryObject"
+			id="a_00050004000800020001" caption="加计扣除查询" F_CDJS="5" />
+		<node param="JCostSystem/Query/jjkcmxcx.xml" data="DX0001"
+			object="GenerQueryObject" F_CDBH="10011002101010021002" F_CDMX="1"
+			F_CDSM="加计扣除明细查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询\加计扣除明细查询" method="QueryObject"
+			id="a_00050004000800020002" caption="加计扣除明细查询" F_CDJS="5" />
+		<node param="JCostSystem/Query/kyjgjjkccx.xml" data="DX0002"
+			object="GenerQueryObject" F_CDBH="10011002101010021003" F_CDMX="1"
+			F_CDSM="销售机构费用加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询\销售机构费用加计扣除查询" method="QueryObject"
+			id="a_00050004000800020003" caption="销售机构费用加计扣除查询" F_CDJS="5" />
+	</a_0005000400080002>
+	<a_00050004000800020001 param="JCostSystem/Query/jjkccx.xml"
+		data="DX0001" object="GenerQueryObject" F_CDBH="10011002101010021001"
+		F_CDMX="1" F_CDSM="加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询\加计扣除查询" method="QueryObject"
+		id="a_00050004000800020001" caption="加计扣除查询" F_CDJS="5" />
+	<a_00050004000800020002 param="JCostSystem/Query/jjkcmxcx.xml"
+		data="DX0001" object="GenerQueryObject" F_CDBH="10011002101010021002"
+		F_CDMX="1" F_CDSM="加计扣除明细查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询\加计扣除明细查询" method="QueryObject"
+		id="a_00050004000800020002" caption="加计扣除明细查询" F_CDJS="5" />
+	<a_00050004000800020003 param="JCostSystem/Query/kyjgjjkccx.xml"
+		data="DX0002" object="GenerQueryObject" F_CDBH="10011002101010021003"
+		F_CDMX="1" F_CDSM="销售机构费用加计扣除查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\加计扣除查询\加计扣除查询\销售机构费用加计扣除查询" method="QueryObject"
+		id="a_00050004000800020003" caption="销售机构费用加计扣除查询" F_CDJS="5" />
+	<a_000500040009 F_CDSM="成本月末处理" F_GNBH="" F_CDBH="100110021004"
+		F_CDLJ="项目成本系统\销售模块\成本月末处理" F_CDMX="0" id="a_000500040009" caption="成本月末处理"
+		F_CDJS="3">
+		<node data="CB03" object="CostSysManager" F_CDBH="1001100210041001"
+			F_CDMX="1" F_CDSM="处理过程定义" F_GNBH="" F_CDLJ="项目成本系统\销售模块\成本月末处理\处理过程定义"
+			nodeClass="jenterprise.FWKNodeStub" method="cbymclgcdy" id="a_0005000400090001"
+			caption="处理过程定义" F_CDJS="4" />
+		<node F_CDSM="成本分摊" F_GNBH="" F_CDBH="1001100210041002" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊"
+			F_CDMX="0" id="a_0005000400090002" caption="成本分摊" F_CDJS="4" />
+		<node F_CDSM="成本结转" F_GNBH="" F_CDBH="1001100210041003" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转"
+			F_CDMX="0" id="a_0005000400090003" caption="成本结转" F_CDJS="4" />
+	</a_000500040009>
+	<a_0005000400090001 data="CB03" object="CostSysManager"
+		F_CDBH="1001100210041001" F_CDMX="1" F_CDSM="处理过程定义" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\成本月末处理\处理过程定义" nodeClass="jenterprise.FWKNodeStub"
+		method="cbymclgcdy" id="a_0005000400090001" caption="处理过程定义" F_CDJS="4" />
+	<a_0005000400090002 F_CDSM="成本分摊" F_GNBH=""
+		F_CDBH="1001100210041002" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊" F_CDMX="0"
+		id="a_0005000400090002" caption="成本分摊" F_CDJS="4">
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100410021001"
+			F_CDMX="1" F_CDSM="分摊步骤配置" F_GNBH="" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊\分摊步骤配置"
+			nodeClass="jenterprise.FWKNodeStub" method="ftbzpz" id="a_00050004000900020001"
+			caption="分摊步骤配置" F_CDJS="5" />
+		<node param="" data="CB03" object="CostSysManager" F_CDBH="10011002100410021002"
+			F_CDMX="1" F_CDSM="成本分摊" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊\成本分摊" method="CbfpOperation" id="a_00050004000900020002"
+			caption="成本分摊" F_CDJS="5" />
+		<node param="JCostSystem/Query/ftlogcx.xml" data="CB03;01"
+			object="GenerQueryObject" F_CDBH="10011002100410021003" F_CDMX="1"
+			F_CDSM="分摊日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊\分摊日志查询"
+			method="QueryObject" id="a_00050004000900020003" caption="分摊日志查询"
+			F_CDJS="5" />
+	</a_0005000400090002>
+	<a_00050004000900020001 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100410021001" F_CDMX="1" F_CDSM="分摊步骤配置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊\分摊步骤配置" nodeClass="jenterprise.FWKNodeStub"
+		method="ftbzpz" id="a_00050004000900020001" caption="分摊步骤配置" F_CDJS="5" />
+	<a_00050004000900020002 param="" data="CB03"
+		object="CostSysManager" F_CDBH="10011002100410021002" F_CDMX="1"
+		F_CDSM="成本分摊" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊\成本分摊"
+		method="CbfpOperation" id="a_00050004000900020002" caption="成本分摊"
+		F_CDJS="5" />
+	<a_00050004000900020003 param="JCostSystem/Query/ftlogcx.xml"
+		data="CB03;01" object="GenerQueryObject" F_CDBH="10011002100410021003"
+		F_CDMX="1" F_CDSM="分摊日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\成本月末处理\成本分摊\分摊日志查询" method="QueryObject"
+		id="a_00050004000900020003" caption="分摊日志查询" F_CDJS="5" />
+	<a_0005000400090003 F_CDSM="成本结转" F_GNBH=""
+		F_CDBH="1001100210041003" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转" F_CDMX="0"
+		id="a_0005000400090003" caption="成本结转" F_CDJS="4">
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100410031001"
+			F_CDMX="1" F_CDSM="结转步骤配置" F_GNBH="" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转\结转步骤配置"
+			nodeClass="jenterprise.FWKNodeStub" method="jzbzpz" id="a_00050004000900030001"
+			caption="结转步骤配置" F_CDJS="5" />
+		<node data="CB03" object="CostSysManager" F_CDBH="10011002100410031002"
+			F_CDMX="1" F_CDSM="成本结转" F_GNBH="" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转\成本结转"
+			nodeClass="jenterprise.FWKNodeStub" method="CbjzOperation" id="a_00050004000900030002"
+			caption="成本结转" F_CDJS="5" />
+		<node param="JCostSystem/Query/ftlogcx.xml" data="CB03;02"
+			object="GenerQueryObject" F_CDBH="10011002100410031003" F_CDMX="1"
+			F_CDSM="结转日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转\结转日志查询"
+			method="QueryObject" id="a_00050004000900030003" caption="结转日志查询"
+			F_CDJS="5" />
+	</a_0005000400090003>
+	<a_00050004000900030001 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100410031001" F_CDMX="1" F_CDSM="结转步骤配置" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转\结转步骤配置" nodeClass="jenterprise.FWKNodeStub"
+		method="jzbzpz" id="a_00050004000900030001" caption="结转步骤配置" F_CDJS="5" />
+	<a_00050004000900030002 data="CB03" object="CostSysManager"
+		F_CDBH="10011002100410031002" F_CDMX="1" F_CDSM="成本结转" F_GNBH=""
+		F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转\成本结转" nodeClass="jenterprise.FWKNodeStub"
+		method="CbjzOperation" id="a_00050004000900030002" caption="成本结转"
+		F_CDJS="5" />
+	<a_00050004000900030003 param="JCostSystem/Query/ftlogcx.xml"
+		data="CB03;02" object="GenerQueryObject" F_CDBH="10011002100410031003"
+		F_CDMX="1" F_CDSM="结转日志查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\成本月末处理\成本结转\结转日志查询" method="QueryObject"
+		id="a_00050004000900030003" caption="结转日志查询" F_CDJS="5" />
+	<a_JCostSystem_CBYSCXCB03 F_CDSM="预算查询"
+		F_GNBH="" F_CDBH="100110021005" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\预算查询" F_CDMX="1" id="a_JCostSystem_CBYSCXCB03"
+		caption="预算查询" F_CDJS="3" />
+	<a_JCostSystem_CBCXCB03 F_CDSM="成本查询" F_GNBH=""
+		F_CDBH="100110021006" F_CDLJ="项目成本系统\销售模块\成本查询" F_CDMX="0"
+		id="a_JCostSystem_CBCXCB03" caption="成本查询" F_CDJS="3">
+		<node param="JCostSystem/Query/ryhzcx.xml" data="CB03;CB03"
+			object="GenerQueryObject" F_CDBH="1001100210061001" F_CDMX="1"
+			F_CDSM="任意汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\销售模块\成本查询\任意汇总查询"
+			method="QueryObject" id="a_0005000400110001" caption="任意汇总查询" F_CDJS="4" />
+		
+		<!-- add by wutp in 20160927 start -->
+					
+		<!-- add by wutp in 20160927 end -->
+		
+		<node param="JCostSystem/Query/jccbdxhzcx.xml" data="CB03;CB03"
+			object="GenerQueryObject" F_CDBH="1001100210061002" F_CDMX="1"
+			F_CDSM="交叉成本对象汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\成本查询\交叉成本对象汇总查询" method="QueryObject" id="a_0005000400110002"
+			caption="交叉成本对象汇总查询" F_CDJS="4" />
+		<node param="JCostSystem/Query/cbdxXmkpcx.xml" data="DX0003;CB03" object="GenerQueryObject" F_CDBH="10011002100110041006" 
+			F_CDMX="1" F_CDSM="项目卡片综合查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" 
+			F_CDLJ="项目成本系统\销售模块\系统配置\成本对象\项目成本系统\销售模块\系统配置\成本对象\项目卡片综合查询" 
+			method="QueryObject" id="a_0005000400040006" caption="项目卡片综合查询" F_CDJS="4"/>
+	</a_JCostSystem_CBCXCB03>
+	<a_0005000400110001 param="JCostSystem/Query/ryhzcx.xml"
+		data="CB03;CB03" object="GenerQueryObject" F_CDBH="1001100210061001"
+		F_CDMX="1" F_CDSM="任意汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\成本查询\任意汇总查询" method="QueryObject" id="a_0005000400110001"
+		caption="任意汇总查询" F_CDJS="4" />
+		
+	<!-- add by wutp in 20160927 start -->
+	
+	<!-- add by wutp in 20160927 end -->
+	
+	<a_0005000400110002 param="JCostSystem/Query/jccbdxhzcx.xml"
+		data="CB03;CB03" object="GenerQueryObject" F_CDBH="1001100210061002"
+		F_CDMX="1" F_CDSM="交叉成本对象汇总查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\成本查询\交叉成本对象汇总查询" method="QueryObject" id="a_0005000400110002"
+		caption="交叉成本对象汇总查询" F_CDJS="4" />
+	<a_JCostSystem_DBFXCB03 F_CDSM="对比分析" F_GNBH=""
+		F_CDBH="100110021007" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\销售模块\对比分析"
+		F_CDMX="1" id="a_JCostSystem_DBFXCB03" caption="对比分析" F_CDJS="3" />
+	<a_JCostSystem_FZCXCB03 F_CDSM="辅助查询" F_GNBH=""
+		F_CDBH="100110021008" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\销售模块\辅助查询"
+		F_CDMX="1" id="a_JCostSystem_FZCXCB03" caption="辅助查询" F_CDJS="3" />
+	<a_000500040014 F_CDSM="多项辅助查询" F_GNBH="" F_CDBH="100110021009"
+		F_CDLJ="项目成本系统\销售模块\多项辅助查询" F_CDMX="0" id="a_000500040014" caption="多项辅助查询"
+		F_CDJS="3">
+		<node param="JCostSystem/Query/dxfzyecx.xml" data="CB03"
+			object="GenerQueryObject" F_CDBH="1001100210091001" F_CDMX="1"
+			F_CDSM="多项辅助余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\多项辅助查询\多项辅助余额表" method="QueryObject" id="a_0005000400140001"
+			caption="多项辅助余额表" F_CDJS="4" />
+		<node param="JCostSystem/Query/dxfzyeewcx.xml" data="CB03"
+			object="GenerQueryObject" F_CDBH="1001100210091002" F_CDMX="1"
+			F_CDSM="多项辅助二维余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\销售模块\多项辅助查询\多项辅助二维余额表" method="QueryObject" id="a_0005000400140002"
+			caption="多项辅助二维余额表" F_CDJS="4" />
+	</a_000500040014>
+	<a_0005000400140001 param="JCostSystem/Query/dxfzyecx.xml"
+		data="CB03" object="GenerQueryObject" F_CDBH="1001100210091001"
+		F_CDMX="1" F_CDSM="多项辅助余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\多项辅助查询\多项辅助余额表" method="QueryObject" id="a_0005000400140001"
+		caption="多项辅助余额表" F_CDJS="4" />
+	<a_0005000400140002 param="JCostSystem/Query/dxfzyeewcx.xml"
+		data="CB03" object="GenerQueryObject" F_CDBH="1001100210091002"
+		F_CDMX="1" F_CDSM="多项辅助二维余额表" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+		F_CDLJ="项目成本系统\销售模块\多项辅助查询\多项辅助二维余额表" method="QueryObject" id="a_0005000400140002"
+		caption="多项辅助二维余额表" F_CDJS="4" />
+	<a_00050005 F_CDSM="公共配置" F_GNBH="" F_CDBH="10011001"
+		F_CDLJ="项目成本系统\公共配置" F_CDMX="0" id="a_00050005" caption="公共配置" F_CDJS="2">
+		<node object="CostSysManager" F_CDBH="100110011001" F_CDMX="1"
+			F_CDSM="成本系统管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本系统管理" nodeClass="jenterprise.FWKNodeStub"
+			method="CbMkManager" id="a_000500050001" caption="成本系统管理" F_CDJS="3" />
+		<node object="CostSysManager" F_CDBH="100110011002" F_CDMX="1"
+			F_CDSM="标准字典同步" F_GNBH="" F_CDLJ="项目成本系统\公共配置\标准字典同步" nodeClass="jenterprise.FWKNodeStub"
+			method="Cbbzzdtb" id="a_000500050002" caption="标准字典同步" F_CDJS="3" />
+		<node F_CDSM="成本要素" F_GNBH="" F_CDBH="100110011003" F_CDLJ="项目成本系统\公共配置\成本要素"
+			F_CDMX="0" id="a_000500050003" caption="成本要素" F_CDJS="3" />
+		<node F_CDSM="成本对象" F_GNBH="" F_CDBH="100110011004" F_CDLJ="项目成本系统\公共配置\成本对象"
+			F_CDMX="0" id="a_000500050004" caption="成本对象" F_CDJS="3" />
+		<node F_CDSM="自定义成本辅助" F_GNBH="" F_CDBH="100110011005" F_CDLJ="项目成本系统\公共配置\自定义成本辅助"
+			F_CDMX="0" id="a_000500050005" caption="自定义成本辅助" F_CDJS="3" />
+		<node F_CDSM="字典查询" F_GNBH="" F_CDBH="100110011006" F_CDLJ="项目成本系统\公共配置\字典查询"
+			F_CDMX="0" id="a_000500050006" caption="字典查询" F_CDJS="3" />
+		<node F_CDSM="成本对象自动创建" F_GNBH="" F_CDBH="100110101005" F_CDLJ="账务管理\实时记账\初始设置"
+			F_CDMX="0" id="a_000500050007" caption="成本对象自动创建" F_CDJS="3" />
+	</a_00050005>
+	<a_000500050001 object="CostSysManager" F_CDBH="100110011001"
+		F_CDMX="1" F_CDSM="成本系统管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本系统管理"
+		nodeClass="jenterprise.FWKNodeStub" method="CbMkManager" id="a_000500050001"
+		caption="成本系统管理" F_CDJS="3" />
+	<a_000500050002 object="CostSysManager" F_CDBH="100110011002"
+		F_CDMX="1" F_CDSM="标准字典同步" F_GNBH="" F_CDLJ="项目成本系统\公共配置\标准字典同步"
+		nodeClass="jenterprise.FWKNodeStub" method="Cbbzzdtb" id="a_000500050002"
+		caption="标准字典同步" F_CDJS="3" />
+	<a_000500050003 F_CDSM="成本要素" F_GNBH="" F_CDBH="100110011003"
+		F_CDLJ="项目成本系统\公共配置\成本要素" F_CDMX="0" id="a_000500050003" caption="成本要素"
+		F_CDJS="3">
+		<node object="CostSysManager" F_CDBH="1001100110031001" F_CDMX="1"
+			F_CDSM="成本要素管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本要素\成本要素管理" nodeClass="jenterprise.FWKNodeStub"
+			method="CbYsManager" id="a_0005000500030001" caption="成本要素管理" F_CDJS="4" />
+		<node param="" data="" object="CostSysManager" F_CDBH="1001100110031002"
+			F_CDMX="1" F_CDSM="成本要素导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\公共配置\成本要素\成本要素导入" method="costElementsImport" id="a_0005000500030002"
+			caption="成本要素导入" F_CDJS="4" />
+		<node param="" object="CostSysManager" F_CDBH="1001100110031003"
+			F_CDMX="1" F_CDSM="成本要素维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本要素\成本要素维护"
+			nodeClass="jenterprise.FWKNodeStub" method="CbyswhManager" id="a_0005000500030003"
+			caption="成本要素维护" F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110031004" F_CDMX="1"
+			F_CDSM="科目对应要素" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本要素\科目对应要素" nodeClass="jenterprise.FWKNodeStub"
+			method="kmdycbysManager" id="a_0005000500030004" caption="科目对应要素"
+			F_CDJS="4" />
+	</a_000500050003>
+	<a_0005000500030001 object="CostSysManager" F_CDBH="1001100110031001"
+		F_CDMX="1" F_CDSM="成本要素管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本要素\成本要素管理"
+		nodeClass="jenterprise.FWKNodeStub" method="CbYsManager" id="a_0005000500030001"
+		caption="成本要素管理" F_CDJS="4" />
+	<a_0005000500030002 param="" data="" object="CostSysManager"
+		F_CDBH="1001100110031002" F_CDMX="1" F_CDSM="成本要素导入" F_GNBH=""
+		nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\公共配置\成本要素\成本要素导入"
+		method="costElementsImport" id="a_0005000500030002" caption="成本要素导入"
+		F_CDJS="4" />
+	<a_0005000500030003 param="" object="CostSysManager"
+		F_CDBH="1001100110031003" F_CDMX="1" F_CDSM="成本要素维护" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本要素\成本要素维护" nodeClass="jenterprise.FWKNodeStub"
+		method="CbyswhManager" id="a_0005000500030003" caption="成本要素维护"
+		F_CDJS="4" />
+	<a_0005000500030004 object="CostSysManager" F_CDBH="1001100110031004"
+		F_CDMX="1" F_CDSM="科目对应要素" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本要素\科目对应要素"
+		nodeClass="jenterprise.FWKNodeStub" method="kmdycbysManager" id="a_0005000500030004"
+		caption="科目对应要素" F_CDJS="4" />
+	<a_000500050004 F_CDSM="成本对象" F_GNBH="" F_CDBH="100110011004"
+		F_CDLJ="项目成本系统\公共配置\成本对象" F_CDMX="0" id="a_000500050004" caption="成本对象"
+		F_CDJS="3">
+		<node object="CostSysManager" F_CDBH="1001100110041001" F_CDMX="1"
+			F_CDSM="成本对象管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象管理" nodeClass="jenterprise.FWKNodeStub"
+			method="CbdxManager" id="a_0005000500040001" caption="成本对象管理" F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110041002" F_CDMX="1"
+			F_CDSM="属性字典管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\属性字典管理" nodeClass="jenterprise.FWKNodeStub"
+			method="SxzdManager" id="a_0005000500040002" caption="属性字典管理" F_CDJS="4" />
+		<node param="" data="" object="CostSysManager" F_CDBH="1001100110041003"
+			F_CDMX="1" F_CDSM="属性字典导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\公共配置\成本对象\��性字典导入" method="EleLibImport" id="a_0005000500040003"
+			caption="属性字典导入" F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110041004" F_CDMX="1"
+			F_CDSM="属性字典维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\属性字典维护" nodeClass="jenterprise.FWKNodeStub"
+			method="SxzdwhManager" id="a_0005000500040004" caption="属性字典维护"
+			F_CDJS="4" />
+		<node data="CB00" object="CostSysManager" F_CDBH="1001100110041005"
+			F_CDMX="1" F_CDSM="成本对象属性" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象属性"
+			nodeClass="jenterprise.FWKNodeStub" method="CbdxSxSet" id="a_0005000500040005"
+			caption="成本对象属性" F_CDJS="4" />
+		<node param="" data="" object="CostSysManager" F_CDBH="1001100110041006"
+			F_CDMX="1" F_CDSM="成本对象导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\公共配置\成本对象\成本对象导入" method="cbdxImport" id="a_0005000500040006"
+			caption="成本对象导入" F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110041007" F_CDMX="1"
+			F_CDSM="成本对象维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象维护" nodeClass="jenterprise.FWKNodeStub"
+			method="CbdxwhManager" id="a_0005000500040007" caption="成本对象维护"
+			F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110041008" F_CDMX="1"
+			F_CDSM="成本对象审核" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象审核" nodeClass="jenterprise.FWKNodeStub"
+			method="CbdxshManager" id="a_0005000500040008" caption="成本对象审核"
+			F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110041009" F_CDMX="1"
+			F_CDSM="到位资金维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\到位资金维护" nodeClass="jenterprise.FWKNodeStub"
+			method="DwzjwhManager" id="a_0005000500040009" caption="到位资金维护"
+			F_CDJS="4" />
+		<node param="JCostSystem/Query/dwzjcx.xml" data=""
+			object="GenerQueryObject" F_CDBH="1001100110041010" F_CDMX="1"
+			F_CDSM="到位资金查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\公共配置\成本对象\到位资金查询"
+			method="QueryObject" id="a_0005000500040010" caption="到位资金查询" F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110041011" F_CDMX="1"
+			F_CDSM="责任中心选用" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\责任中心选用" nodeClass="jenterprise.FWKNodeStub"
+			method="ZrzxxyCbdx" id="a_0005000500040011" caption="责任中心选用" F_CDJS="4" />
+		<node param="DX0001" data="CB01" object="CostSysManager" F_CDBH="1001100110041012"
+			F_CDMX="1" F_CDSM="成本对象完工" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\公共配置\成本对象\成本对象完工" method="Kyxmwgcl" id="a_0005000500040012"
+			caption="成本对象完工" F_CDJS="4" />
+		<node data="" object="CostSysManager" F_CDBH="1001100110041013"
+			F_CDMX="1" F_CDSM="成本对象清理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象清理"
+			nodeClass="jenterprise.FWKNodeStub" method="Cbdxql" id="a_0005000500040013"
+			caption="成本对象清理" F_CDJS="4" />
+		<node F_CDSM="属性对应关系" F_GNBH="" F_CDBH="1001100110041014" F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系"
+			F_CDMX="0" id="a_0005000500040014" caption="属性对应关系" F_CDJS="4" />
+	</a_000500050004>
+	<a_0005000500040001 object="CostSysManager" F_CDBH="1001100110041001"
+		F_CDMX="1" F_CDSM="成本对象管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象管理"
+		nodeClass="jenterprise.FWKNodeStub" method="CbdxManager" id="a_0005000500040001"
+		caption="成本对象管理" F_CDJS="4" />
+	<a_0005000500040002 object="CostSysManager" F_CDBH="1001100110041002"
+		F_CDMX="1" F_CDSM="属性字典管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\属性字典管理"
+		nodeClass="jenterprise.FWKNodeStub" method="SxzdManager" id="a_0005000500040002"
+		caption="属性字典管理" F_CDJS="4" />
+	<a_0005000500040003 param="" data="" object="CostSysManager"
+		F_CDBH="1001100110041003" F_CDMX="1" F_CDSM="属性字典导入" F_GNBH=""
+		nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\公共配置\成本对象\属性字典导入"
+		method="EleLibImport" id="a_0005000500040003" caption="属性字典导入" F_CDJS="4" />
+	<a_0005000500040004 object="CostSysManager" F_CDBH="1001100110041004"
+		F_CDMX="1" F_CDSM="属性字典维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\属性字典维护"
+		nodeClass="jenterprise.FWKNodeStub" method="SxzdwhManager" id="a_0005000500040004"
+		caption="属性字典维护" F_CDJS="4" />
+	<a_0005000500040005 data="CB00" object="CostSysManager"
+		F_CDBH="1001100110041005" F_CDMX="1" F_CDSM="成本对象属性" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\成本对象属性" nodeClass="jenterprise.FWKNodeStub"
+		method="CbdxSxSet" id="a_0005000500040005" caption="成本对象属性" F_CDJS="4" />
+	<a_0005000500040006 param="" data="" object="CostSysManager"
+		F_CDBH="1001100110041006" F_CDMX="1" F_CDSM="成本对象导入" F_GNBH=""
+		nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象导入"
+		method="cbdxImport" id="a_0005000500040006" caption="成本对象导入" F_CDJS="4" />
+	<a_0005000500040007 object="CostSysManager" F_CDBH="1001100110041007"
+		F_CDMX="1" F_CDSM="成本对象维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象维护"
+		nodeClass="jenterprise.FWKNodeStub" method="CbdxwhManager" id="a_0005000500040007"
+		caption="成本对象维护" F_CDJS="4" />
+	<a_0005000500040008 object="CostSysManager" F_CDBH="1001100110041008"
+		F_CDMX="1" F_CDSM="成本对象审核" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象审核"
+		nodeClass="jenterprise.FWKNodeStub" method="CbdxshManager" id="a_0005000500040008"
+		caption="成本对象审核" F_CDJS="4" />
+	<a_0005000500040009 object="CostSysManager" F_CDBH="1001100110041009"
+		F_CDMX="1" F_CDSM="到位资金维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\到位资金维护"
+		nodeClass="jenterprise.FWKNodeStub" method="DwzjwhManager" id="a_0005000500040009"
+		caption="到位资金维护" F_CDJS="4" />
+	<a_0005000500040010 param="JCostSystem/Query/dwzjcx.xml"
+		data="" object="GenerQueryObject" F_CDBH="1001100110041010" F_CDMX="1"
+		F_CDSM="到位资金查询" F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\公共配置\成本对象\到位资金查询"
+		method="QueryObject" id="a_0005000500040010" caption="到位资金查询" F_CDJS="4" />
+	<a_0005000500040011 object="CostSysManager" F_CDBH="1001100110041011"
+		F_CDMX="1" F_CDSM="责任中心选用" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\责任中心选用"
+		nodeClass="jenterprise.FWKNodeStub" method="ZrzxxyCbdx" id="a_0005000500040011"
+		caption="责任中心选用" F_CDJS="4" />
+	<a_0005000500040012 param="DX0001" data="CB01"
+		object="CostSysManager" F_CDBH="1001100110041012" F_CDMX="1" F_CDSM="成本对象完工"
+		F_GNBH="" nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\公共配置\成本对象\成本对象完工"
+		method="Kyxmwgcl" id="a_0005000500040012" caption="成本对象完工" F_CDJS="4" />
+	<a_0005000500040013 data="" object="CostSysManager"
+		F_CDBH="1001100110041013" F_CDMX="1" F_CDSM="成本对象清理" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\成本对象清理" nodeClass="jenterprise.FWKNodeStub"
+		method="Cbdxql" id="a_0005000500040013" caption="成本对象清理" F_CDJS="4" />
+	<a_0005000500040014 F_CDSM="属性对应关系" F_GNBH=""
+		F_CDBH="1001100110041014" F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系" F_CDMX="0"
+		id="a_0005000500040014" caption="属性对应关系" F_CDJS="4">
+		<node object="CostSysManager" F_CDBH="10011001100410141001"
+			F_CDMX="1" F_CDSM="属性对应属性" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\属性对应属性"
+			nodeClass="jenterprise.FWKNodeStub" method="CbdxsxxzgxManager" id="a_00050005000400140001"
+			caption="属性对应属性" F_CDJS="5" />
+		<node object="CostSysManager" F_CDBH="10011001100410141002"
+			F_CDMX="1" F_CDSM="对应属性明细" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应属性明细"
+			nodeClass="jenterprise.FWKNodeStub" method="CbdxsxxzdyManager" id="a_00050005000400140002"
+			caption="对应属性明细" F_CDJS="5" />
+		<node object="CostSysManager" F_CDBH="10011001100410141003"
+			F_CDMX="1" F_CDSM="对应成本要素" F_GNBH="" F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应成本要素"
+			nodeClass="jenterprise.FWKNodeStub" method="CbdxsxysgxManager" id="a_00050005000400140003"
+			caption="对应成本要素" F_CDJS="5" />
+		<node object="CostSysManager" F_CDBH="10011001100410141004"
+			F_CDMX="1" F_CDSM="对应成本要素明细" F_GNBH=""
+			F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应成本要素明细" nodeClass="jenterprise.FWKNodeStub"
+			method="CbdxsxysdyManager" id="a_00050005000400140004" caption="对应成本要素明细"
+			F_CDJS="5" />
+		<node object="CostSysManager" F_CDBH="10011001100410141005"
+			F_CDMX="1" F_CDSM="对应自定义成本辅助" F_GNBH=""
+			F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应自定义成本辅助" nodeClass="jenterprise.FWKNodeStub"
+			method="CbdxsxzfzgxManager" id="a_00050005000400140005" caption="对应自定义成本辅助"
+			F_CDJS="5" />
+		<node object="CostSysManager" F_CDBH="10011001100410141006"
+			F_CDMX="1" F_CDSM="对应自定义成本辅助明细" F_GNBH=""
+			F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应自定义成本辅助明细" nodeClass="jenterprise.FWKNodeStub"
+			method="CbdxsxzfzdyManager" id="a_00050005000400140006" caption="对应自定义成本辅助明细"
+			F_CDJS="5" />
+	</a_0005000500040014>
+	<a_00050005000400140001 object="CostSysManager"
+		F_CDBH="10011001100410141001" F_CDMX="1" F_CDSM="属性对应属性" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\属性对应属性" nodeClass="jenterprise.FWKNodeStub"
+		method="CbdxsxxzgxManager" id="a_00050005000400140001" caption="属性对应属性"
+		F_CDJS="5" />
+	<a_00050005000400140002 object="CostSysManager"
+		F_CDBH="10011001100410141002" F_CDMX="1" F_CDSM="对应属性明细" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应属性明细" nodeClass="jenterprise.FWKNodeStub"
+		method="CbdxsxxzdyManager" id="a_00050005000400140002" caption="对应属性明细"
+		F_CDJS="5" />
+	<a_00050005000400140003 object="CostSysManager"
+		F_CDBH="10011001100410141003" F_CDMX="1" F_CDSM="对应成本要素" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应成本要素" nodeClass="jenterprise.FWKNodeStub"
+		method="CbdxsxysgxManager" id="a_00050005000400140003" caption="对应成本要素"
+		F_CDJS="5" />
+	<a_00050005000400140004 object="CostSysManager"
+		F_CDBH="10011001100410141004" F_CDMX="1" F_CDSM="对应成本要素明细" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应成本要素明细" nodeClass="jenterprise.FWKNodeStub"
+		method="CbdxsxysdyManager" id="a_00050005000400140004" caption="对应成本要素明细"
+		F_CDJS="5" />
+	<a_00050005000400140005 object="CostSysManager"
+		F_CDBH="10011001100410141005" F_CDMX="1" F_CDSM="对应自定义成本辅助" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应自定义成本辅助" nodeClass="jenterprise.FWKNodeStub"
+		method="CbdxsxzfzgxManager" id="a_00050005000400140005" caption="对应自定义成本辅助"
+		F_CDJS="5" />
+	<a_00050005000400140006 object="CostSysManager"
+		F_CDBH="10011001100410141006" F_CDMX="1" F_CDSM="对应自定义成本辅助明细" F_GNBH=""
+		F_CDLJ="项目成本系统\公共配置\成本对象\属性对应关系\对应自定义成本辅助明细" nodeClass="jenterprise.FWKNodeStub"
+		method="CbdxsxzfzdyManager" id="a_00050005000400140006" caption="对应自定义成本辅助明细"
+		F_CDJS="5" />
+	<a_000500050005 F_CDSM="自定义成本辅助" F_GNBH="" F_CDBH="100110011005"
+		F_CDLJ="项目成本系统\公共配置\自定义成本辅助" F_CDMX="0" id="a_000500050005" caption="自定义成本辅助"
+		F_CDJS="3">
+		<node object="CostSysManager" F_CDBH="1001100110051001" F_CDMX="1"
+			F_CDSM="自定义成本辅助管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\自定义成本辅助\自定义成本辅助管理"
+			nodeClass="jenterprise.FWKNodeStub" method="ZdycbfzManager" id="a_0005000500050001"
+			caption="自定义成本辅助管理" F_CDJS="4" />
+		<node param="" data="" object="CostSysManager" F_CDBH="1001100110051002"
+			F_CDMX="1" F_CDSM="自定义成本辅助导入" F_GNBH="" nodeClass="jenterprise.FWKNodeStub"
+			F_CDLJ="项目成本系统\公共配置\自定义成本辅助\自定义成本辅助导入" method="zdyImport" id="a_0005000500050002"
+			caption="自定义成本辅助导入" F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110051003" F_CDMX="1"
+			F_CDSM="自定义成本辅助维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\自定义成本辅助\自定义成本辅助维护"
+			nodeClass="jenterprise.FWKNodeStub" method="ZdyfzwhManager" id="a_0005000500050003"
+			caption="自定义成本辅助维护" F_CDJS="4" />
+	</a_000500050005>
+	<a_0005000500050001 object="CostSysManager" F_CDBH="1001100110051001"
+		F_CDMX="1" F_CDSM="自定义成本辅助管理" F_GNBH="" F_CDLJ="项目成本系统\公共配置\自定义成本辅助\自定义成本辅助管理"
+		nodeClass="jenterprise.FWKNodeStub" method="ZdycbfzManager" id="a_0005000500050001"
+		caption="自定义成本辅助管理" F_CDJS="4" />
+	<a_0005000500050002 param="" data="" object="CostSysManager"
+		F_CDBH="1001100110051002" F_CDMX="1" F_CDSM="自定义成本辅助导入" F_GNBH=""
+		nodeClass="jenterprise.FWKNodeStub" F_CDLJ="项目成本系统\公共配置\自定义成本辅助\自定义成本辅助导入"
+		method="zdyImport" id="a_0005000500050002" caption="自定义成本辅助导入" F_CDJS="4" />
+	<a_0005000500050003 object="CostSysManager" F_CDBH="1001100110051003"
+		F_CDMX="1" F_CDSM="自定义成本辅助维护" F_GNBH="" F_CDLJ="项目成本系统\公共配置\自定义成本辅助\自定义成本辅助维护"
+		nodeClass="jenterprise.FWKNodeStub" method="ZdyfzwhManager" id="a_0005000500050003"
+		caption="自定义成本辅助维护" F_CDJS="4" />
+	<a_000500050006 F_CDSM="字典查询" F_GNBH="" F_CDBH="100110011006"
+		F_CDLJ="项目成本系统\公共配置\字典查询" F_CDMX="0" id="a_000500050006" caption="字典查询"
+		F_CDJS="3">
+		<node object="CostSysManager" F_CDBH="1001100110061001" F_CDMX="1"
+			F_CDSM="成本要素查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\成本要素查询" nodeClass="jenterprise.FWKNodeStub"
+			method="CbyscxManager" id="a_0005000500060001" caption="成本要素查询"
+			F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110061002" F_CDMX="1"
+			F_CDSM="属性字典查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\属性字典查询" nodeClass="jenterprise.FWKNodeStub"
+			method="SxzdcxManager" id="a_0005000500060002" caption="属性字典查询"
+			F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110061003" F_CDMX="1"
+			F_CDSM="成本对象查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\成本对象查询" nodeClass="jenterprise.FWKNodeStub"
+			method="CbdxcxManager" id="a_0005000500060003" caption="成本对象查询"
+			F_CDJS="4" />
+		<node object="CostSysManager" F_CDBH="1001100110061004" F_CDMX="1"
+			F_CDSM="自定义成本辅助查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\自定义成本辅助查询"
+			nodeClass="jenterprise.FWKNodeStub" method="ZdyfzcxManager" id="a_0005000500060004"
+			caption="自定义成本辅助查询" F_CDJS="4" />
+	</a_000500050006>
+	<a_0005000500060001 object="CostSysManager" F_CDBH="1001100110061001"
+		F_CDMX="1" F_CDSM="成本要素查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\成本要素查询"
+		nodeClass="jenterprise.FWKNodeStub" method="CbyscxManager" id="a_0005000500060001"
+		caption="成本要素查询" F_CDJS="4" />
+	<a_0005000500060002 object="CostSysManager" F_CDBH="1001100110061002"
+		F_CDMX="1" F_CDSM="属性字典查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\属性字典查询"
+		nodeClass="jenterprise.FWKNodeStub" method="SxzdcxManager" id="a_0005000500060002"
+		caption="属性字典查询" F_CDJS="4" />
+	<a_0005000500060003 object="CostSysManager" F_CDBH="1001100110061003"
+		F_CDMX="1" F_CDSM="成本对象查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\成本对象查询"
+		nodeClass="jenterprise.FWKNodeStub" method="CbdxcxManager" id="a_0005000500060003"
+		caption="成本对象查询" F_CDJS="4" />
+	<a_0005000500060004 object="CostSysManager" F_CDBH="1001100110061004"
+		F_CDMX="1" F_CDSM="自定义成本辅助查询" F_GNBH="" F_CDLJ="项目成本系统\公共配置\字典查询\自定义成本辅助查询"
+		nodeClass="jenterprise.FWKNodeStub" method="ZdyfzcxManager" id="a_0005000500060004"
+		caption="自定义成本辅助查询" F_CDJS="4" />
+	<a_000500050007 F_CDSM="成本对象自动创建" F_GNBH="" F_CDBH="100110101005"
+		F_CDLJ="账务管理\实时记账\初始设置" F_CDMX="0" id="a_000500050007" caption="成本对象自动创建"
+		F_CDJS="3">
+		<node object="ERPVoucherObject" F_CDBH="100110011009" F_CDMX="1"
+			F_CDSM="同步WBS项目配置" F_GNBH="" F_CDLJ="ERP集成凭证处理\业务处理\同步WBS项目配置"
+			nodeClass="jenterprise.FWKNodeStub" method="ProConfig" id="a_0005000500070002"
+			caption="同步WBS项目配置" F_CDJS="4" />
+		<node object="ERPVoucherObject" F_CDBH="100110011010" F_CDMX="1"
+			F_CDSM="同步WBS创建项目" F_GNBH="" F_CDLJ="ERP集成凭证处理\业务处理\同步WBS创建项目"
+			nodeClass="jenterprise.FWKNodeStub" method="SynwbsCreatepro" id="a_0005000500070003"
+			caption="同步WBS创建项目" F_CDJS="4" />
+	</a_000500050007>
+</package>

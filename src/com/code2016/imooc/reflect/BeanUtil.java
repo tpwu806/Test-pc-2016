@@ -16,7 +16,7 @@ public class BeanUtil {
 				+ propertyName.substring(0, 1).toUpperCase()
 				+ propertyName.substring(1);
 		//2.获取方法对象
-		Class c = obj.getClass();
+		Class<? extends Object> c = obj.getClass();
 		try {
 			//get方法都是public的且无参数
 			Method m= c.getMethod(getMethodName);

@@ -10,8 +10,8 @@ public class MethodDemo4 {
 		ArrayList<String> list1 = new ArrayList<String>();
 		list1.add("hello");
 		//list1.add(20);错误的
-		Class c1 = list.getClass();
-		Class c2 = list1.getClass();
+		Class<?> c1 = list.getClass();
+		Class<?> c2 = list1.getClass();
 		System.out.println(c1 == c2);
 		//反射的操作都是编译之后的操作
 		

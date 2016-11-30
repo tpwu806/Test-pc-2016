@@ -8,10 +8,10 @@ public class ClassDemo1 {
 		//任何一个类都是Class的实例对象，这个实例对象有三种表示方式
 		
 		//第一种表示方式--->实际在告诉我们任何一个类都有一个隐含的静态成员变量class
-		Class c1 = Foo.class;
+		Class<Foo> c1 = Foo.class;
 		
 		//第二中表达方式  已经知道该类的对象通过getClass方法
-		Class c2 = foo1.getClass();
+		Class<? extends Foo> c2 = foo1.getClass();
 		
 		/*官网 c1 ,c2 表示了Foo类的类类型(class type)
 		 * 万事万物皆对象，
@@ -24,11 +24,10 @@ public class ClassDemo1 {
 		System.out.println(c1 == c2);
 		
 		//第三种表达方式
-		Class c3 = null;
+		Class<?> c3 = null;
 		try {
 			c3 = Class.forName("com.code2016.imooc.reflect.Foo");
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println(c2==c3);
@@ -38,11 +37,8 @@ public class ClassDemo1 {
 			Foo foo = (Foo)c1.newInstance();//需要有无参数的构造方法
 			foo.print();
 		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		} catch (IllegalAccessException e) {			e.printStackTrace();
 		}
 	
 		
