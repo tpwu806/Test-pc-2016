@@ -2,7 +2,13 @@ package com.code2016.imooc.reflect;
 
 import java.lang.reflect.Method;
 
+/**
+ * @Description: 方法的反射操作
+ * @author wutp 2016年12月30日
+ * @version 1.0
+ */
 public class MethodDemo1 {
+	
 	public static void main(String[] args) {
 		// 要获取print(int ,int )方法 1.要获取一个方法就是获取类的信息，获取类的信息首先要获取类的类类型
 		A a1 = new A();
@@ -20,7 +26,11 @@ public class MethodDemo1 {
 			// 方法如果没有返回值返回null,有返回值返回具体的返回值
 			// Object o = m.invoke(a1,new Object[]{10,20});
 			Object o = m.invoke(a1, 10, 20);
-			System.out.println("==================" + o.toString());
+			if(o != null){
+				System.out.println("==================" + o.toString());				
+			}else{
+				System.out.println("================== null");
+			}
 			// 获取方法print(String,String)
 			Method m1 = c.getMethod("print", String.class, String.class);
 			// 用方法进行反射操作
@@ -49,5 +59,9 @@ class A {
 
 	public void print(String a, String b) {
 		System.out.println(a.toUpperCase() + "," + b.toLowerCase());
+	}
+	
+	public String getStr() {
+		return "helloworld";
 	}
 }

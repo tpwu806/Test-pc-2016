@@ -1,6 +1,12 @@
 package com.code2016.imooc.reflect;
 
+/**
+ * @Description: 三种创建类的类类型的方法
+ * @author wutp 2016年12月31日
+ * @version 1.0
+ */
 public class ClassDemo1 {
+	
 	public static void main(String[] args) {
 		//Foo的实例对象如何表示
 		Foo foo1 = new Foo();//foo1就表示出来了.

@@ -4,11 +4,17 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.lang.reflect.Method;
 
+/**
+ * @Description: 通过键盘输入命令执行操作
+ * @author wutp 2016年12月30日
+ * @version 1.0
+ */
 public class MethodDemo2 {
+	
 	public static void main(String[] args) {
 		UserService us = new UserService();
 		/*
-		 * 通过键盘输入命令执行操作
+		 * 
 		 * 输入update命令就调用update方法
 		 * 输入delete命令就调用delete方法
 		 * ...
@@ -31,7 +37,7 @@ public class MethodDemo2 {
 			 * action就是方法名称， 都没有参数--->通过方法的反射操作就会简单很多
 			 * 通过方法对象然后进行反射操作
 			 */
-			Class c = us.getClass();
+			Class<? extends UserService> c = us.getClass();
 			Method m = c.getMethod(action);
 			m.invoke(us);
 		} catch (Exception e) {

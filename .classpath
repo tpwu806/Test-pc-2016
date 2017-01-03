@@ -7,5 +7,9 @@
 	<classpathentry kind="lib" path="libs/bcprov-jdk15on-149.jar"/>
 	<classpathentry kind="lib" path="libs/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.8/jre1.8.0_60/lib/rt.jar"/>
+	<classpathentry kind="lib" path="D:/work/backcode/Workspaces/TestDemo/libs/asm.jar"/>
+	<classpathentry kind="lib" path="D:/work/backcode/Workspaces/TestDemo/libs/asm-commons.jar"/>
+	<classpathentry kind="lib" path="D:/work/backcode/Workspaces/TestDemo/libs/asm-tree.jar"/>
+	<classpathentry kind="lib" path="D:/work/backcode/Workspaces/TestDemo/libs/cglib-2.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

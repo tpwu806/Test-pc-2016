@@ -1,4 +1,4 @@
-package com.code2015;
+package com.code2015.note;
 import java.util.HashMap;
 
 public class Code2015Test {

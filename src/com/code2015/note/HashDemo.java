@@ -1,4 +1,4 @@
-package com.code2015;
+package com.code2015.note;
 
 import java.util.HashSet;
 import java.util.Iterator;

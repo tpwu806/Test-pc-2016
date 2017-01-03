@@ -3,7 +3,13 @@ package com.code2016.imooc.reflect;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
+/**
+ * @Description: 反射和泛型
+ * @author wutp 2016年12月30日
+ * @version 1.0
+ */
 public class MethodDemo4 {
+	
 	public static void main(String[] args) {
 		ArrayList<?> list = new ArrayList<>();
 		

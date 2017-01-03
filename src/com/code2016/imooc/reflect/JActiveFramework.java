@@ -2,7 +2,7 @@ package com.code2016.imooc.reflect;
 
 import java.lang.reflect.Method;
 
-public class BeanUtil {
+public class JActiveFramework {
 	/**
 	 * 根据标准javaBean对象的属性名获取其属性值
 	 * 
@@ -10,7 +10,7 @@ public class BeanUtil {
 	 * @param propertyName
 	 * @return
 	 */
-	public static Object getValueByPropertyName(Object obj, String propertyName) {
+	public static Object InvokeObjectMethod(Object obj, String propertyName) {
 		// 1.根据属性名称就可以获取其get方法
 		String getMethodName = "get"
 				+ propertyName.substring(0, 1).toUpperCase()

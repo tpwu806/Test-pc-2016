@@ -1,4 +1,4 @@
-package com.code2016;
+package com.code2016.note;
 
 import java.awt.Graphics2D;  
 import java.awt.RenderingHints;  

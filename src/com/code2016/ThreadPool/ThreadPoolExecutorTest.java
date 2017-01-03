@@ -5,6 +5,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @Description: 创建四种线程池的方式
+ * @author wutp 2017年1月3日
+ * @version 1.0
+ */
 public class ThreadPoolExecutorTest {
 
 	public static void main(String[] args) {
