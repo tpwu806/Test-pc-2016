@@ -42,6 +42,8 @@ public class ClassDemo1 {
 		try {
 			Foo foo = (Foo)c1.newInstance();//需要有无参数的构造方法
 			foo.print();
+			String s = foo.getValue("3");
+			System.out.println(s);
 		} catch (InstantiationException e) {
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {			e.printStackTrace();
@@ -54,5 +56,9 @@ class Foo{
 	
 	void print(){
 		System.out.println("foo");
+	}
+	
+	String getValue(String n){		
+		return "value"+n;		
 	}
 }
