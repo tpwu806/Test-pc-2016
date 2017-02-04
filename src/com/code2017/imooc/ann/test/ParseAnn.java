@@ -1,4 +1,4 @@
-package com.code2017.ann.test;
+package com.code2017.imooc.ann.test;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;

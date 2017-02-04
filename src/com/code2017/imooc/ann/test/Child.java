@@ -1,4 +1,4 @@
-package com.code2017.ann.test;
+package com.code2017.imooc.ann.test;
 
 @Description("i am description")
 public class Child implements Person {
