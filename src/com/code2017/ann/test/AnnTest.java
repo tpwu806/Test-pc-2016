@@ -6,7 +6,7 @@ public class AnnTest {
 
 	@Test
 	public void annTest(){
-		RoleContext.INSTANCE.setCurrentRole(Role.USER);
+		RoleContext.INSTANCE.setCurrentRole(Role.SYSTEM);
 		UserDao dao = DaoProxyFactory.newRoleDaoProxy(UserDao.class);
 		dao.delete();
 		
