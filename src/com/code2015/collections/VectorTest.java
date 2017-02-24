@@ -1,5 +1,6 @@
 package com.code2015.collections;
 
+import java.util.Enumeration;
 import java.util.Vector;
 
 public class VectorTest {
@@ -16,8 +17,17 @@ public class VectorTest {
 		v1.addAll(v2);
 		v1.addAll(v3);
 		
-		for(Object n : v1)
+		for(Object n : v1){
 			System.out.println(n);
+		}
+		
+		/**
+		 * 枚举遍历
+		 */		
+		Enumeration<String> e = v1.elements();		
+		while (e.hasMoreElements()) {
+			System.out.println(e.nextElement());
+		}
 
 	}
 
