@@ -1,4 +1,4 @@
-package com.code2017.imooc.proxy.part2.stage3.proxy;
+package com.code2017.imooc.proxy.part2.stage2;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -29,9 +29,9 @@ public class Proxy {
 		}
 		
 		String str =
-		"package com.imooc.proxy;" + rt +
+		"package com.code2017.proxy.part2.stage2.proxy;" + rt +
 		"import java.lang.reflect.Method;" + rt +
-		"import com.imooc.proxy.InvocationHandler;" +  rt+
+		"import com.code2017.imooc.proxy.part2.stage2.InvocationHandler;" +  rt+
 		"public class $Proxy0 implements " + infce.getName() + " {" + rt +
 		"	public $Proxy0(InvocationHandler h) {" + rt +
 		"		this.h = h;" + rt +
@@ -40,7 +40,7 @@ public class Proxy {
 		methodStr + rt +
 		"}" ;
 		//产生代理类的java文件
-		String filename = System.getProperty("user.dir") +"/bin/com/imooc/proxy/$Proxy0.java";
+		String filename = System.getProperty("user.dir") +"/bin/com/code2017/proxy/part2/stage2/proxy/$Proxy0.java";
 		File file = new File(filename);
 		FileUtils.writeStringToFile(file, str);
 		
@@ -60,7 +60,7 @@ public class Proxy {
 		
 		//load 到内存
 		ClassLoader cl = ClassLoader.getSystemClassLoader();
-		Class c = cl.loadClass("com.imooc.proxy.$Proxy0");
+		Class c = cl.loadClass("com.code2017.proxy.part2.stage2.proxy.$Proxy0");
 		
 		Constructor ctr = c.getConstructor(InvocationHandler.class);
 		return ctr.newInstance(h);

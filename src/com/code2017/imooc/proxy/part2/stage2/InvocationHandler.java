@@ -1,4 +1,4 @@
-package com.code2017.imooc.proxy.part2.stage3.proxy;
+package com.code2017.imooc.proxy.part2.stage2;
 
 import java.lang.reflect.Method;
 

@@ -1,4 +1,7 @@
-package com.code2017.imooc.proxy.part2.stage2.proxy;
+package com.code2017.imooc.proxy.part2.stage2;
+
+import com.code2017.imooc.proxy.part1.demo1.Car;
+import com.code2017.imooc.proxy.part1.demo1.Moveable;
 
 public class Client {
 

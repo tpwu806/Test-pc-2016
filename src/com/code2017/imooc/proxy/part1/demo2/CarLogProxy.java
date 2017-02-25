@@ -1,5 +1,7 @@
 package com.code2017.imooc.proxy.part1.demo2;
 
+import com.code2017.imooc.proxy.part1.demo1.Moveable;
+
 public class CarLogProxy implements Moveable {
 
 	public CarLogProxy(Moveable m) {

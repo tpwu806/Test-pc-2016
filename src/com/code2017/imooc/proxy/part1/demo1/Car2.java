@@ -1,5 +1,6 @@
 package com.code2017.imooc.proxy.part1.demo1;
 
+
 public class Car2 extends Car {
 
 	@Override

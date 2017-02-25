@@ -1,5 +1,6 @@
 package com.code2017.imooc.proxy.part1.demo1;
 
+
 public class Car3 implements Moveable {
 
 	public Car3(Car car) {

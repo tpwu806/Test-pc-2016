@@ -1,4 +1,4 @@
-package com.code2017.imooc.proxy.part2.stage2.proxy;
+package com.code2017.imooc.proxy.part2.stage1;
 
 import java.io.File;
 import java.lang.reflect.Constructor;
@@ -11,36 +11,37 @@ import javax.tools.JavaCompiler.CompilationTask;
 
 import org.apache.commons.io.FileUtils;
 
+import com.code2017.imooc.proxy.part1.demo1.Car;
+
 public class Proxy {
 	
-	@SuppressWarnings("unchecked")
-	public static Object newProxyInstance(Class infce,InvocationHandler h) throws Exception{
+	public static Object newProxyInstance(Class<?> infce) throws Exception{
 		String rt = "\r\n";
 		String methodStr = "";
 		for(Method m : infce.getMethods()){
 			methodStr += "	@Override" + rt +
 			"	public void " + m.getName() + "() {" + rt +
-			"  try{" + rt +
-			"  Method md = " + infce.getName() + ".class.getMethod(\"" 
-										+ m.getName() + "\");" + rt +
-			"  h.invoke(this,md);" +rt+ 
-			"  }catch(Exception e){ e.printStackTrace();}" + rt +
+			"		long starttime = System.currentTimeMillis();" + rt +
+			"		System.out.println(\"汽车开始行驶....\");" + rt +
+			"		m." + m.getName() + "();" + rt +
+			"		long endtime = System.currentTimeMillis();" + rt +
+			"		System.out.println(\"汽车结束行驶....  汽车行驶时间：\" " + rt +
+			"				+ (endtime - starttime) + \"毫秒！\");" + rt +
 			"	}" ;
 		}
 		
 		String str =
-		"package com.imooc.proxy;" + rt +
-		"import java.lang.reflect.Method;" + rt +
-		"import com.imooc.proxy.InvocationHandler;" +  rt+
+		"package com.code2017.proxy.part2.stage1.proxy;" + rt +
 		"public class $Proxy0 implements " + infce.getName() + " {" + rt +
-		"	public $Proxy0(InvocationHandler h) {" + rt +
-		"		this.h = h;" + rt +
+		"	public $Proxy0(" + infce.getName() + " m) {" + rt +
+		"		super();" + rt +
+		"		this.m = m;" + rt +
 		"	}" + rt +
-		"  private InvocationHandler h;" + rt+ 
+		"	private " + infce.getName() + " m;" + rt +
 		methodStr + rt +
 		"}" ;
 		//产生代理类的java文件
-		String filename = System.getProperty("user.dir") +"/bin/com/imooc/proxy/$Proxy0.java";
+		String filename = System.getProperty("user.dir") +"/bin/com/code2017/proxy/part2/stage1/proxy/$Proxy0.java";
 		File file = new File(filename);
 		FileUtils.writeStringToFile(file, str);
 		
@@ -60,10 +61,10 @@ public class Proxy {
 		
 		//load 到内存
 		ClassLoader cl = ClassLoader.getSystemClassLoader();
-		Class c = cl.loadClass("com.imooc.proxy.$Proxy0");
+		Class<?> c = cl.loadClass("com.code2017.proxy.part2.stage1.proxy.$Proxy0");
 		
-		Constructor ctr = c.getConstructor(InvocationHandler.class);
-		return ctr.newInstance(h);
+		Constructor<?> ctr = c.getConstructor(infce);
+		return ctr.newInstance(new Car());
 	}
 
 	

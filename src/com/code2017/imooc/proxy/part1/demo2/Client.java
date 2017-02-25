@@ -1,9 +1,15 @@
 package com.code2017.imooc.proxy.part1.demo2;
 
+import com.code2017.imooc.proxy.part1.demo1.Car;
+
 public class Client {
 
 	/**
-	 * 测试类
+	 * @Description:测试类
+	 * 聚合方式代理可以更灵活的实现各种功能
+	 * @auther: wutp 2017年2月25日
+	 * @param args
+	 * @return void
 	 */
 	public static void main(String[] args) {
 		Car car = new Car();
