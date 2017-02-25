@@ -12,4 +12,8 @@
    asm-tree.jar
    asm.jar
    
+ 4 cglib 2017-2-25
+ cglib-nodep-2.2.jar
+ commons-io-2.2.jar
+   
    
