@@ -35,7 +35,8 @@ public class MethodDemo1 {
 			Method m1 = c.getMethod("print", String.class, String.class);
 			// 用方法进行反射操作
 			// a1.print("hello", "WORLD");
-			o = m1.invoke(a1, "hello", "WORLD");
+//			o = m1.invoke(a1, "hello", "WORLD");
+			o = m1.invoke(a1, new Object[]{"hello", "WORLD"});
 			System.out.println("===================");
 			// Method m2 = c.getMethod("print", new Class[]{});
 			Method m2 = c.getMethod("print");
