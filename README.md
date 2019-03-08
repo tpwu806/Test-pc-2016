@@ -18,3 +18,7 @@
  4 cglib 2017-2-25
  cglib-nodep-2.2.jar
  commons-io-2.2.jar
+ 
+ 5 rabbitMQ 2017-3-7
+ amqp-client-4.1.0.jar
+ 
